@@ -4,12 +4,23 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/prix/champagne-moins-de-40-euros/",
+    soon: false,
+    cat: "Guide d’achat — Champagne",
+    title: "Meilleur champagne à moins de 40 euros : notre top 25 dégusté",
+    excerpt: "Gonet-Médeville, Fleury, Jérôme Dehours… 25 cuvées dégustées à l’aveugle, des grandes maisons aux vignerons indépendants, avec tableau comparatif et le bon choix selon l’occasion.",
+    date: "16 juillet 2026",
+    minutes: 11,
+    img: "https://images.unsplash.com/photo-1547595628-c61a29f496f0?q=80&w=600&auto=format&fit=crop",
+    tags: ["champagne", "champagne pas cher", "moins de 40 euros", "prix", "budget", "gonet-médeville", "fleury", "jérôme dehours", "taittinger", "drappier", "nicolas feuillatte", "jacquart", "mumm", "lanson", "piper-heidsieck", "pommery", "blanc de noirs", "blanc de blancs", "extra-brut", "brut", "rosé", "vigneron indépendant", "grande maison", "mariage", "cadeau", "apéritif", "repas de fêtes", "bulles", "classement", "comparatif", "guide d’achat"]
+  },
+  {
     url: "/guides/prix/vin-moins-de-15-euros/",
     soon: false,
     cat: "Guide d’achat — Prix",
     title: "Les 30 meilleurs vins à moins de 15 € que l’on peut servir sans rougir",
     excerpt: "Corbières, Saumur-Champigny, Picpoul de Pinet, crémants… 30 appellations dégustées à l’aveugle qui surclassent leur prix : 10 rouges, 8 blancs, 5 rosés et 7 effervescents, avec accords et budgets.",
-    date: "Mis à jour le 16 juillet 2026",
+    date: "16 juillet 2026",
     minutes: 12,
     img: "https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?q=80&w=600&auto=format&fit=crop",
     tags: ["vin pas cher", "rapport qualité-prix", "moins de 15 euros", "budget", "petit prix", "corbières", "fitou", "saumur-champigny", "picpoul de pinet", "cahors", "malbec", "madiran", "minervois", "faugères", "beaujolais", "côtes du rhône", "bordeaux supérieur", "muscadet", "touraine sauvignon", "côtes de gascogne", "bergerac", "mâcon-villages", "vouvray", "tavel", "côtes de provence", "rosé", "rouge", "blanc", "crémant", "blanquette de limoux", "clairette de die", "effervescent", "bulles", "guide d’achat", "prix", "accords mets et vins", "guide hachette"]
@@ -24,17 +35,6 @@ window.JDV_ARTICLES = [
     minutes: 12,
     img: "https://images.unsplash.com/photo-1543418219-44e30b057fea?q=80&w=600&auto=format&fit=crop",
     tags: ["bourgogne", "millésime 2026", "chablis", "vendanges", "vin rouge", "vin blanc", "pinot noir", "chardonnay", "enquête"]
-  },
-  {
-    url: "#",
-    soon: true,
-    cat: "Champagne",
-    title: "Les 25 meilleurs champagnes à moins de 40 € cette année",
-    excerpt: "Maisons discrètes et vignerons indépendants : notre sélection dégustée des cuvées qui rivalisent avec les grandes étiquettes.",
-    date: "15 juillet 2026",
-    minutes: 10,
-    img: "https://images.unsplash.com/photo-1643618829236-a23857519fb6?q=80&w=600&auto=format&fit=crop",
-    tags: ["champagne", "moins de 40 euros", "prix", "brut", "vigneron indépendant", "bulles", "apéritif", "fêtes"]
   },
   {
     url: "#",

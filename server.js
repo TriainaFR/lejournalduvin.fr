@@ -40,7 +40,8 @@ function serveFile(res, filePath) {
   const ext = path.extname(filePath).toLowerCase();
   fs.readFile(filePath, (err, data) => {
     if (err) return send(res, 404, 'text/html; charset=utf-8', PAGE_404);
-    const cache = ext === '.html' ? 'no-cache' : 'public, max-age=3600';
+    // .html et .js en no-cache : l’index de recherche doit suivre chaque publication
+    const cache = (ext === '.html' || ext === '.js') ? 'no-cache' : 'public, max-age=3600';
     send(res, 200, MIME[ext] || 'application/octet-stream', data, { 'Cache-Control': cache });
   });
 }
