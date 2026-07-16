@@ -59,15 +59,15 @@ window.JDV_ARTICLES = [
     tags: ["visite de caves", "œnotourisme", "bourgogne", "route des grands crus", "dijon", "beaune", "itinéraire", "week-end", "dégustation"]
   },
   {
-    url: "#",
-    soon: true,
-    cat: "Spiritueux",
-    title: "Whiskys français : dix distilleries qui font trembler l’Écosse",
-    excerpt: "De la Bretagne à l’Alsace, la nouvelle génération de single malts tricolores n’a plus rien à envier aux Highlands.",
-    date: "8 juillet 2026",
-    minutes: 14,
+    url: "/spiritueux/whisky/meilleur-whisky-francais/",
+    soon: false,
+    cat: "Spiritueux — Whisky",
+    title: "Meilleur whisky français : les 12 cuvées à connaître en 2026",
+    excerpt: "Armorik, Rozelieures, Hautes Glaces, Kornog, Bellevoye… Les 12 meilleurs whiskys français dégustés et comparés, avec tableau des prix, les tourbés à connaître et le podium haut de gamme.",
+    date: "16 juillet 2026",
+    minutes: 11,
     img: "https://images.unsplash.com/photo-1597290282695-edc43d0e7129?q=80&w=600&auto=format&fit=crop",
-    tags: ["whisky", "spiritueux", "distillerie", "single malt", "france", "bretagne", "alsace", "dégustation"]
+    tags: ["whisky", "whisky français", "meilleur whisky", "spiritueux", "distillerie", "single malt", "tourbé", "blé noir", "france", "bretagne", "lorraine", "alpes", "isère", "charente", "gironde", "armorik", "warenghem", "rozelieures", "hautes glaces", "brenne", "eddu", "menhirs", "kornog", "celtic whisky", "bellevoye", "cadeau", "haut de gamme", "dégustation", "classement", "comparatif"]
   },
   {
     url: "/guides/occasions/champagne-mariage/",
