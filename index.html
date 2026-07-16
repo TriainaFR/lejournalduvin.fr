@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Journal du Vin — Vins, champagnes &amp; spiritueux : guides, sélections et routes des caves</title>
+  <meta name="description" content="Le Journal du Vin, média indépendant du vin, du champagne et des spiritueux : sélections par prix, région et millésime, guides pour chaque occasion et itinéraires de visites de caves.">
+  <link rel="canonical" href="https://lejournalduvin.fr/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Le Journal du Vin">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Le Journal du Vin — Le média des vins, champagnes &amp; spiritueux">
+  <meta property="og:description" content="Sélections par prix, région et millésime, guides pour chaque occasion et itinéraires de visites de caves.">
+  <meta property="og:url" content="https://lejournalduvin.fr/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1543418219-44e30b057fea?q=80&w=1600&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Jost:ital,wght@0,300..600;1,300..600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://lejournalduvin.fr/#website",
+        "url": "https://lejournalduvin.fr/",
+        "name": "Le Journal du Vin",
+        "alternateName": "lejournalduvin.fr",
+        "description": "Média indépendant consacré au vin, au champagne, aux spiritueux, aux cocktails et aux visites de caves.",
+        "inLanguage": "fr-FR",
+        "publisher": { "@id": "https://lejournalduvin.fr/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": { "@type": "EntryPoint", "urlTemplate": "https://lejournalduvin.fr/recherche?q={search_term_string}" },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "NewsMediaOrganization",
+        "@id": "https://lejournalduvin.fr/#organization",
+        "name": "Le Journal du Vin",
+        "url": "https://lejournalduvin.fr/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://lejournalduvin.fr/assets/favicon.svg"
+        },
+        "description": "Le Journal du Vin est un média français indépendant qui déguste, compare et recommande vins, champagnes et spiritueux, et raconte les plus belles caves de France.",
+        "knowsAbout": ["Vin", "Champagne", "Spiritueux", "Cocktails", "Œnotourisme", "Visites de caves", "Millésimes", "Accords mets et vins"],
+        "foundingDate": "2026",
+        "areaServed": "FR",
+        "publishingPrinciples": "https://lejournalduvin.fr/charte-editoriale/"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ————————————————————————————————
+       LE JOURNAL DU VIN — feuille de style
+       Papier ivoire · Encre noire · Bordeaux · Or
+    ———————————————————————————————— */
+    :root{
+      --paper:      #F4EEE0;
+      --paper-soft: #EFE7D5;
+      --paper-deep: #E9DFC9;
+      --ink:        #17110C;
+      --ink-soft:   #4A4038;
+      --bordeaux:   #6B1F30;
+      --bordeaux-deep: #431320;
+      --gold:       #A9822F;
+      --gold-soft:  #C8A96A;
+      --hairline:   rgba(23,17,12,.16);
+      --hairline-strong: rgba(23,17,12,.55);
+      --serif: "Bodoni Moda", "Didot", "Bodoni MT", Georgia, serif;
+      --sans:  "Jost", "Futura", "Avenir Next", sans-serif;
+      --w: min(1240px, calc(100vw - 48px));
+      --ease: cubic-bezier(.22,.61,.21,1);
+    }
+    *{ margin:0; padding:0; box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      background-color:var(--paper);
+      /* grain de papier, fondu dans le fond (léger, sans calque fixe) */
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      color:var(--ink);
+      font-family:var(--sans);
+      font-weight:300;
+      font-size:17px;
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    .sr-only{
+      position:absolute; width:1px; height:1px; overflow:hidden;
+      clip:rect(0 0 0 0); white-space:nowrap;
+    }
+    ::selection{ background:var(--bordeaux); color:var(--paper); }
+    img{ max-width:100%; display:block; }
+    a{ color:inherit; text-decoration:none; }
+    ul{ list-style:none; }
+    .wrap{ width:var(--w); margin-inline:auto; position:relative; z-index:1; }
+
+    a:focus-visible, button:focus-visible, input:focus-visible{
+      outline:2px solid var(--gold); outline-offset:3px; border-radius:1px;
+    }
+
+    /* ——— utilitaires typographiques ——— */
+    .kicker{
+      font-family:var(--sans); font-weight:500; font-size:.72rem;
+      letter-spacing:.24em; text-transform:uppercase; color:var(--gold);
+    }
+    .kicker--bordeaux{ color:var(--bordeaux); }
+
+    /* ================= TOP BAR ================= */
+    .topbar{
+      border-bottom:1px solid var(--hairline);
+      font-size:.72rem; letter-spacing:.18em; text-transform:uppercase; font-weight:400;
+      position:relative; z-index:5; background:var(--paper);
+    }
+    .topbar .wrap{
+      display:flex; justify-content:space-between; align-items:center;
+      padding:.65rem 0; gap:1rem;
+    }
+    .topbar span i{ font-style:normal; color:var(--gold); margin:0 .6em; }
+    .topbar a{ border-bottom:1px solid transparent; transition:border-color .25s; white-space:nowrap; }
+    .topbar a:hover{ border-color:var(--gold); }
+    .topbar .edition{ color:var(--ink-soft); }
+
+    /* ================= MASTHEAD ================= */
+    .masthead{ position:relative; z-index:4; background:var(--paper); }
+    .masthead .wrap{
+      display:grid; grid-template-columns:1fr auto 1fr; align-items:center;
+      padding:2.6rem 0 2rem; gap:2rem;
+    }
+    .masthead-side{
+      font-size:.7rem; letter-spacing:.22em; text-transform:uppercase;
+      color:var(--ink-soft); font-weight:400; line-height:2;
+    }
+    .masthead-side.right{ text-align:right; }
+    .masthead-side b{ display:block; color:var(--ink); font-weight:500; }
+    .brand{ text-align:center; position:relative; display:inline-block; justify-self:center; }
+    .brand h1{
+      font-family:var(--serif); font-weight:600; color:var(--ink);
+      line-height:.92; letter-spacing:.015em; text-transform:uppercase;
+    }
+    .brand h1 .l1{ display:block; font-size:clamp(1.6rem, 3.4vw, 2.6rem); }
+    .brand h1 .l2{ display:block; font-size:clamp(2.3rem, 5vw, 3.9rem); letter-spacing:.04em; }
+    .brand .vine{
+      position:absolute; top:-1.55rem; right:-3.2rem; width:clamp(64px, 7vw, 96px);
+      color:var(--bordeaux);
+    }
+    .brand .tagline{
+      margin-top:.9rem; font-size:.7rem; letter-spacing:.34em; text-transform:uppercase;
+      color:var(--bordeaux); font-weight:400;
+    }
+
+    /* ================= NAV ================= */
+    .nav{
+      position:sticky; top:0; z-index:50;
+      background:var(--paper);
+      border-top:1px solid var(--hairline-strong);
+      border-bottom:1px solid var(--hairline-strong);
+      transition:box-shadow .3s var(--ease);
+    }
+    .nav.scrolled{ box-shadow:0 10px 30px -18px rgba(23,17,12,.35); }
+    .nav .wrap{ display:flex; align-items:center; justify-content:center; gap:.5rem; }
+    .nav-mono{
+      display:none; align-items:center; margin-right:auto;
+      font-family:var(--serif); font-weight:700; font-size:1.15rem; letter-spacing:.02em;
+    }
+    .nav-mono em{ font-style:normal; color:var(--bordeaux); }
+    .nav.scrolled .nav-mono{ display:flex; }
+    .nav ul{ display:flex; flex-wrap:nowrap; overflow-x:auto; scrollbar-width:none; }
+    .nav ul::-webkit-scrollbar{ display:none; }
+    .nav li a{
+      display:block; padding:1.05rem 1.15rem;
+      font-size:.74rem; font-weight:500; letter-spacing:.2em; text-transform:uppercase;
+      position:relative; white-space:nowrap; transition:color .25s;
+    }
+    .nav li a::after{
+      content:""; position:absolute; left:1.15rem; right:1.15rem; bottom:.7rem;
+      border-bottom:2px solid var(--bordeaux);
+      transform:scaleX(0); transform-origin:left; transition:transform .3s var(--ease);
+    }
+    .nav li a:hover{ color:var(--bordeaux); }
+    .nav li a:hover::after{ transform:scaleX(1); }
+    .nav .search{
+      margin-left:auto; display:flex; align-items:center; gap:.5rem;
+      font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; font-weight:500;
+      padding:.55rem 0; color:var(--ink-soft); background:none; border:none; cursor:pointer;
+      font-family:var(--sans); transition:color .25s;
+    }
+    .nav .search:hover{ color:var(--bordeaux); }
+    .nav .search svg{ width:15px; height:15px; }
+
+    /* ================= TICKER ================= */
+    .ticker{
+      border-bottom:1px solid var(--hairline);
+      background:var(--paper-soft);
+      overflow:hidden; position:relative; z-index:1;
+    }
+    .ticker{ contain:content; }
+    .ticker .inner{ display:flex; width:max-content; animation:tick 46s linear infinite; will-change:transform; }
+    .ticker:hover .inner{ animation-play-state:paused; }
+    .ticker ul{ display:flex; align-items:center; padding:.55rem 0; }
+    .ticker li{
+      font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; font-weight:400;
+      white-space:nowrap; padding:0 1.4rem; display:flex; align-items:center; gap:1.4rem;
+      color:var(--ink-soft);
+    }
+    .ticker li::after{ content:"◆"; font-size:.5rem; color:var(--gold); }
+    .ticker li b{ font-weight:500; color:var(--bordeaux); }
+    @keyframes tick{ to{ transform:translateX(-50%); } }
+
+    /* ================= HERO ================= */
+    .hero{ padding:3.2rem 0 4rem; }
+    .hero .wrap{
+      display:grid; grid-template-columns:7.2fr 4.8fr; gap:3.4rem; align-items:start;
+    }
+    .feature{ position:relative; }
+    .feature .imgbox{
+      position:relative; overflow:hidden; aspect-ratio:16/10; background:var(--paper-deep);
+    }
+    .feature .imgbox::after{
+      content:""; position:absolute; inset:10px; border:1px solid rgba(244,238,224,.55);
+      pointer-events:none;
+    }
+    .feature img, .card img, .route-card img, .arch img{
+      width:100%; height:100%; object-fit:cover;
+      transition:transform 1.2s var(--ease);
+    }
+    .feature a:hover img{ transform:scale(1.035); }
+    .feature figcaption{
+      margin-top:.5rem; font-size:.68rem; letter-spacing:.12em; text-transform:uppercase;
+      color:var(--ink-soft); text-align:right;
+    }
+    .feature .kicker{ display:inline-block; margin:1.6rem 0 .8rem; }
+    .feature h2{
+      font-family:var(--serif); font-weight:600;
+      font-size:clamp(1.9rem, 3.6vw, 3.1rem); line-height:1.06; letter-spacing:.005em;
+    }
+    .feature h2 a{ background-image:linear-gradient(var(--gold), var(--gold));
+      background-size:0% 2px; background-repeat:no-repeat; background-position:0 96%;
+      transition:background-size .5s var(--ease);
+    }
+    .feature h2 a:hover{ background-size:100% 2px; }
+    .feature .standfirst{
+      margin-top:1.1rem; font-family:var(--serif); font-style:italic; font-weight:400;
+      font-size:1.18rem; line-height:1.5; color:var(--ink-soft); max-width:56ch;
+    }
+    .byline{
+      margin-top:1.2rem; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase;
+      color:var(--ink-soft);
+    }
+    .byline b{ font-weight:500; color:var(--ink); }
+    .byline i{ font-style:normal; color:var(--gold); margin:0 .55em; }
+
+    .rail h3.rail-title{
+      font-size:.74rem; letter-spacing:.26em; text-transform:uppercase; font-weight:500;
+      color:var(--ink); display:flex; align-items:center; gap:1rem; margin-bottom:.4rem;
+    }
+    .rail h3.rail-title::after{ content:""; flex:1; border-top:1px solid var(--hairline-strong); }
+    .rail ol{ list-style:none; counter-reset:rail; }
+    .rail li{
+      counter-increment:rail; padding:1.35rem 0; border-bottom:1px solid var(--hairline);
+      display:grid; grid-template-columns:auto 1fr; gap:1.2rem; align-items:baseline;
+    }
+    .rail li:last-child{ border-bottom:none; }
+    .rail li::before{
+      content:counter(rail, decimal-leading-zero);
+      font-family:var(--serif); font-size:1.7rem; font-weight:400; font-style:italic;
+      color:var(--gold); line-height:1;
+    }
+    .rail .cat{
+      display:block; font-size:.66rem; letter-spacing:.22em; text-transform:uppercase;
+      color:var(--bordeaux); font-weight:500; margin-bottom:.35rem;
+    }
+    .rail h4{
+      font-family:var(--serif); font-weight:500; font-size:1.18rem; line-height:1.25;
+    }
+    .rail h4 a{ transition:color .25s; }
+    .rail h4 a:hover{ color:var(--bordeaux); }
+    .rail .more{
+      display:inline-flex; align-items:center; gap:.6rem; margin-top:1.4rem;
+      font-size:.72rem; letter-spacing:.22em; text-transform:uppercase; font-weight:500;
+      color:var(--bordeaux);
+    }
+    .rail .more .arrow{ transition:transform .3s var(--ease); }
+    .rail .more:hover .arrow{ transform:translateX(6px); }
+
+    /* ————— entêtes de section ————— */
+    .section-head{ text-align:center; margin-bottom:2.8rem; }
+    .section-head .kicker{ display:block; margin-bottom:.7rem; }
+    .section-head h2{
+      font-family:var(--serif); font-weight:500; font-style:italic;
+      font-size:clamp(1.9rem, 3.4vw, 2.9rem); line-height:1.1; letter-spacing:.01em;
+    }
+    .section-head .orn{
+      display:flex; align-items:center; justify-content:center; gap:1.1rem;
+      margin-top:1.15rem; color:var(--gold);
+    }
+    .section-head .orn::before, .section-head .orn::after{
+      content:""; width:72px; border-top:1px solid var(--hairline-strong);
+    }
+    .section-head .orn svg{ width:14px; height:14px; }
+
+    /* ================= UNIVERS (arches) ================= */
+    .univers{ padding:4.2rem 0 4.6rem; border-top:1px solid var(--hairline); }
+    .univers-grid{
+      display:grid; grid-template-columns:repeat(5, 1fr); gap:1.6rem;
+    }
+    .arch{ text-align:center; display:block; }
+    .arch .frame{
+      position:relative; border-radius:999px 999px 0 0; overflow:hidden;
+      aspect-ratio:3/4.3; background:var(--paper-deep);
+      box-shadow:0 0 0 1px var(--gold-soft), inset 0 0 0 1px var(--gold-soft);
+      transition:transform .5s var(--ease), box-shadow .5s var(--ease);
+    }
+    .arch .frame::after{
+      content:""; position:absolute; inset:7px; border:1px solid rgba(244,238,224,.6);
+      border-radius:999px 999px 0 0; pointer-events:none;
+    }
+    .arch:hover .frame{ transform:translateY(-8px); box-shadow:0 0 0 1px var(--gold), inset 0 0 0 1px var(--gold), 0 24px 34px -22px rgba(23,17,12,.45); }
+    .arch:hover img{ transform:scale(1.06); }
+    .arch h3{
+      margin-top:1.15rem; font-family:var(--serif); font-weight:600; font-size:1.22rem;
+      letter-spacing:.02em;
+    }
+    .arch p{
+      font-size:.7rem; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft);
+      margin-top:.3rem;
+    }
+
+    /* ================= GUIDES ================= */
+    .guides{ padding:4.4rem 0 5rem; background:var(--paper-soft); border-top:1px solid var(--hairline); border-bottom:1px solid var(--hairline); }
+    .guides-grid{
+      display:grid; grid-template-columns:1.6fr 1fr 1fr; grid-template-rows:auto auto; gap:2.2rem;
+    }
+    .card{ display:flex; flex-direction:column; }
+    .card .imgwrap{ position:relative; }
+    .card .chip{
+      position:absolute; z-index:2; top:0; left:50%; transform:translate(-50%,-50%);
+      background:var(--paper); color:var(--bordeaux); padding:.42rem 1.15rem;
+      font-size:.62rem; letter-spacing:.22em; text-transform:uppercase; font-weight:500;
+      white-space:nowrap; box-shadow:0 0 0 1px var(--hairline);
+    }
+    .card .imgbox{ overflow:hidden; aspect-ratio:4/3; background:var(--paper-deep); position:relative; }
+    .card--lead{ grid-row:span 2; }
+    .card--lead .imgbox{ aspect-ratio:4/4.6; }
+    .card a.imglink:hover img{ transform:scale(1.05); }
+    .card h3{
+      margin-top:1.15rem;
+      font-family:var(--serif); font-weight:500; font-size:1.32rem; line-height:1.22;
+    }
+    .card--lead h3{ font-size:clamp(1.6rem, 2.4vw, 2.15rem); font-weight:600; line-height:1.12; }
+    .card h3 a{ transition:color .25s; }
+    .card h3 a:hover{ color:var(--bordeaux); }
+    .card .excerpt{
+      margin-top:.65rem; font-size:.95rem; color:var(--ink-soft); line-height:1.6;
+      display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
+    }
+    .card .meta{
+      margin-top:auto; padding-top:.9rem; font-size:.68rem; letter-spacing:.14em;
+      text-transform:uppercase; color:var(--ink-soft);
+    }
+    .card .meta i{ font-style:normal; color:var(--gold); margin:0 .5em; }
+
+    .btn{
+      display:inline-block; padding:.95rem 2.4rem; border:1px solid var(--ink);
+      font-size:.72rem; letter-spacing:.26em; text-transform:uppercase; font-weight:500;
+      transition:background .3s, color .3s, border-color .3s; cursor:pointer; background:transparent;
+      font-family:var(--sans); color:var(--ink);
+    }
+    .btn:hover{ background:var(--bordeaux); border-color:var(--bordeaux); color:var(--paper); }
+    .center{ text-align:center; }
+    .guides .center{ margin-top:3rem; }
+
+    /* ================= CITATION ================= */
+    .quote{ padding:5.6rem 0; text-align:center; position:relative; }
+    .quote .mark{
+      font-family:var(--serif); font-size:5.4rem; line-height:.4; color:var(--gold);
+      display:block; margin-bottom:1.6rem; font-style:italic;
+    }
+    .quote blockquote p{
+      font-family:var(--serif); font-style:italic; font-weight:500;
+      font-size:clamp(1.5rem, 3.2vw, 2.5rem); line-height:1.28; max-width:26ch; margin-inline:auto;
+    }
+    .quote cite{
+      display:block; margin-top:1.6rem; font-style:normal;
+      font-size:.72rem; letter-spacing:.28em; text-transform:uppercase; color:var(--ink-soft);
+    }
+    .quote cite::before{ content:"— "; color:var(--gold); }
+
+    /* ================= ROUTES DES CAVES ================= */
+    .routes{ background:var(--ink); color:var(--paper); padding:5rem 0 5.4rem; position:relative; }
+    .routes::before{
+      content:""; position:absolute; inset:0;
+      background:radial-gradient(ellipse 90% 60% at 50% -10%, rgba(107,31,48,.55), transparent 60%);
+      pointer-events:none;
+    }
+    .routes .section-head h2{ color:var(--paper); }
+    .routes .section-head .orn::before, .routes .section-head .orn::after{ border-color:rgba(244,238,224,.28); }
+    .routes-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; }
+    .route-card{ position:relative; display:block; }
+    .route-card .imgbox{ overflow:hidden; aspect-ratio:4/5; position:relative; }
+    .route-card .imgbox::after{
+      content:""; position:absolute; inset:0;
+      background:linear-gradient(to top, rgba(13,9,6,.82) 8%, rgba(13,9,6,.12) 48%, transparent 70%);
+    }
+    .route-card:hover img{ transform:scale(1.05); }
+    .route-card .num{
+      position:absolute; top:1.2rem; left:1.4rem; z-index:2;
+      font-family:var(--serif); font-style:italic; font-size:2rem; color:var(--gold-soft);
+      text-shadow:0 2px 14px rgba(0,0,0,.5);
+    }
+    .route-card .body{ position:absolute; left:1.6rem; right:1.6rem; bottom:1.5rem; z-index:2; }
+    .route-card .region{
+      font-size:.66rem; letter-spacing:.26em; text-transform:uppercase; color:var(--gold-soft);
+      font-weight:500;
+    }
+    .route-card h3{
+      font-family:var(--serif); font-weight:600; font-size:1.55rem; line-height:1.15;
+      margin:.5rem 0 .8rem; color:#FAF6EB;
+    }
+    .route-card .specs{
+      display:flex; gap:1.1rem; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase;
+      color:rgba(244,238,224,.75);
+    }
+    .route-card .specs span::before{ content:"◆ "; color:var(--gold); font-size:.55rem; }
+    .routes .center{ margin-top:3.2rem; }
+    .routes .btn{ border-color:rgba(244,238,224,.5); color:var(--paper); }
+    .routes .btn:hover{ background:var(--gold); border-color:var(--gold); color:var(--ink); }
+
+    /* ================= OCCASIONS ================= */
+    .occasions{ padding:4.6rem 0 5rem; }
+    .occasions-grid{
+      display:grid; grid-template-columns:repeat(6, 1fr); gap:1.2rem;
+    }
+    .occ{
+      border:1px solid var(--hairline-strong); text-align:center; padding:2.1rem .8rem 1.9rem;
+      position:relative; transition:background .35s var(--ease), border-color .35s, transform .35s var(--ease);
+      display:block; background:transparent;
+    }
+    .occ::after{
+      content:""; position:absolute; inset:5px; border:1px solid transparent; transition:border-color .35s;
+      pointer-events:none;
+    }
+    .occ .pict{ height:34px; display:flex; align-items:center; justify-content:center; margin-bottom:1rem; color:var(--bordeaux); transition:color .35s; }
+    .occ .pict svg{ height:30px; width:auto; }
+    .occ h3{ font-family:var(--serif); font-weight:500; font-size:1.15rem; }
+    .occ p{ font-size:.64rem; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft); margin-top:.3rem; transition:color .35s; }
+    .occ:hover{ background:var(--bordeaux); border-color:var(--bordeaux); transform:translateY(-5px); color:var(--paper); }
+    .occ:hover::after{ border-color:rgba(244,238,224,.35); }
+    .occ:hover .pict{ color:var(--gold-soft); }
+    .occ:hover p{ color:rgba(244,238,224,.72); }
+
+    /* ================= NEWSLETTER ================= */
+    .news{
+      background:var(--bordeaux); color:var(--paper); padding:4.8rem 0; position:relative; overflow:hidden;
+    }
+    .news::before{
+      content:""; position:absolute; inset:0; opacity:.5; pointer-events:none;
+      background:
+        radial-gradient(ellipse 70% 120% at 110% 50%, rgba(23,17,12,.4), transparent 60%),
+        radial-gradient(ellipse 70% 120% at -10% 50%, rgba(23,17,12,.4), transparent 60%);
+    }
+    .news .wrap{ display:grid; grid-template-columns:1.1fr 1fr; gap:3rem; align-items:center; }
+    .news .kicker{ color:var(--gold-soft); }
+    .news h2{
+      font-family:var(--serif); font-weight:600; font-size:clamp(1.8rem, 3.2vw, 2.7rem);
+      line-height:1.1; margin-top:.8rem;
+    }
+    .news .sub{ margin-top:1rem; font-size:1.02rem; color:rgba(244,238,224,.82); max-width:44ch; }
+    .news form{ display:flex; border:1px solid rgba(244,238,224,.55); }
+    .news input{
+      flex:1; background:transparent; border:none; padding:1.1rem 1.3rem; color:var(--paper);
+      font-family:var(--sans); font-size:.95rem; letter-spacing:.04em; min-width:0;
+    }
+    .news input::placeholder{ color:rgba(244,238,224,.55); }
+    .news button{
+      background:var(--gold); color:var(--ink); border:none; padding:1.1rem 2rem;
+      font-family:var(--sans); font-size:.72rem; letter-spacing:.24em; text-transform:uppercase;
+      font-weight:500; cursor:pointer; transition:background .3s;
+    }
+    .news button:hover{ background:var(--gold-soft); }
+    .news .rgpd{
+      margin-top:.9rem; font-size:.7rem; color:rgba(244,238,224,.55); letter-spacing:.03em;
+    }
+
+    /* ================= MANIFESTE ================= */
+    .manifesto{ padding:4.8rem 0; border-bottom:1px solid var(--hairline); }
+    .manifesto .wrap{ max-width:820px; text-align:center; }
+    .manifesto .kicker{ display:block; margin-bottom:1.3rem; }
+    .manifesto p{
+      font-family:var(--serif); font-size:clamp(1.15rem, 2vw, 1.45rem); line-height:1.65; font-weight:400;
+    }
+    .manifesto p + p{ margin-top:1.2rem; }
+    .manifesto a{ border-bottom:1px solid var(--gold); transition:color .25s; }
+    .manifesto a:hover{ color:var(--bordeaux); }
+
+    /* ================= FOOTER ================= */
+    footer{ background:var(--ink); color:rgba(244,238,224,.78); }
+    .foot-main{ padding:4.2rem 0 3.4rem; }
+    .foot-main .wrap{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:3rem; }
+    .foot-brand .mono{ width:74px; margin-bottom:1.2rem; }
+    .foot-brand p{ font-size:.92rem; line-height:1.7; max-width:34ch; }
+    .foot-brand .sig{
+      margin-top:1.4rem; font-family:var(--serif); font-style:italic; font-size:1.05rem; color:var(--gold-soft);
+    }
+    footer h4{
+      font-size:.7rem; letter-spacing:.26em; text-transform:uppercase; font-weight:500;
+      color:var(--paper); margin-bottom:1.3rem;
+    }
+    footer li{ margin-bottom:.7rem; font-size:.92rem; font-weight:300; }
+    footer li a{ transition:color .25s; }
+    footer li a:hover{ color:var(--gold-soft); }
+    .foot-bottom{ border-top:1px solid rgba(244,238,224,.14); }
+    .foot-bottom .wrap{
+      display:flex; justify-content:space-between; align-items:center; padding:1.4rem 0; gap:1rem;
+      font-size:.7rem; letter-spacing:.16em; text-transform:uppercase;
+    }
+    .foot-bottom .soc{ display:flex; gap:1.6rem; }
+    .foot-bottom a:hover{ color:var(--gold-soft); }
+    .foot-bottom .abus{ color:rgba(244,238,224,.45); font-size:.66rem; letter-spacing:.1em; text-transform:none; }
+
+    /* ————— reveal on scroll ————— */
+    .reveal{ opacity:0; transform:translateY(26px); transition:opacity .9s var(--ease), transform .9s var(--ease); }
+    .reveal.in{ opacity:1; transform:none; }
+    .d1{ transition-delay:.08s; } .d2{ transition-delay:.16s; } .d3{ transition-delay:.24s; }
+    .d4{ transition-delay:.32s; } .d5{ transition-delay:.4s; }
+
+    @media (prefers-reduced-motion: reduce){
+      *{ animation:none !important; transition:none !important; }
+      .reveal{ opacity:1; transform:none; }
+      html{ scroll-behavior:auto; }
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 1080px){
+      .univers-grid{ grid-template-columns:repeat(3, 1fr); }
+      .arch:nth-child(4), .arch:nth-child(5){ display:block; }
+      .occasions-grid{ grid-template-columns:repeat(3, 1fr); }
+      .guides-grid{ grid-template-columns:1fr 1fr; }
+      .card--lead{ grid-row:auto; grid-column:span 2; }
+      .card--lead .imgbox{ aspect-ratio:16/9; }
+    }
+    @media (max-width: 880px){
+      .hero .wrap{ grid-template-columns:1fr; gap:2.6rem; }
+      .masthead .wrap{ grid-template-columns:1fr; padding:2rem 0 1.6rem; }
+      .masthead-side{ display:none; }
+      .brand .vine{ right:-2.4rem; }
+      .news .wrap{ grid-template-columns:1fr; gap:2rem; }
+      .routes-grid{ grid-template-columns:1fr; max-width:460px; margin-inline:auto; }
+      .foot-main .wrap{ grid-template-columns:1fr 1fr; gap:2.4rem; }
+      .topbar .tagline-top{ display:none; }
+    }
+    @media (max-width: 640px){
+      .univers-grid{ grid-template-columns:repeat(2, 1fr); gap:1.1rem; }
+      .guides-grid{ grid-template-columns:1fr; }
+      .card--lead{ grid-column:auto; }
+      .occasions-grid{ grid-template-columns:repeat(2, 1fr); }
+      .nav .search span{ display:none; }
+      .foot-bottom .wrap{ flex-direction:column; gap:.8rem; }
+      .news form{ flex-direction:column; border:none; gap:.8rem; }
+      .news input{ border:1px solid rgba(244,238,224,.55); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+  <div class="topbar">
+    <div class="wrap">
+      <span class="edition">Jeudi 16 juillet 2026<i>◆</i>Édition digitale</span>
+      <span class="tagline-top">Vins&nbsp;· Champagnes&nbsp;· Spiritueux&nbsp;· Caves</span>
+      <a href="#newsletter">S’abonner à la lettre</a>
+    </div>
+  </div>
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <div class="wrap">
+      <div class="masthead-side">
+        <b>France</b>
+        Le média des amateurs éclairés
+      </div>
+      <div class="brand">
+        <h1>
+          <a href="/" aria-label="Le Journal du Vin — accueil">
+            <span class="l1">Le Journal</span>
+            <span class="l2">du Vin</span>
+          </a>
+          <span class="sr-only">, le média français du vin, du champagne et des spiritueux</span>
+        </h1>
+        <!-- ornement de vigne, repris du logo -->
+        <svg class="vine" viewBox="0 0 120 90" fill="none" aria-hidden="true">
+          <path d="M8 62 C 30 48, 52 30, 92 22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M92 22 c 10 -6 20 -4 24 2 c -8 4 -18 4 -24 -2 z" fill="currentColor"/>
+          <path d="M46 41 c -2 -12 4 -22 14 -25 c 3 10 -2 20 -14 25 z" fill="currentColor"/>
+          <path d="M64 32 c 8 -1 13 4 13 10 c -7 1 -12 -3 -13 -10 z" fill="currentColor"/>
+          <path d="M96 26 q 8 8 2 16 q -8 -2 -2 -16" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <g fill="currentColor">
+            <circle cx="97" cy="46" r="4.6"/><circle cx="106" cy="50" r="4.6"/><circle cx="88" cy="50" r="4.6"/>
+            <circle cx="101" cy="57" r="4.6"/><circle cx="92" cy="58" r="4.6"/><circle cx="110" cy="58" r="4.4"/>
+            <circle cx="97" cy="65" r="4.4"/><circle cx="105" cy="66" r="4.2"/><circle cx="101" cy="73" r="4"/>
+          </g>
+          <path d="M22 58 q 6 -10 16 -9" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+        </svg>
+        <p class="tagline">Vins · Champagnes · Spiritueux · Art de la dégustation</p>
+      </div>
+      <div class="masthead-side right">
+        <b>Fondé en 2026</b>
+        Indépendant &amp; sans concession
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= NAVIGATION ================= -->
+  <nav class="nav" id="nav" aria-label="Navigation principale">
+    <div class="wrap">
+      <a class="nav-mono" href="/" aria-label="Le Journal du Vin — accueil">J<em>D</em>V</a>
+      <ul>
+        <li><a href="#univers">Vin</a></li>
+        <li><a href="#univers">Champagne</a></li>
+        <li><a href="#univers">Spiritueux</a></li>
+        <li><a href="#univers">Cocktails</a></li>
+        <li><a href="#routes">Visites de caves</a></li>
+        <li><a href="#guides">Guides d’achat</a></li>
+        <li><a href="#occasions">Occasions</a></li>
+      </ul>
+      <button class="search" type="button" aria-label="Rechercher">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+        <span>Rechercher</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ================= TICKER ================= -->
+  <div class="ticker" aria-hidden="true">
+    <div class="inner">
+      <ul>
+        <li><b>Millésime 2026</b> — la Bourgogne annonce des blancs d’anthologie</li>
+        <li><b>Champagne</b> — les vendanges les plus précoces depuis 2003</li>
+        <li><b>Enchères</b> — un romanée-conti 1999 adjugé 28 400 €</li>
+        <li><b>Whisky</b> — la France, premier pays consommateur au monde</li>
+        <li><b>Œnotourisme</b> — la route des Grands Crus classée au patrimoine</li>
+        <li><b>Cocktails</b> — le retour en grâce du vermouth français</li>
+      </ul>
+      <ul>
+        <li><b>Millésime 2026</b> — la Bourgogne annonce des blancs d’anthologie</li>
+        <li><b>Champagne</b> — les vendanges les plus précoces depuis 2003</li>
+        <li><b>Enchères</b> — un romanée-conti 1999 adjugé 28 400 €</li>
+        <li><b>Whisky</b> — la France, premier pays consommateur au monde</li>
+        <li><b>Œnotourisme</b> — la route des Grands Crus classée au patrimoine</li>
+        <li><b>Cocktails</b> — le retour en grâce du vermouth français</li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <!-- ================= À LA UNE ================= -->
+    <section class="hero" aria-labelledby="alaune">
+      <h2 id="alaune" class="sr-only">À la une</h2>
+      <div class="wrap">
+        <article class="feature reveal">
+          <a href="#" class="imglink">
+            <figure>
+              <div class="imgbox">
+                <img src="https://images.unsplash.com/photo-1543418219-44e30b057fea?q=80&w=1600&auto=format&fit=crop" alt="Vignoble de la côte de Beaune baigné par la lumière dorée du soir" fetchpriority="high">
+              </div>
+              <figcaption>Côte de Beaune, Bourgogne — © Le Journal du Vin</figcaption>
+            </figure>
+          </a>
+          <span class="kicker">Grand format — Bourgogne</span>
+          <h2><a href="#">Millésime 2026&#8239;: pourquoi la Bourgogne s’apprête à signer une année historique</a></h2>
+          <p class="standfirst">Gelées évitées, été solaire, vendanges précoces&#8239;: des Chablis aux Maranges, les vignerons parlent déjà d’un millésime « de légende ». Enquête sur une année à part, entre euphorie et prudence.</p>
+          <p class="byline">Par <b>La Rédaction</b><i>◆</i>Lecture 12 min</p>
+        </article>
+
+        <aside class="rail reveal d2" aria-label="Les articles les plus lus">
+          <h3 class="rail-title">Les indispensables</h3>
+          <ol>
+            <li>
+              <div>
+                <span class="cat">Champagne</span>
+                <h4><a href="#">Les 25 meilleurs champagnes à moins de 40 € cette année</a></h4>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span class="cat">Guide d’achat</span>
+                <h4><a href="#">Bordeaux&#8239;: quels millésimes boire en 2026 — et lesquels attendre</a></h4>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span class="cat">Visites de caves</span>
+                <h4><a href="#">Un week-end sur la route des Grands Crus, de Dijon à Beaune</a></h4>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span class="cat">Spiritueux</span>
+                <h4><a href="#">Whiskys français&#8239;: dix distilleries qui font trembler l’Écosse</a></h4>
+              </div>
+            </li>
+          </ol>
+          <a class="more" href="#">Tous les articles <span class="arrow">→</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= NOS UNIVERS ================= -->
+    <section class="univers" id="univers" aria-labelledby="univers-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker">Explorer</span>
+          <h2 id="univers-title">Nos univers</h2>
+          <div class="orn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c1.8 3.2 4.5 4.6 4.5 8a4.5 4.5 0 0 1-9 0C7.5 6.6 10.2 5.2 12 2Zm-.9 13.5h1.8V20h2.3v1.5H8.8V20h2.3v-4.5Z"/></svg>
+          </div>
+        </div>
+        <div class="univers-grid">
+          <a class="arch reveal" href="#">
+            <div class="frame">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1610458034932-dc165f29499e?q=80&w=800&auto=format&fit=crop" alt="Verre de vin rouge à la dégustation">
+            </div>
+            <h3>Le Vin</h3>
+            <p>Rouges · Blancs · Rosés</p>
+          </a>
+          <a class="arch reveal d1" href="#">
+            <div class="frame">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1643618829236-a23857519fb6?q=80&w=800&auto=format&fit=crop" alt="Bouteille de champagne rafraîchie sur glace">
+            </div>
+            <h3>Le Champagne</h3>
+            <p>Maisons · Cuvées · Bulles</p>
+          </a>
+          <a class="arch reveal d2" href="#">
+            <div class="frame">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1615887023544-3a566f29d822?q=80&w=800&auto=format&fit=crop" alt="Verre de whisky servi sur une table claire">
+            </div>
+            <h3>Les Spiritueux</h3>
+            <p>Whisky · Cognac · Rhum</p>
+          </a>
+          <a class="arch reveal d3" href="#">
+            <div class="frame">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1597075687490-8f673c6c17f6?q=80&w=800&auto=format&fit=crop" alt="Cocktail servi dans un verre à pied sur un bar en bois">
+            </div>
+            <h3>Les Cocktails</h3>
+            <p>Recettes · Bars · Tendances</p>
+          </a>
+          <a class="arch reveal d4" href="#routes">
+            <div class="frame">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1561906814-23da9a8bfee0?q=80&w=800&auto=format&fit=crop" alt="Fûts de chêne alignés dans une cave voûtée">
+            </div>
+            <h3>Les Caves</h3>
+            <p>Visites · Itinéraires</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GUIDES DU MOMENT ================= -->
+    <section class="guides" id="guides" aria-labelledby="guides-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker">Sélections &amp; conseils</span>
+          <h2 id="guides-title">Les guides du moment</h2>
+          <div class="orn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c1.8 3.2 4.5 4.6 4.5 8a4.5 4.5 0 0 1-9 0C7.5 6.6 10.2 5.2 12 2Zm-.9 13.5h1.8V20h2.3v1.5H8.8V20h2.3v-4.5Z"/></svg>
+          </div>
+        </div>
+        <div class="guides-grid">
+          <article class="card card--lead reveal">
+            <div class="imgwrap">
+              <a href="#" class="imglink"><div class="imgbox">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?q=80&w=1000&auto=format&fit=crop" alt="Bouteilles de vin alignées sur un casier de cave">
+              </div></a>
+              <span class="chip">Guide d’achat — Prix</span>
+            </div>
+            <h3><a href="#">Les 30 meilleurs vins à moins de 15 € que l’on peut servir sans rougir</a></h3>
+            <p class="excerpt">Notre comité de dégustation a passé au crible 240 cuvées vendues en grande distribution et chez les cavistes. Voici celles qui surclassent leur prix — et les pièges à éviter au rayon vin.</p>
+            <p class="meta">14 juillet 2026<i>◆</i>Lecture 18 min</p>
+          </article>
+
+          <article class="card reveal d1">
+            <div class="imgwrap">
+              <a href="#" class="imglink"><div class="imgbox">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1707707178778-bec9382d152c?q=80&w=800&auto=format&fit=crop" alt="Jeunes mariés trinquant au champagne">
+              </div></a>
+              <span class="chip">Occasions — Mariage</span>
+            </div>
+            <h3><a href="#">Quel champagne pour un mariage&#8239;? Le calcul juste, les bons choix</a></h3>
+            <p class="meta">12 juillet 2026<i>◆</i>Lecture 9 min</p>
+          </article>
+
+          <article class="card reveal d2">
+            <div class="imgwrap">
+              <a href="#" class="imglink"><div class="imgbox">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1692764719158-77276a8fb65e?q=80&w=800&auto=format&fit=crop" alt="Vieille bouteille de vin patinée par le temps">
+              </div></a>
+              <span class="chip">Millésimes</span>
+            </div>
+            <h3><a href="#">Bordeaux 2005–2020&#8239;: le tableau des années à boire maintenant</a></h3>
+            <p class="meta">10 juillet 2026<i>◆</i>Lecture 11 min</p>
+          </article>
+
+          <article class="card reveal d2">
+            <div class="imgwrap">
+              <a href="#" class="imglink"><div class="imgbox">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1597290282695-edc43d0e7129?q=80&w=800&auto=format&fit=crop" alt="Étagère de bar garnie de bouteilles de spiritueux">
+              </div></a>
+              <span class="chip">Spiritueux — Région</span>
+            </div>
+            <h3><a href="#">Whiskys français&#8239;: 10 distilleries qui montent, de la Bretagne à l’Alsace</a></h3>
+            <p class="meta">8 juillet 2026<i>◆</i>Lecture 14 min</p>
+          </article>
+
+          <article class="card reveal d3">
+            <div class="imgwrap">
+              <a href="#" class="imglink"><div class="imgbox">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=800&auto=format&fit=crop" alt="Amis levant leurs verres de vin lors d’un dîner">
+              </div></a>
+              <span class="chip">Accords &amp; conseils</span>
+            </div>
+            <h3><a href="#">Apéritif d’été&#8239;: 12 bouteilles qui font l’unanimité (et leurs accords)</a></h3>
+            <p class="meta">6 juillet 2026<i>◆</i>Lecture 8 min</p>
+          </article>
+        </div>
+        <div class="center reveal">
+          <a class="btn" href="#">Tous nos guides d’achat</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CITATION ================= -->
+    <section class="quote" aria-label="Citation">
+      <div class="wrap reveal">
+        <span class="mark" aria-hidden="true">“</span>
+        <blockquote>
+          <p>Le vin est la seule œuvre d’art que l’on puisse boire.</p>
+          <cite>Luis Fernando Olaverri</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ================= ROUTES DES CAVES ================= -->
+    <section class="routes" id="routes" aria-labelledby="routes-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker">Œnotourisme</span>
+          <h2 id="routes-title">La route des caves</h2>
+          <div class="orn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c1.8 3.2 4.5 4.6 4.5 8a4.5 4.5 0 0 1-9 0C7.5 6.6 10.2 5.2 12 2Zm-.9 13.5h1.8V20h2.3v1.5H8.8V20h2.3v-4.5Z"/></svg>
+          </div>
+        </div>
+        <div class="routes-grid">
+          <a class="route-card reveal" href="#">
+            <span class="num">I.</span>
+            <div class="imgbox">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1717240049346-b6a9f43f4e1c?q=80&w=900&auto=format&fit=crop" alt="Vignoble champenois et maison de vigneron à flanc de coteau">
+            </div>
+            <div class="body">
+              <span class="region">Champagne</span>
+              <h3>De Reims à Épernay, les caves des grandes maisons</h3>
+              <div class="specs"><span>3 jours</span><span>92 km</span><span>9 caves</span></div>
+            </div>
+          </a>
+          <a class="route-card reveal d1" href="#">
+            <span class="num">II.</span>
+            <div class="imgbox">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1567072629554-20e689de2400?q=80&w=900&auto=format&fit=crop" alt="Rangs de vigne au coucher du soleil en Bourgogne">
+            </div>
+            <div class="body">
+              <span class="region">Bourgogne</span>
+              <h3>La route des Grands Crus, de Dijon à Santenay</h3>
+              <div class="specs"><span>2 jours</span><span>60 km</span><span>7 domaines</span></div>
+            </div>
+          </a>
+          <a class="route-card reveal d2" href="#">
+            <span class="num">III.</span>
+            <div class="imgbox">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1701622669938-fa4e09a1f1fe?q=80&w=900&auto=format&fit=crop" alt="Galerie de cave voûtée abritant des fûts de vieillissement">
+            </div>
+            <div class="body">
+              <span class="region">Bordeaux</span>
+              <h3>Médoc confidentiel&#8239;: chais et châteaux hors des sentiers battus</h3>
+              <div class="specs"><span>3 jours</span><span>110 km</span><span>8 châteaux</span></div>
+            </div>
+          </a>
+        </div>
+        <div class="center reveal">
+          <a class="btn" href="#">Tous les itinéraires</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OCCASIONS ================= -->
+    <section class="occasions" id="occasions" aria-labelledby="occasions-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker">Que servir pour…</span>
+          <h2 id="occasions-title">Chaque occasion, sa bouteille</h2>
+          <div class="orn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c1.8 3.2 4.5 4.6 4.5 8a4.5 4.5 0 0 1-9 0C7.5 6.6 10.2 5.2 12 2Zm-.9 13.5h1.8V20h2.3v1.5H8.8V20h2.3v-4.5Z"/></svg>
+          </div>
+        </div>
+        <div class="occasions-grid">
+          <a class="occ reveal" href="#">
+            <div class="pict"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 3l3 4h-2l3 4h-2l3 4H7l3-4H8l3-4H9l3-4Z"/><path d="M12 15v5m-3 1h6"/></svg></div>
+            <h3>Noël</h3>
+            <p>Repas de fêtes</p>
+          </a>
+          <a class="occ reveal d1" href="#">
+            <div class="pict"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M8 3h8l-1.2 7.2a3.9 3.9 0 0 1-2.8 3.1V18h3v2H9v-2h3v-4.7a3.9 3.9 0 0 1-2.8-3.1L8 3Z"/><path d="M5 6l-1.5-1M19 6l1.5-1M12 1v1.4"/></svg></div>
+            <h3>Nouvel An</h3>
+            <p>Minuit &amp; bulles</p>
+          </a>
+          <a class="occ reveal d2" href="#">
+            <div class="pict"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M9 3h6M12 3v4"/><path d="M7 7h10l-1 8a4 4 0 0 1-8 0L7 7Z"/><path d="M12 19v2m-3 0h6" transform="translate(0 -2)"/><circle cx="12" cy="11" r="1.2"/></svg></div>
+            <h3>Mariage</h3>
+            <p>Vin d’honneur</p>
+          </a>
+          <a class="occ reveal d3" href="#">
+            <div class="pict"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 11h14v9H5z"/><path d="M3 8h18v3H3zM12 8v12M12 8s-3-.5-3-3a1.8 1.8 0 0 1 3 0M12 8s3-.5 3-3a1.8 1.8 0 0 0-3 0"/></svg></div>
+            <h3>Anniversaire</h3>
+            <p>Millésime de naissance</p>
+          </a>
+          <a class="occ reveal d4" href="#">
+            <div class="pict"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M7 21c0-4 2-5 2-9V4h6v8c0 4 2 5 2 9H7Z"/><path d="M9 4h6M9.4 12h5.2"/></svg></div>
+            <h3>Apéritif</h3>
+            <p>Entre amis</p>
+          </a>
+          <a class="occ reveal d5" href="#">
+            <div class="pict"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 4h16v5H4zM6 9v11h12V9M12 4v16"/><path d="M12 4c-1.5-2.2-5-2.2-5 0h5Zm0 0c1.5-2.2 5-2.2 5 0h-5Z"/></svg></div>
+            <h3>À offrir</h3>
+            <p>Cadeaux sûrs</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="news" id="newsletter" aria-labelledby="news-title">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="kicker">La lettre du Journal du Vin</span>
+          <h2 id="news-title">« La Dégustation », chaque jeudi matin</h2>
+          <p class="sub">Nos sélections, nos enquêtes et nos routes des caves, résumées en cinq minutes de lecture. Rien d’autre, promis.</p>
+        </div>
+        <div class="reveal d2">
+          <form action="#" method="post">
+            <label for="email" class="sr-only">Votre adresse e-mail</label>
+            <input id="email" type="email" name="email" placeholder="Votre adresse e-mail" required>
+            <button type="submit">Je m’abonne</button>
+          </form>
+          <p class="rgpd">Un e-mail par semaine, zéro publicité déguisée. Désinscription en un clic, conformément au RGPD.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MANIFESTE ================= -->
+    <section class="manifesto" aria-labelledby="manifesto-title">
+      <div class="wrap reveal">
+        <span class="kicker" id="manifesto-title">Notre manifeste</span>
+        <p>Le Journal du Vin est un média français indépendant qui déguste, compare et recommande vins, champagnes et spiritueux, et raconte les plus belles caves de France. Nous goûtons ce que nous recommandons, nous parcourons les caves que nous racontons, et nous n’écrivons jamais sous la dictée d’une étiquette.</p>
+        <p>Des <a href="#guides">guides par prix, région et millésime</a> aux <a href="#routes">itinéraires de visites de caves</a>, notre promesse tient en une phrase&#8239;: vous aider à mieux choisir, mieux servir et mieux comprendre ce qu’il y a dans votre verre.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="foot-main">
+      <div class="wrap">
+        <div class="foot-brand">
+          <svg class="mono" viewBox="0 0 128 128" aria-label="Monogramme JDV">
+            <circle cx="64" cy="64" r="52" fill="none" stroke="#B08A3E" stroke-width="3"/>
+            <g fill="#F4EEE0" font-family="Bodoni Moda, Didot, Georgia, serif" font-weight="700">
+              <text x="38" y="86" font-size="58" letter-spacing="-2">J</text>
+              <text x="54" y="80" font-size="64">D</text>
+              <text x="76" y="60" font-size="44">V</text>
+            </g>
+          </svg>
+          <p>Le média français des vins, champagnes et spiritueux. Sélections dégustées, guides par occasion et routes des caves, écrits par des palais indépendants.</p>
+          <p class="sig">In vino veritas.</p>
+        </div>
+        <nav aria-label="Univers">
+          <h4>Univers</h4>
+          <ul>
+            <li><a href="#univers">Vin</a></li>
+            <li><a href="#univers">Champagne</a></li>
+            <li><a href="#univers">Spiritueux</a></li>
+            <li><a href="#univers">Cocktails</a></li>
+            <li><a href="#routes">Visites de caves</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Guides">
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="#guides">Meilleurs vins par prix</a></li>
+            <li><a href="#guides">Par région &amp; appellation</a></li>
+            <li><a href="#guides">Par millésime</a></li>
+            <li><a href="#occasions">Par occasion</a></li>
+            <li><a href="#routes">Itinéraires œnotourisme</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Le Journal">
+          <h4>Le Journal</h4>
+          <ul>
+            <li><a href="#">À propos &amp; rédaction</a></li>
+            <li><a href="#">Charte éditoriale</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div class="wrap">
+        <span>© 2026 Le Journal du Vin — Tous droits réservés</span>
+        <div class="soc">
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+          <a href="#">YouTube</a>
+        </div>
+        <span class="abus">L’abus d’alcool est dangereux pour la santé, à consommer avec modération.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Ombre de la nav au scroll + monogramme
+    const nav = document.getElementById('nav');
+    addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', scrollY > 240);
+    }, { passive:true });
+
+    // Révélation au défilement
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }, { rootMargin:'0px 0px -8% 0px', threshold:.08 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>

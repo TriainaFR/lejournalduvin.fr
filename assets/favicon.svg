@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="24" fill="#F4EEE0"/>
+  <circle cx="64" cy="64" r="52" fill="none" stroke="#B08A3E" stroke-width="3.5"/>
+  <g fill="#17110C" font-family="Didot, 'Bodoni MT', 'Bodoni Moda', 'Playfair Display', Georgia, serif" font-weight="700">
+    <text x="38" y="86" font-size="58" letter-spacing="-2">J</text>
+    <text x="54" y="80" font-size="64">D</text>
+    <text x="76" y="60" font-size="44">V</text>
+  </g>
+</svg>
