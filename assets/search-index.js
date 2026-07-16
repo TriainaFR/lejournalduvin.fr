@@ -70,15 +70,15 @@ window.JDV_ARTICLES = [
     tags: ["whisky", "spiritueux", "distillerie", "single malt", "france", "bretagne", "alsace", "dégustation"]
   },
   {
-    url: "#",
-    soon: true,
+    url: "/guides/occasions/champagne-mariage/",
+    soon: false,
     cat: "Occasions — Mariage",
     title: "Quel champagne pour un mariage ? Le calcul juste, les bons choix",
-    excerpt: "Combien de bouteilles par invité, quelles cuvées selon le budget, et les alternatives crémant qui tiennent la comparaison.",
-    date: "12 juillet 2026",
+    excerpt: "Une bouteille pour 3 invités au vin d’honneur, une pour 2 si le champagne coule toute la soirée : le calcul complet, les cuvées justes par moment de la fête et trois budgets réalistes.",
+    date: "16 juillet 2026",
     minutes: 9,
     img: "https://images.unsplash.com/photo-1707707178778-bec9382d152c?q=80&w=600&auto=format&fit=crop",
-    tags: ["mariage", "champagne", "vin d’honneur", "occasions", "budget", "crémant", "calcul", "invités", "fête"]
+    tags: ["mariage", "champagne", "champagne mariage", "vin d’honneur", "occasions", "budget", "calcul", "combien de bouteilles", "invités", "fête", "blanc de blancs", "demi-sec", "rosé", "pièce montée", "dessert", "soirée", "canard-duchêne", "gremillet", "h.blin", "laurent-perrier", "taittinger", "mumm", "vigneron indépendant", "grande maison"]
   },
   {
     url: "#",
