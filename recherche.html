@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recherche — Le Journal du Vin</title>
+  <meta name="description" content="Recherchez un article, une appellation, une région ou une occasion parmi les guides et enquêtes du Journal du Vin.">
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://lejournalduvin.fr/recherche">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Jost:ital,wght@0,300..600;1,300..600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --paper:      #F4EEE0;
+      --paper-soft: #EFE7D5;
+      --paper-deep: #E9DFC9;
+      --ink:        #17110C;
+      --ink-soft:   #4A4038;
+      --bordeaux:   #6B1F30;
+      --bordeaux-deep: #431320;
+      --gold:       #A9822F;
+      --gold-soft:  #C8A96A;
+      --hairline:   rgba(23,17,12,.16);
+      --hairline-strong: rgba(23,17,12,.55);
+      --serif: "Bodoni Moda", "Didot", "Bodoni MT", Georgia, serif;
+      --sans:  "Jost", "Futura", "Avenir Next", sans-serif;
+      --w: min(1240px, calc(100vw - 48px));
+      --ease: cubic-bezier(.22,.61,.21,1);
+    }
+    *{ margin:0; padding:0; box-sizing:border-box; }
+    body{
+      background-color:var(--paper);
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      color:var(--ink); font-family:var(--sans); font-weight:300; font-size:17px;
+      line-height:1.6; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
+    .sr-only{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+    ::selection{ background:var(--bordeaux); color:var(--paper); }
+    img{ max-width:100%; display:block; }
+    a{ color:inherit; text-decoration:none; }
+    ul, ol{ list-style:none; }
+    .wrap{ width:var(--w); margin-inline:auto; position:relative; z-index:1; }
+    a:focus-visible, button:focus-visible, input:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; border-radius:1px; }
+    .kicker{ font-family:var(--sans); font-weight:500; font-size:.72rem; letter-spacing:.24em; text-transform:uppercase; color:var(--gold); }
+
+    /* ——— chrome ——— */
+    .topbar{ border-bottom:1px solid var(--hairline); font-size:.72rem; letter-spacing:.18em; text-transform:uppercase; font-weight:400; background:var(--paper); }
+    .topbar .wrap{ display:flex; justify-content:space-between; align-items:center; padding:.65rem 0; gap:1rem; }
+    .topbar span i{ font-style:normal; color:var(--gold); margin:0 .6em; }
+    .topbar a{ border-bottom:1px solid transparent; transition:border-color .25s; white-space:nowrap; }
+    .topbar a:hover{ border-color:var(--gold); }
+    .topbar .edition{ color:var(--ink-soft); }
+
+    .masthead{ background:var(--paper); text-align:center; padding:1.9rem 0 1.5rem; }
+    .masthead .brand{ display:inline-block; font-family:var(--serif); font-weight:600; text-transform:uppercase; line-height:.95; letter-spacing:.02em; }
+    .masthead .brand .l1{ display:block; font-size:1.1rem; }
+    .masthead .brand .l2{ display:block; font-size:1.7rem; letter-spacing:.04em; }
+    .masthead .tagline{ margin-top:.55rem; font-size:.62rem; letter-spacing:.3em; text-transform:uppercase; color:var(--bordeaux); }
+
+    .nav{ position:sticky; top:0; z-index:50; background:var(--paper); border-top:1px solid var(--hairline-strong); border-bottom:1px solid var(--hairline-strong); transition:box-shadow .3s var(--ease); }
+    .nav.scrolled{ box-shadow:0 10px 30px -18px rgba(23,17,12,.35); }
+    .nav .wrap{ display:flex; align-items:center; justify-content:center; gap:.5rem; }
+    .nav ul{ display:flex; flex-wrap:nowrap; overflow-x:auto; scrollbar-width:none; }
+    .nav ul::-webkit-scrollbar{ display:none; }
+    .nav li a{ display:block; padding:1.05rem 1.15rem; font-size:.74rem; font-weight:500; letter-spacing:.2em; text-transform:uppercase; position:relative; white-space:nowrap; transition:color .25s; }
+    .nav li a::after{ content:""; position:absolute; left:1.15rem; right:1.15rem; bottom:.7rem; border-bottom:2px solid var(--bordeaux); transform:scaleX(0); transform-origin:left; transition:transform .3s var(--ease); }
+    .nav li a:hover{ color:var(--bordeaux); }
+    .nav li a:hover::after{ transform:scaleX(1); }
+
+    /* ——— zone de recherche ——— */
+    .search-hero{ padding:4rem 0 2.6rem; border-bottom:1px solid var(--hairline); }
+    .search-hero .inner{ width:min(880px, calc(100vw - 48px)); margin-inline:auto; }
+    .search-hero .kicker{ display:block; margin-bottom:1.2rem; }
+    .search-hero input[type="search"]{
+      width:100%; background:transparent; border:none;
+      border-bottom:2px solid var(--hairline-strong);
+      font-family:var(--serif); font-style:italic; font-weight:500;
+      font-size:clamp(1.7rem, 4.6vw, 3rem); line-height:1.2;
+      padding:.35em 0; color:var(--ink); border-radius:0;
+      -webkit-appearance:none; appearance:none;
+    }
+    .search-hero input[type="search"]::placeholder{ color:rgba(23,17,12,.32); }
+    .search-hero input[type="search"]:focus{ outline:none; border-color:var(--bordeaux); }
+    .search-hero .hint{ margin-top:.9rem; font-size:.72rem; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft); }
+
+    /* ——— résultats ——— */
+    .results-zone{ padding:2.4rem 0 5rem; min-height:46vh; }
+    .results-zone .inner{ width:min(880px, calc(100vw - 48px)); margin-inline:auto; }
+    .count{ font-family:var(--serif); font-style:italic; font-weight:500; font-size:1.35rem; color:var(--ink); }
+    .count b{ color:var(--bordeaux); font-weight:600; }
+    .result{ display:grid; grid-template-columns:210px 1fr; gap:1.7rem; padding:1.9rem 0; border-bottom:1px solid var(--hairline); align-items:start; }
+    .result .thumb{ overflow:hidden; aspect-ratio:4/3; background:var(--paper-deep); position:relative; }
+    .result .thumb img{ width:100%; height:100%; object-fit:cover; transition:transform 1.2s var(--ease); }
+    .result a.thumb:hover img{ transform:scale(1.05); }
+    .result .cat{ font-size:.64rem; letter-spacing:.22em; text-transform:uppercase; color:var(--bordeaux); font-weight:500; }
+    .result h2{ margin-top:.45rem; font-family:var(--serif); font-weight:500; font-size:1.42rem; line-height:1.22; }
+    .result h2 a{ transition:color .25s; }
+    .result h2 a:hover{ color:var(--bordeaux); }
+    .result .excerpt{ margin-top:.55rem; font-size:.95rem; color:var(--ink-soft); line-height:1.6; }
+    .result .meta{ margin-top:.7rem; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft); }
+    .result .meta i{ font-style:normal; color:var(--gold); margin:0 .5em; }
+    .result.soon .thumb img{ opacity:.55; filter:grayscale(.35); }
+    .badge-soon{
+      display:inline-block; margin-left:.7rem; vertical-align:middle;
+      border:1px solid var(--gold-soft); color:var(--gold); padding:.22rem .6rem;
+      font-family:var(--sans); font-size:.58rem; letter-spacing:.2em; text-transform:uppercase; font-weight:500;
+    }
+    mark{ background:transparent; color:var(--bordeaux); font-weight:500; border-bottom:2px solid var(--gold-soft); }
+
+    .noresult{ text-align:center; padding:3.4rem 0 1rem; }
+    .noresult .mark-orn{ font-family:var(--serif); font-style:italic; font-size:3.4rem; color:var(--gold); line-height:1; }
+    .noresult h2{ margin-top:1rem; font-family:var(--serif); font-weight:500; font-style:italic; font-size:1.7rem; }
+    .noresult p{ margin-top:.7rem; color:var(--ink-soft); }
+    .sug{ margin-top:2rem; display:flex; flex-wrap:wrap; gap:.7rem; justify-content:center; }
+    .sug a{ border:1px solid var(--hairline-strong); padding:.5rem 1.1rem; font-size:.7rem; letter-spacing:.18em; text-transform:uppercase; font-weight:500; transition:background .3s, color .3s, border-color .3s; }
+    .sug a:hover{ background:var(--bordeaux); border-color:var(--bordeaux); color:var(--paper); }
+
+    /* ——— footer ——— */
+    footer{ background:var(--ink); color:rgba(244,238,224,.78); }
+    .foot-bottom .wrap{ display:flex; justify-content:space-between; align-items:center; padding:1.4rem 0; gap:1rem; font-size:.7rem; letter-spacing:.16em; text-transform:uppercase; flex-wrap:wrap; }
+    .foot-bottom a{ transition:color .25s; }
+    .foot-bottom a:hover{ color:var(--gold-soft); }
+    .foot-bottom .abus{ color:rgba(244,238,224,.45); font-size:.66rem; letter-spacing:.1em; text-transform:none; }
+
+    @media (max-width:640px){
+      .result{ grid-template-columns:1fr; gap:1rem; }
+      .result .thumb{ aspect-ratio:16/9; }
+      .foot-bottom .wrap{ flex-direction:column; gap:.8rem; text-align:center; }
+    }
+    @media (prefers-reduced-motion: reduce){
+      *{ animation:none !important; transition:none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span class="edition">Édition digitale</span>
+      <a href="/#newsletter">S’abonner à la newsletter</a>
+    </div>
+  </div>
+
+  <header class="masthead">
+    <a class="brand" href="/" aria-label="Le Journal du Vin — accueil">
+      <span class="l1">Le Journal</span>
+      <span class="l2">du Vin</span>
+    </a>
+    <p class="tagline">Vins · Champagnes · Spiritueux</p>
+  </header>
+
+  <nav class="nav" id="nav" aria-label="Navigation principale">
+    <div class="wrap">
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/#univers">Vin</a></li>
+        <li><a href="/#univers">Champagne</a></li>
+        <li><a href="/#univers">Spiritueux</a></li>
+        <li><a href="/#routes">Visites de caves</a></li>
+        <li><a href="/#guides">Guides d’achat</a></li>
+        <li><a href="/#occasions">Occasions</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="search-hero" aria-labelledby="search-title">
+      <div class="inner">
+        <span class="kicker" id="search-title">Recherche</span>
+        <form action="/recherche" method="get" role="search">
+          <label class="sr-only" for="q">Rechercher un article ou un mot-clé</label>
+          <input id="q" name="q" type="search" placeholder="Un vin, une région, une occasion…" autocomplete="off">
+          <p class="hint">Les résultats s’affichent au fil de la saisie</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="results-zone" aria-live="polite">
+      <div class="inner">
+        <p class="count" id="count"></p>
+        <div id="results"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="foot-bottom">
+      <div class="wrap">
+        <span>© 2026 Le Journal du Vin — Tous droits réservés</span>
+        <a href="/">← Retour à l’accueil</a>
+        <span class="abus">L’abus d’alcool est dangereux pour la santé, à consommer avec modération.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/search-index.js"></script>
+  <script>
+    const nav = document.getElementById('nav');
+    addEventListener('scroll', () => { nav.classList.toggle('scrolled', scrollY > 60); }, { passive:true });
+
+    /* ——— moteur de recherche ——— */
+    const input   = document.getElementById('q');
+    const zone    = document.getElementById('results');
+    const countEl = document.getElementById('count');
+    const DATA    = window.JDV_ARTICLES || [];
+
+    // normalisation accent/casse-insensible
+    const norm = s => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+
+    // regex de surlignage insensible aux accents
+    const ACC = { a:'[aàâä]', e:'[eéèêë]', i:'[iîï]', o:'[oôö]', u:'[uùûü]', c:'[cç]', y:'[yÿ]' };
+    const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const accRe = term => new RegExp(
+      norm(esc(term)).split('').map(ch => ACC[ch] || esc(ch)).join(''), 'gi'
+    );
+    const highlight = (text, terms) => {
+      let out = text;
+      for (const t of terms) if (t.length > 1) out = out.replace(accRe(t), m => '' + m + '');
+      return out
+        .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+        .replace(//g,'<mark>').replace(//g,'</mark>');
+    };
+    const escHtml = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+    function score(article, terms){
+      const hay = {
+        title:   norm(article.title),
+        cat:     norm(article.cat),
+        excerpt: norm(article.excerpt),
+        tags:    norm((article.tags || []).join(' '))
+      };
+      let total = 0;
+      for (const t of terms) {
+        let s = 0;
+        if (hay.title.includes(t))   s += 5;
+        if (hay.tags.includes(t))    s += 3;
+        if (hay.cat.includes(t))     s += 2;
+        if (hay.excerpt.includes(t)) s += 1;
+        if (s === 0) return 0;   // chaque terme doit se retrouver quelque part
+        total += s;
+      }
+      return total;
+    }
+
+    function render(q){
+      const query = (q || '').trim();
+      const terms = norm(query).split(/\s+/).filter(t => t.length > 1);
+
+      let list;
+      if (!terms.length) {
+        list = DATA.slice();
+        countEl.innerHTML = 'Tous les articles <b>(' + list.length + ')</b>';
+      } else {
+        list = DATA
+          .map(a => ({ a, s: score(a, terms) }))
+          .filter(x => x.s > 0)
+          .sort((x, y) => (y.s - x.s) || ((x.a.soon ? 1 : 0) - (y.a.soon ? 1 : 0)))
+          .map(x => x.a);
+        countEl.innerHTML = list.length
+          ? '<b>' + list.length + '</b> résultat' + (list.length > 1 ? 's' : '') + ' pour «&#8239;' + escHtml(query) + '&#8239;»'
+          : '';
+      }
+
+      if (!list.length) {
+        zone.innerHTML =
+          '<div class="noresult">' +
+            '<span class="mark-orn" aria-hidden="true">∅</span>' +
+            '<h2>Aucun résultat pour «&#8239;' + escHtml(query) + '&#8239;»</h2>' +
+            '<p>Essayez une appellation, une région ou une occasion.</p>' +
+            '<div class="sug">' +
+              '<a href="/recherche?q=vin%20pas%20cher">Vin pas cher</a>' +
+              '<a href="/recherche?q=champagne">Champagne</a>' +
+              '<a href="/recherche?q=mill%C3%A9sime">Millésimes</a>' +
+              '<a href="/recherche?q=visite%20de%20caves">Visites de caves</a>' +
+              '<a href="/recherche?q=mariage">Mariage</a>' +
+            '</div>' +
+          '</div>';
+        return;
+      }
+
+      zone.innerHTML = list.map(a => {
+        const title = highlight(a.title, terms);
+        const excerpt = highlight(a.excerpt, terms);
+        const img = '<img loading="lazy" src="' + a.img + '" alt="">';
+        const badge = a.soon ? '<span class="badge-soon">À paraître</span>' : '';
+        const thumb = a.soon
+          ? '<div class="thumb">' + img + '</div>'
+          : '<a class="thumb" href="' + a.url + '" tabindex="-1" aria-hidden="true">' + img + '</a>';
+        const h2 = a.soon
+          ? '<h2>' + title + badge + '</h2>'
+          : '<h2><a href="' + a.url + '">' + title + '</a></h2>';
+        return '<article class="result' + (a.soon ? ' soon' : '') + '">' +
+          thumb +
+          '<div>' +
+            '<p class="cat">' + escHtml(a.cat) + '</p>' +
+            h2 +
+            '<p class="excerpt">' + excerpt + '</p>' +
+            '<p class="meta">' + escHtml(a.date) + '<i>◆</i>Lecture ' + a.minutes + ' min</p>' +
+          '</div>' +
+        '</article>';
+      }).join('');
+    }
+
+    // état initial depuis l’URL
+    const params = new URLSearchParams(location.search);
+    const q0 = params.get('q') || '';
+    input.value = q0;
+    render(q0);
+    if (!q0) input.focus();
+
+    // recherche en direct + URL synchronisée
+    input.addEventListener('input', () => {
+      render(input.value);
+      const u = new URL(location);
+      if (input.value.trim()) u.searchParams.set('q', input.value.trim());
+      else u.searchParams.delete('q');
+      history.replaceState(null, '', u);
+    });
+
+    // Entrée = on fige l’URL (le formulaire recharge la page proprement)
+    document.querySelector('form[role="search"]').addEventListener('submit', (e) => {
+      e.preventDefault();
+      render(input.value);
+      const u = new URL(location);
+      if (input.value.trim()) u.searchParams.set('q', input.value.trim());
+      else u.searchParams.delete('q');
+      history.replaceState(null, '', u);
+      input.blur();
+    });
+  </script>
+</body>
+</html>

@@ -540,6 +540,59 @@
       html{ scroll-behavior:auto; }
     }
 
+    /* ================= RECHERCHE (overlay) ================= */
+    .search-overlay{
+      position:fixed; inset:0; z-index:120; display:none;
+      background-color:var(--paper);
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    }
+    .search-overlay.open{ display:block; }
+    .search-overlay .inner{
+      width:min(880px, calc(100vw - 48px)); margin-inline:auto; padding-top:20vh;
+    }
+    .search-overlay.open .inner > *{ animation:so-rise .6s var(--ease) both; }
+    .search-overlay.open .inner > *:nth-child(2){ animation-delay:.08s; }
+    .search-overlay.open .inner > *:nth-child(3){ animation-delay:.16s; }
+    @keyframes so-rise{ from{ opacity:0; transform:translateY(18px); } to{ opacity:1; transform:none; } }
+    .search-overlay .kicker{ display:block; margin-bottom:1.4rem; }
+    .search-overlay input[type="search"]{
+      width:100%; background:transparent; border:none;
+      border-bottom:2px solid var(--hairline-strong);
+      font-family:var(--serif); font-style:italic; font-weight:500;
+      font-size:clamp(1.7rem, 4.6vw, 3rem); line-height:1.2;
+      padding:.35em 0; color:var(--ink); border-radius:0;
+      -webkit-appearance:none; appearance:none;
+    }
+    .search-overlay input[type="search"]::placeholder{ color:rgba(23,17,12,.32); }
+    .search-overlay input[type="search"]:focus{ outline:none; border-color:var(--bordeaux); }
+    .search-overlay .hint{
+      margin-top:1rem; font-size:.72rem; letter-spacing:.18em; text-transform:uppercase;
+      color:var(--ink-soft);
+    }
+    .search-overlay .hint b{ font-weight:500; color:var(--bordeaux); }
+    .search-overlay .sug{
+      margin-top:2.6rem; display:flex; flex-wrap:wrap; gap:.7rem; align-items:center;
+    }
+    .search-overlay .sug span{
+      font-size:.68rem; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft);
+      margin-right:.4rem;
+    }
+    .search-overlay .sug a{
+      border:1px solid var(--hairline-strong); padding:.5rem 1.1rem;
+      font-size:.7rem; letter-spacing:.18em; text-transform:uppercase; font-weight:500;
+      transition:background .3s, color .3s, border-color .3s;
+    }
+    .search-overlay .sug a:hover{ background:var(--bordeaux); border-color:var(--bordeaux); color:var(--paper); }
+    .search-overlay .close{
+      position:absolute; top:1.8rem; right:2.2rem;
+      background:none; border:none; cursor:pointer; font-family:var(--sans);
+      font-size:.72rem; letter-spacing:.22em; text-transform:uppercase; font-weight:500;
+      color:var(--ink-soft); display:flex; align-items:center; gap:.6rem; padding:.5rem;
+      transition:color .25s;
+    }
+    .search-overlay .close:hover{ color:var(--bordeaux); }
+    .search-overlay .close i{ font-style:normal; font-size:1.05rem; line-height:1; }
+
     /* ================= RESPONSIVE ================= */
     @media (max-width: 1080px){
       .univers-grid{ grid-template-columns:repeat(3, 1fr); }
@@ -578,7 +631,7 @@
     <div class="wrap">
       <span class="edition">Jeudi 16 juillet 2026<i>◆</i>Édition digitale</span>
       <span class="tagline-top">Vins&nbsp;· Champagnes&nbsp;· Spiritueux&nbsp;· Caves</span>
-      <a href="#newsletter">S’abonner à la lettre</a>
+      <a href="#newsletter">S’abonner à la newsletter</a>
     </div>
   </div>
 
@@ -633,7 +686,7 @@
         <li><a href="#guides">Guides d’achat</a></li>
         <li><a href="#occasions">Occasions</a></li>
       </ul>
-      <button class="search" type="button" aria-label="Rechercher">
+      <button class="search" type="button" id="search-open" aria-label="Rechercher" aria-haspopup="dialog">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
         <span>Rechercher</span>
       </button>
@@ -710,7 +763,7 @@
               </div>
             </li>
           </ol>
-          <a class="more" href="#">Tous les articles <span class="arrow">→</span></a>
+          <a class="more" href="/recherche">Tous les articles <span class="arrow">→</span></a>
         </aside>
       </div>
     </section>
@@ -778,14 +831,14 @@
         <div class="guides-grid">
           <article class="card card--lead reveal">
             <div class="imgwrap">
-              <a href="#" class="imglink"><div class="imgbox">
+              <a href="/guides/prix/vin-moins-de-15-euros/" class="imglink"><div class="imgbox">
                 <img loading="lazy" src="https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?q=80&w=1000&auto=format&fit=crop" alt="Bouteilles de vin alignées sur un casier de cave">
               </div></a>
               <span class="chip">Guide d’achat — Prix</span>
             </div>
-            <h3><a href="#">Les 30 meilleurs vins à moins de 15 € que l’on peut servir sans rougir</a></h3>
-            <p class="excerpt">Notre comité de dégustation a passé au crible 240 cuvées vendues en grande distribution et chez les cavistes. Voici celles qui surclassent leur prix — et les pièges à éviter au rayon vin.</p>
-            <p class="meta">14 juillet 2026<i>◆</i>Lecture 18 min</p>
+            <h3><a href="/guides/prix/vin-moins-de-15-euros/">Les 30 meilleurs vins à moins de 15 € que l’on peut servir sans rougir</a></h3>
+            <p class="excerpt">Notre comité de dégustation a passé au crible les appellations vendues en grande distribution et chez les cavistes. Voici les 30 qui surclassent leur prix — et les pièges à éviter au rayon vin.</p>
+            <p class="meta">Mis à jour le 16 juillet 2026<i>◆</i>Lecture 12 min</p>
           </article>
 
           <article class="card reveal d1">
@@ -1003,7 +1056,7 @@
         <nav aria-label="Guides">
           <h4>Guides</h4>
           <ul>
-            <li><a href="#guides">Meilleurs vins par prix</a></li>
+            <li><a href="/guides/prix/vin-moins-de-15-euros/">Meilleurs vins par prix</a></li>
             <li><a href="#guides">Par région &amp; appellation</a></li>
             <li><a href="#guides">Par millésime</a></li>
             <li><a href="#occasions">Par occasion</a></li>
@@ -1035,12 +1088,51 @@
     </div>
   </footer>
 
+  <!-- ================= RECHERCHE (overlay) ================= -->
+  <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Recherche">
+    <button class="close" type="button" id="search-close" aria-label="Fermer la recherche">Fermer <i>✕</i></button>
+    <div class="inner">
+      <span class="kicker">Recherche</span>
+      <form action="/recherche" method="get" role="search">
+        <label class="sr-only" for="q">Rechercher un article ou un mot-clé</label>
+        <input id="q" name="q" type="search" placeholder="Un vin, une région, une occasion…" autocomplete="off">
+        <p class="hint">Appuyez sur <b>Entrée</b> pour afficher tous les résultats</p>
+      </form>
+      <div class="sug">
+        <span>Recherches populaires&nbsp;:</span>
+        <a href="/recherche?q=vin%20pas%20cher">Vin pas cher</a>
+        <a href="/recherche?q=champagne">Champagne</a>
+        <a href="/recherche?q=mill%C3%A9sime">Millésimes</a>
+        <a href="/recherche?q=visite%20de%20caves">Visites de caves</a>
+        <a href="/recherche?q=mariage">Mariage</a>
+      </div>
+    </div>
+  </div>
+
   <script>
     // Ombre de la nav au scroll + monogramme
     const nav = document.getElementById('nav');
     addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', scrollY > 240);
     }, { passive:true });
+
+    // Overlay de recherche
+    const so = document.getElementById('search-overlay');
+    const soInput = document.getElementById('q');
+    const soOpen = () => {
+      so.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => soInput.focus(), 60);
+    };
+    const soClose = () => {
+      so.classList.remove('open');
+      document.body.style.overflow = '';
+    };
+    document.getElementById('search-open').addEventListener('click', soOpen);
+    document.getElementById('search-close').addEventListener('click', soClose);
+    addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && so.classList.contains('open')) soClose();
+    });
 
     // Révélation au défilement
     const io = new IntersectionObserver((entries) => {
