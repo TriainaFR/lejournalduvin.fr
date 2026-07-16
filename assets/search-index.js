@@ -37,15 +37,15 @@ window.JDV_ARTICLES = [
     tags: ["bourgogne", "millésime 2026", "chablis", "vendanges", "vin rouge", "vin blanc", "pinot noir", "chardonnay", "enquête"]
   },
   {
-    url: "#",
-    soon: true,
+    url: "/guides/millesimes/bordeaux/",
+    soon: false,
     cat: "Guide d’achat — Millésimes",
-    title: "Bordeaux : quels millésimes boire en 2026 — et lesquels attendre",
-    excerpt: "Notre tableau des années 2005–2020 : celles qui sont à leur apogée, celles qui méritent encore quelques années de cave.",
-    date: "14 juillet 2026",
-    minutes: 11,
-    img: "https://images.unsplash.com/photo-1692764719158-77276a8fb65e?q=80&w=600&auto=format&fit=crop",
-    tags: ["bordeaux", "millésime", "garde", "apogée", "médoc", "saint-émilion", "pomerol", "vin rouge", "cave"]
+    title: "Millésimes Bordeaux : lesquels boire en 2026, lesquels attendre",
+    excerpt: "2000, 2003, 2005 et 2009 à boire ; 2010, 2016, 2019 et le « millésime du siècle » 2022 à attendre. Le tableau complet 2000-2022, sources Parker, Decanter, RVF et Wine Scholar Guild.",
+    date: "16 juillet 2026",
+    minutes: 12,
+    img: "https://images.unsplash.com/photo-1560148218-1a83060f7b32?q=80&w=600&auto=format&fit=crop",
+    tags: ["bordeaux", "millésime", "millésime bordeaux", "meilleurs millésimes", "carte des millésimes", "2000", "2003", "2005", "2009", "2010", "2015", "2016", "2018", "2019", "2020", "2022", "millésime du siècle", "garde", "apogée", "carafe", "décanter", "médoc", "pessac-léognan", "saint-émilion", "pomerol", "rive gauche", "rive droite", "grands crus classés", "parker", "rvf", "château margaux", "vin rouge", "cave"]
   },
   {
     url: "#",
@@ -79,17 +79,6 @@ window.JDV_ARTICLES = [
     minutes: 9,
     img: "https://images.unsplash.com/photo-1707707178778-bec9382d152c?q=80&w=600&auto=format&fit=crop",
     tags: ["mariage", "champagne", "champagne mariage", "vin d’honneur", "occasions", "budget", "calcul", "combien de bouteilles", "invités", "fête", "blanc de blancs", "demi-sec", "rosé", "pièce montée", "dessert", "soirée", "canard-duchêne", "gremillet", "h.blin", "laurent-perrier", "taittinger", "mumm", "vigneron indépendant", "grande maison"]
-  },
-  {
-    url: "#",
-    soon: true,
-    cat: "Millésimes",
-    title: "Bordeaux 2005–2020 : le tableau des années à boire maintenant",
-    excerpt: "Quinze millésimes passés au crible, appellation par appellation, pour ouvrir vos bouteilles au bon moment.",
-    date: "10 juillet 2026",
-    minutes: 11,
-    img: "https://images.unsplash.com/photo-1692764719158-77276a8fb65e?q=80&w=600&auto=format&fit=crop",
-    tags: ["bordeaux", "millésime", "tableau", "apogée", "garde", "vin rouge"]
   },
   {
     url: "#",
