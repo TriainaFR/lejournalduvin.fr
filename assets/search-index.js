@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/prix/vin-rouge-moins-de-20-euros/",
+    soon: false,
+    cat: "Guide d’achat — Prix",
+    title: "Vin rouge : les 20 meilleurs rapports qualité-prix à moins de 20 euros",
+    excerpt: "Un Cahors à 9 € noté 93/100 par la RVF : le classement des 20 vraies affaires en vin rouge, classées par indice note/prix, avec tableau comparatif et méthode de sélection.",
+    date: "16 juillet 2026",
+    minutes: 12,
+    img: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=600&auto=format&fit=crop",
+    tags: ["vin rouge", "rapport qualité-prix", "moins de 20 euros", "vin pas cher", "meilleur vin rouge", "budget", "cahors", "malbec", "mâcon", "pinot noir", "côtes du rhône", "beaujolais", "fleurie", "morgon", "côte de brouilly", "chinon", "bourgueil", "cabernet franc", "anjou", "madiran", "marsannay", "rully", "cairanne", "beaumes de venise", "côte roannaise", "marmandais", "rvf", "guide hachette", "concours général agricole", "note", "classement", "comparatif", "guide d’achat", "prix"]
+  },
+  {
     url: "/guides/prix/champagne-moins-de-40-euros/",
     soon: false,
     cat: "Guide d’achat — Champagne",
