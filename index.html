@@ -3,19 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Le Journal du Vin — Vins, champagnes &amp; spiritueux : guides, sélections et routes des caves</title>
-  <meta name="description" content="Le Journal du Vin, média indépendant du vin, du champagne et des spiritueux : sélections par prix, région et millésime, guides pour chaque occasion et itinéraires de visites de caves.">
+  <title>Le Journal du Vin — Guides vins, champagnes &amp; spiritueux</title>
+  <meta name="description" content="Le Journal du Vin : média indépendant français dédié aux vins, champagnes, spiritueux et œnotourisme. Dégustations, guides et recommandations d’experts.">
   <link rel="canonical" href="https://www.lejournalduvin.fr/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta name="theme-color" content="#6B1F30">
+  <meta name="apple-mobile-web-app-title" content="Le Journal du Vin">
+  <meta name="application-name" content="Le Journal du Vin">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Le Journal du Vin">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:title" content="Le Journal du Vin — Le média des vins, champagnes &amp; spiritueux">
-  <meta property="og:description" content="Sélections par prix, région et millésime, guides pour chaque occasion et itinéraires de visites de caves.">
+  <meta property="og:title" content="Le Journal du Vin — Guides vins, champagnes &amp; spiritueux">
+  <meta property="og:description" content="Découvrez nos guides d’experts, dégustations et recommandations sur les meilleurs vins, champagnes, spiritueux et destinations œnotourisme.">
   <meta property="og:url" content="https://www.lejournalduvin.fr/">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=1600&auto=format&fit=crop">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=1200&h=630&fit=crop&auto=format">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Le Journal du Vin — Guides vins, champagnes &amp; spiritueux">
+  <meta name="twitter:description" content="Découvrez nos guides d’experts, dégustations et recommandations sur les meilleurs vins, champagnes, spiritueux et destinations œnotourisme.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=1200&h=630&fit=crop&auto=format">
+  <meta name="twitter:site" content="@JournalVin">
+  <meta name="twitter:creator" content="@JournalVin">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,12 +55,17 @@
         "@type": "NewsMediaOrganization",
         "@id": "https://www.lejournalduvin.fr/#organization",
         "name": "Le Journal du Vin",
+        "alternateName": "Journal du Vin",
         "url": "https://www.lejournalduvin.fr/",
         "logo": {
           "@type": "ImageObject",
           "url": "https://www.lejournalduvin.fr/assets/favicon.svg"
         },
         "description": "Le Journal du Vin est un média français indépendant qui déguste, compare et recommande vins, champagnes et spiritueux, et raconte les plus belles caves de France.",
+        "sameAs": [
+          "https://x.com/JournalVin",
+          "https://www.facebook.com/journalvin"
+        ],
         "knowsAbout": ["Vin", "Champagne", "Spiritueux", "Cocktails", "Œnotourisme", "Visites de caves", "Millésimes", "Accords mets et vins"],
         "foundingDate": "2026",
         "areaServed": "FR",
@@ -630,7 +646,8 @@
   <!-- ================= TOP BAR ================= -->
   <div class="topbar">
     <div class="wrap">
-      <span class="edition">Jeudi 16 juillet 2026<i>◆</i>Édition digitale</span>
+      <span class="edition"><span id="date-jour">Édition du jour</span><i>◆</i>Édition digitale</span>
+      <script>(function(){var d=new Date().toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long',year:'numeric'});document.getElementById('date-jour').textContent=d.charAt(0).toUpperCase()+d.slice(1);})();</script>
       <span class="tagline-top">Vins&nbsp;· Champagnes&nbsp;· Spiritueux&nbsp;· Caves</span>
       <a href="#newsletter">S’abonner à la newsletter</a>
     </div>
@@ -679,11 +696,11 @@
     <div class="wrap">
       <a class="nav-mono" href="/" aria-label="Le Journal du Vin — accueil">J<em>D</em>V</a>
       <ul>
-        <li><a href="#univers">Vin</a></li>
-        <li><a href="#univers">Champagne</a></li>
-        <li><a href="#univers">Spiritueux</a></li>
-        <li><a href="#univers">Cocktails</a></li>
-        <li><a href="#routes">Visites de caves</a></li>
+        <li><a href="/vin/">Vin</a></li>
+        <li><a href="/champagne/">Champagne</a></li>
+        <li><a href="/spiritueux/">Spiritueux</a></li>
+        <li><a href="/cocktails/">Cocktails</a></li>
+        <li><a href="/oenotourisme/">Visites de caves</a></li>
         <li><a href="#guides">Guides d’achat</a></li>
         <li><a href="#occasions">Occasions</a></li>
       </ul>
@@ -780,35 +797,35 @@
           </div>
         </div>
         <div class="univers-grid">
-          <a class="arch reveal" href="#">
+          <a class="arch reveal" href="/vin/">
             <div class="frame">
               <img loading="lazy" src="https://images.unsplash.com/photo-1610458034932-dc165f29499e?q=80&w=800&auto=format&fit=crop" alt="Verre de vin rouge à la dégustation">
             </div>
             <h3>Le Vin</h3>
             <p>Rouges · Blancs · Rosés</p>
           </a>
-          <a class="arch reveal d1" href="#">
+          <a class="arch reveal d1" href="/champagne/">
             <div class="frame">
               <img loading="lazy" src="https://images.unsplash.com/photo-1643618829236-a23857519fb6?q=80&w=800&auto=format&fit=crop" alt="Bouteille de champagne rafraîchie sur glace">
             </div>
             <h3>Le Champagne</h3>
             <p>Maisons · Cuvées · Bulles</p>
           </a>
-          <a class="arch reveal d2" href="#">
+          <a class="arch reveal d2" href="/spiritueux/">
             <div class="frame">
               <img loading="lazy" src="https://images.unsplash.com/photo-1615887023544-3a566f29d822?q=80&w=800&auto=format&fit=crop" alt="Verre de whisky servi sur une table claire">
             </div>
             <h3>Les Spiritueux</h3>
             <p>Whisky · Cognac · Rhum</p>
           </a>
-          <a class="arch reveal d3" href="#">
+          <a class="arch reveal d3" href="/cocktails/">
             <div class="frame">
               <img loading="lazy" src="https://images.unsplash.com/photo-1597075687490-8f673c6c17f6?q=80&w=800&auto=format&fit=crop" alt="Cocktail servi dans un verre à pied sur un bar en bois">
             </div>
             <h3>Les Cocktails</h3>
             <p>Recettes · Bars · Tendances</p>
           </a>
-          <a class="arch reveal d4" href="#routes">
+          <a class="arch reveal d4" href="/oenotourisme/">
             <div class="frame">
               <img loading="lazy" src="https://images.unsplash.com/photo-1561906814-23da9a8bfee0?q=80&w=800&auto=format&fit=crop" alt="Fûts de chêne alignés dans une cave voûtée">
             </div>
@@ -1047,11 +1064,11 @@
         <nav aria-label="Univers">
           <h4>Univers</h4>
           <ul>
-            <li><a href="#univers">Vin</a></li>
-            <li><a href="#univers">Champagne</a></li>
-            <li><a href="#univers">Spiritueux</a></li>
-            <li><a href="#univers">Cocktails</a></li>
-            <li><a href="#routes">Visites de caves</a></li>
+            <li><a href="/vin/">Vin</a></li>
+            <li><a href="/champagne/">Champagne</a></li>
+            <li><a href="/spiritueux/">Spiritueux</a></li>
+            <li><a href="/cocktails/">Cocktails</a></li>
+            <li><a href="/oenotourisme/">Visites de caves</a></li>
           </ul>
         </nav>
         <nav aria-label="Guides">
@@ -1080,9 +1097,9 @@
       <div class="wrap">
         <span>© 2026 Le Journal du Vin — Tous droits réservés</span>
         <div class="soc">
+          <a href="https://x.com/JournalVin" target="_blank" rel="noopener">X</a>
+          <a href="https://www.facebook.com/journalvin" target="_blank" rel="noopener">Facebook</a>
           <a href="#">Instagram</a>
-          <a href="#">TikTok</a>
-          <a href="#">YouTube</a>
         </div>
         <span class="abus">L’abus d’alcool est dangereux pour la santé, à consommer avec modération.</span>
       </div>

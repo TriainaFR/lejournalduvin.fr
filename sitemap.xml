@@ -2,7 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.lejournalduvin.fr/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.lejournalduvin.fr/vin/</loc>
+    <lastmod>2026-07-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.lejournalduvin.fr/champagne/</loc>
+    <lastmod>2026-07-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.lejournalduvin.fr/spiritueux/</loc>
+    <lastmod>2026-07-17</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/prix/vin-rouge-moins-de-20-euros/</loc>

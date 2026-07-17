@@ -34,12 +34,12 @@
         "@type": "NewsMediaOrganization",
         "@id": "https://www.lejournalduvin.fr/#organization",
         "name": "Le Journal du Vin",
-        "url": "https://www.lejournalduvin.fr/",
+        "alternateName": "Journal du Vin",        "url": "https://www.lejournalduvin.fr/",
         "logo": { "@type": "ImageObject", "url": "https://www.lejournalduvin.fr/assets/favicon.svg" },
         "description": "Le Journal du Vin est un média français indépendant qui déguste, compare et recommande vins, champagnes et spiritueux, et raconte les plus belles caves de France.",
         "knowsAbout": ["Vin", "Champagne", "Spiritueux", "Cocktails", "Œnotourisme", "Visites de caves", "Millésimes", "Accords mets et vins"],
-        "foundingDate": "2026",
-        "areaServed": "FR"
+        "sameAs": ["https://x.com/JournalVin", "https://www.facebook.com/journalvin"],
+        "foundingDate": "2026",        "areaServed": "FR"
       },
       {
         "@type": "Article",
@@ -515,7 +515,7 @@
   <!-- ================= TOP BAR ================= -->
   <div class="topbar">
     <div class="wrap">
-      <span class="edition">Jeudi 16 juillet 2026<i>◆</i>Édition digitale</span>
+      <span class="edition"><span id="date-jour">Édition du jour</span><i>◆</i>Édition digitale</span><script>(function(){var d=new Date().toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long',year:'numeric'});document.getElementById('date-jour').textContent=d.charAt(0).toUpperCase()+d.slice(1);})();</script>
       <a href="/#newsletter">S’abonner à la newsletter</a>
     </div>
   </div>
@@ -534,10 +534,10 @@
     <div class="wrap">
       <ul>
         <li><a href="/">Accueil</a></li>
-        <li><a href="/#univers">Vin</a></li>
-        <li><a href="/#univers">Champagne</a></li>
-        <li><a href="/#univers">Spiritueux</a></li>
-        <li><a href="/#routes">Visites de caves</a></li>
+        <li><a href="/vin/">Vin</a></li>
+        <li><a href="/champagne/">Champagne</a></li>
+        <li><a href="/spiritueux/">Spiritueux</a></li>
+        <li><a href="/oenotourisme/">Visites de caves</a></li>
         <li><a href="/#guides">Guides d’achat</a></li>
         <li><a href="/#occasions">Occasions</a></li>
       </ul>
@@ -553,8 +553,8 @@
   <div class="crumbs" aria-label="Fil d’Ariane">
     <div class="wrap">
       <a href="/">Accueil</a><i>◆</i>
-      <a href="/#univers">Spiritueux</a><i>◆</i>
-      <a href="/#univers">Whisky</a><i class="last">◆</i>
+      <a href="/spiritueux/">Spiritueux</a><i>◆</i>
+      <a href="/spiritueux/">Whisky</a><i class="last">◆</i>
       <span class="current" aria-current="page">Meilleur whisky français</span>
     </div>
   </div>
