@@ -47,11 +47,13 @@ function serveFile(res, filePath) {
 }
 
 http.createServer((req, res) => {
-  // canonicalisation : www.lejournalduvin.fr → lejournalduvin.fr (301)
+  // canonicalisation : l'hôte canonique est www.lejournalduvin.fr
+  // (Cloudflare redirige déjà l'apex vers www ; l'apex ne doit PAS être
+  // redirigé ici sous peine de boucle infinie)
   const host = (req.headers.host || '').toLowerCase();
-  if (host.startsWith('www.')) {
+  if (host === 'lejournalduvin.fr') {
     return send(res, 301, 'text/plain', 'Redirection', {
-      Location: 'https://' + host.slice(4) + req.url,
+      Location: 'https://www.lejournalduvin.fr' + req.url,
     });
   }
 

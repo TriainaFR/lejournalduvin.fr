@@ -1,5 +1,5 @@
 # ————————————————————————————————
-# Le Journal du Vin — https://lejournalduvin.fr/
+# Le Journal du Vin — https://www.lejournalduvin.fr/
 # Média français indépendant : vins, champagnes & spiritueux
 # ————————————————————————————————
 
@@ -49,4 +49,4 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-Sitemap: https://lejournalduvin.fr/sitemap.xml
+Sitemap: https://www.lejournalduvin.fr/sitemap.xml
