@@ -1,9 +1,14 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const zlib = require('zlib');
 
 const PORT = process.env.PORT || 8080;
 const ROOT = __dirname;
+
+// Types compressibles (le binaire — images, woff2 — est déjà compressé)
+const COMPRESSIBLE = /^(text\/|application\/(javascript|json|xml)|image\/svg)/;
+const MIN_COMPRESS_BYTES = 1024;
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
@@ -36,13 +41,40 @@ function send(res, code, type, data, headers = {}) {
   res.end(data);
 }
 
-function serveFile(res, filePath) {
+// Négocie le meilleur encodage supporté par le client : brotli > gzip > brut
+function pickEncoding(req) {
+  const accepted = (req.headers['accept-encoding'] || '').toLowerCase();
+  if (/\bbr\b/.test(accepted)) return 'br';
+  if (/\bgzip\b/.test(accepted)) return 'gzip';
+  return null;
+}
+
+function serveFile(req, res, filePath) {
   const ext = path.extname(filePath).toLowerCase();
   fs.readFile(filePath, (err, data) => {
     if (err) return send(res, 404, 'text/html; charset=utf-8', PAGE_404);
+
+    const type = MIME[ext] || 'application/octet-stream';
     // .html et .js en no-cache : l’index de recherche doit suivre chaque publication
     const cache = (ext === '.html' || ext === '.js') ? 'no-cache' : 'public, max-age=3600';
-    send(res, 200, MIME[ext] || 'application/octet-stream', data, { 'Cache-Control': cache });
+    const headers = { 'Cache-Control': cache, Vary: 'Accept-Encoding' };
+
+    const encoding = pickEncoding(req);
+    if (!encoding || !COMPRESSIBLE.test(type) || data.length < MIN_COMPRESS_BYTES) {
+      return send(res, 200, type, data, headers);
+    }
+
+    const compress = encoding === 'br'
+      ? (buf, cb) => zlib.brotliCompress(buf, {
+          params: { [zlib.constants.BROTLI_PARAM_QUALITY]: 5 },
+        }, cb)
+      : (buf, cb) => zlib.gzip(buf, { level: 6 }, cb);
+
+    compress(data, (zErr, compressed) => {
+      // en cas d’échec de compression, on sert le contenu brut plutôt que d’échouer
+      if (zErr) return send(res, 200, type, data, headers);
+      send(res, 200, type, compressed, { ...headers, 'Content-Encoding': encoding });
+    });
   });
 }
 
@@ -78,15 +110,15 @@ http.createServer((req, res) => {
         const query = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
         return send(res, 301, 'text/plain', 'Redirection', { Location: urlPath + '/' + query });
       }
-      return serveFile(res, path.join(filePath, 'index.html'));
+      return serveFile(req, res, path.join(filePath, 'index.html'));
     }
-    if (!err) return serveFile(res, filePath);
+    if (!err) return serveFile(req, res, filePath);
 
     // URL propre sans extension : /recherche → recherche.html
     if (!path.extname(filePath)) {
       const alt = filePath.replace(/\/$/, '') + '.html';
       return fs.stat(alt, (err2) => {
-        if (!err2) return serveFile(res, alt);
+        if (!err2) return serveFile(req, res, alt);
         send(res, 404, 'text/html; charset=utf-8', PAGE_404);
       });
     }

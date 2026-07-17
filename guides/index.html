@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visites de caves & routes des vins | Le Journal du Vin</title>
-  <meta name="description" content="Itinéraires de visites de caves et routes des vins : Champagne, Bourgogne, Bordeaux — les feuilles de route œnotourisme du Journal du Vin arrivent bientôt.">
-  <link rel="canonical" href="https://www.lejournalduvin.fr/oenotourisme/">
-  <meta name="robots" content="noindex, follow">
+  <title>Guides d’achat vin, champagne & spiritueux | Le Journal du Vin</title>
+  <meta name="description" content="Tous nos guides d’achat : quel vin par budget, quel millésime boire, quelle bouteille pour un mariage. Sélections dégustées à l’aveugle et recoupées avec la RVF et le Guide Hachette.">
+  <link rel="canonical" href="https://www.lejournalduvin.fr/guides/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <meta name="theme-color" content="#6B1F30">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Le Journal du Vin">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:title" content="Les Visites de caves — Le Journal du Vin">
-  <meta property="og:description" content="Itinéraires de visites de caves et routes des vins : Champagne, Bourgogne, Bordeaux — les feuilles de route œnotourisme du Journal du Vin arrivent bientôt.">
-  <meta property="og:url" content="https://www.lejournalduvin.fr/oenotourisme/">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1561906814-23da9a8bfee0?q=80&w=1200&h=630&fit=crop&auto=format">
+  <meta property="og:title" content="Les guides d’achat — Le Journal du Vin">
+  <meta property="og:description" content="Par prix, par millésime, par occasion : nos sélections dégustées pour choisir la bonne bouteille.">
+  <meta property="og:url" content="https://www.lejournalduvin.fr/guides/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?q=80&w=1200&h=630&fit=crop&auto=format">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@JournalVin">
 
@@ -42,19 +42,31 @@
       },
       {
         "@type": "CollectionPage",
-        "@id": "https://www.lejournalduvin.fr/oenotourisme/#collection",
-        "url": "https://www.lejournalduvin.fr/oenotourisme/",
-        "name": "Visites de caves — itinéraires et routes des vins",
-        "description": "Les itinéraires œnotourisme du Journal du Vin : visites de caves en Champagne, Bourgogne et Bordeaux.",
+        "@id": "https://www.lejournalduvin.fr/guides/#collection",
+        "url": "https://www.lejournalduvin.fr/guides/",
+        "name": "Les guides d’achat — Le Journal du Vin",
+        "description": "Tous les guides d’achat du Journal du Vin : par prix, par millésime, par occasion. Sélections dégustées à l’aveugle et recoupées avec la RVF, le Guide Hachette et le Concours Général Agricole.",
         "inLanguage": "fr-FR",
-        "publisher": { "@id": "https://www.lejournalduvin.fr/#organization" }
+        "isPartOf": { "@id": "https://www.lejournalduvin.fr/#website" },
+        "publisher": { "@id": "https://www.lejournalduvin.fr/#organization" },
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "url": "https://www.lejournalduvin.fr/guides/prix/vin-rouge-moins-de-20-euros/", "name": "Vin rouge&#8239;: les 20 meilleurs rapports qualité-prix à moins de 20 euros" },
+            { "@type": "ListItem", "position": 2, "url": "https://www.lejournalduvin.fr/guides/prix/vin-moins-de-15-euros/", "name": "Les 30 meilleurs vins à moins de 15 € que l’on peut servir sans rougir" },
+            { "@type": "ListItem", "position": 3, "url": "https://www.lejournalduvin.fr/guides/prix/champagne-moins-de-40-euros/", "name": "Meilleur champagne à moins de 40 euros&#8239;: notre top 25 dégusté" },
+            { "@type": "ListItem", "position": 4, "url": "https://www.lejournalduvin.fr/guides/millesimes/bordeaux/", "name": "Millésimes Bordeaux&#8239;: lesquels boire en 2026, lesquels attendre" },
+            { "@type": "ListItem", "position": 5, "url": "https://www.lejournalduvin.fr/guides/occasions/champagne-mariage/", "name": "Quel champagne pour un mariage&#8239;? Le calcul juste, les bons choix" },
+            { "@type": "ListItem", "position": 6, "url": "https://www.lejournalduvin.fr/spiritueux/whisky/meilleur-whisky-francais/", "name": "Meilleur whisky français&#8239;: les 12 cuvées à connaître en 2026" }
+          ]
+        }
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.lejournalduvin.fr/oenotourisme/#breadcrumb",
+        "@id": "https://www.lejournalduvin.fr/guides/#breadcrumb",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.lejournalduvin.fr/" },
-          { "@type": "ListItem", "position": 2, "name": "Visites de caves" }
+          { "@type": "ListItem", "position": 2, "name": "Guides d’achat" }
         ]
       }
     ]
@@ -154,6 +166,20 @@
     }
     .hub-head .orn::before, .hub-head .orn::after{ content:""; width:72px; border-top:1px solid var(--hairline-strong); }
     .hub-head .orn svg{ width:14px; height:14px; }
+
+    /* ——— familles de guides ——— */
+    .fam{ margin-bottom:3.6rem; }
+    .fam:last-of-type{ margin-bottom:0; }
+    .fam-head{ display:flex; align-items:baseline; gap:1.1rem; margin-bottom:1.8rem; }
+    .fam-head h2{
+      font-family:var(--serif); font-weight:500; font-style:italic;
+      font-size:clamp(1.5rem, 2.6vw, 2rem); line-height:1.1; white-space:nowrap;
+    }
+    .fam-head p{
+      font-size:.66rem; letter-spacing:.22em; text-transform:uppercase; color:var(--ink-soft);
+      white-space:nowrap;
+    }
+    .fam-head::after{ content:""; flex:1; border-top:1px solid var(--hairline-strong); }
 
     /* ——— grille d’articles ——— */
     .hub-zone{ padding:0 0 4.6rem; }
@@ -271,8 +297,8 @@
         <li><a href="/champagne/">Champagne</a></li>
         <li><a href="/spiritueux/">Spiritueux</a></li>
         <li><a href="/cocktails/">Cocktails</a></li>
-        <li><a class="on" href="/oenotourisme/">Visites de caves</a></li>
-        <li><a href="/guides/">Guides d’achat</a></li>
+        <li><a href="/oenotourisme/">Visites de caves</a></li>
+        <li><a class="on" href="/guides/">Guides d’achat</a></li>
         <li><a href="/#occasions">Occasions</a></li>
         <li><a href="/a-propos/">À propos</a></li>
         <li><a href="/contact/">Contact</a></li>
@@ -286,68 +312,139 @@
 
   <div class="crumbs" aria-label="Fil d’Ariane">
     <div class="wrap">
-      <a href="/">Accueil</a><i>◆</i>
-      <a href="/#univers">Univers</a><i class="last">◆</i>
-      <span class="current" aria-current="page">Visites de caves</span>
+      <a href="/">Accueil</a><i class="last">◆</i>
+      <span class="current" aria-current="page">Guides d’achat</span>
     </div>
   </div>
 
   <main>
     <header class="hub-head">
       <div class="inner">
-        <span class="kicker">Univers</span>
-        <h1>Les Visites de caves</h1>
-        <p class="sub">Itinéraires · Routes des vins</p>
-        <p class="intro">Week-ends dans les vignobles, caves à visiter, kilomètres et domaines comptés&#8239;: la rédaction prépare ses premières feuilles de route — Champagne, Bourgogne, Bordeaux. En attendant, voici ce qui arrive.</p>
+        <span class="kicker">Sélections &amp; conseils</span>
+        <h1>Les guides d’achat</h1>
+        <p class="sub">Par prix · Par millésime · Par occasion</p>
+        <p class="intro">Quelle bouteille pour 15&#8239;€&#8239;? Quel bordeaux ouvrir cette année&#8239;? Combien de champagne pour cent invités&#8239;? Nos guides d’achat répondent aux questions qu’on se pose vraiment devant un rayon. Chaque sélection est dégustée à l’aveugle, recoupée avec la Revue du Vin de France, le Guide Hachette et le Concours Général Agricole, et ses prix sont relevés chez les cavistes — jamais recopiés d’une fiche produit.</p>
         <div class="orn">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c1.8 3.2 4.5 4.6 4.5 8a4.5 4.5 0 0 1-9 0C7.5 6.6 10.2 5.2 12 2Zm-.9 13.5h1.8V20h2.3v1.5H8.8V20h2.3v-4.5Z"/></svg>
         </div>
       </div>
     </header>
 
-    <section class="hub-zone" aria-label="Itinéraires de visites de caves">
+    <section class="hub-zone" aria-label="Guides d’achat">
       <div class="wrap">
-        <div class="hub-grid">
+                <section class="fam" id="prix">
+          <div class="fam-head">
+            <h2>Par prix</h2>
+            <p>Le budget d’abord</p>
+          </div>
+          <div class="hub-grid">
 
-          <article class="card soon">
+          <article class="card">
             <div class="imgwrap">
-              <div class="imgbox">
-                <img loading="lazy" src="https://images.unsplash.com/photo-1717240049346-b6a9f43f4e1c?q=80&w=800&auto=format&fit=crop" alt="Vignoble champenois à flanc de coteau">
-              </div>
-              <span class="chip">Champagne</span>
+              <a href="/guides/prix/vin-rouge-moins-de-20-euros/" class="imglink"><div class="imgbox">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=800&auto=format&fit=crop" alt="Verre de vin rouge sur fond de vignoble">
+              </div></a>
+              <span class="chip">Guide d’achat — Prix</span>
             </div>
-            <h2>De Reims à Épernay, les caves des grandes maisons<span class="badge-soon">À paraître</span></h2>
-            <p class="excerpt">Trois jours et neuf caves dans les crayères champenoises, des grandes maisons aux vignerons.</p>
-            <p class="meta">À paraître<i>◆</i>3 jours · 92 km</p>
+            <h3><a href="/guides/prix/vin-rouge-moins-de-20-euros/">Vin rouge&#8239;: les 20 meilleurs rapports qualité-prix à moins de 20 euros</a></h3>
+            <p class="excerpt">Un Cahors à 9&#8239;€ noté 93/100 par la RVF&#8239;: le classement des vraies affaires, classées par indice note/prix.</p>
+            <p class="meta">16 juillet 2026<i>◆</i>Lecture 12 min</p>
           </article>
 
-          <article class="card soon">
+          <article class="card">
             <div class="imgwrap">
-              <div class="imgbox">
-                <img loading="lazy" src="https://images.unsplash.com/photo-1567072629554-20e689de2400?q=80&w=800&auto=format&fit=crop" alt="Rangs de vigne au coucher du soleil en Bourgogne">
-              </div>
-              <span class="chip">Bourgogne</span>
+              <a href="/guides/prix/vin-moins-de-15-euros/" class="imglink"><div class="imgbox">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?q=80&w=800&auto=format&fit=crop" alt="Bouteilles de vin alignées sur un casier de cave">
+              </div></a>
+              <span class="chip">Guide d’achat — Prix</span>
             </div>
-            <h2>Un week-end sur la route des Grands Crus, de Dijon à Beaune<span class="badge-soon">À paraître</span></h2>
-            <p class="excerpt">Deux jours, 60 kilomètres et sept domaines au cœur de la côte de Nuits et de la côte de Beaune.</p>
-            <p class="meta">À paraître<i>◆</i>2 jours · 60 km</p>
+            <h3><a href="/guides/prix/vin-moins-de-15-euros/">Les 30 meilleurs vins à moins de 15 € que l’on peut servir sans rougir</a></h3>
+            <p class="excerpt">Corbières, Saumur-Champigny, Picpoul, crémants… 30 appellations dégustées à l’aveugle qui surclassent leur prix.</p>
+            <p class="meta">16 juillet 2026<i>◆</i>Lecture 12 min</p>
           </article>
 
-          <article class="card soon">
+          <article class="card">
             <div class="imgwrap">
-              <div class="imgbox">
-                <img loading="lazy" src="https://images.unsplash.com/photo-1701622669938-fa4e09a1f1fe?q=80&w=800&auto=format&fit=crop" alt="Galerie de cave voûtée abritant des fûts">
-              </div>
-              <span class="chip">Bordeaux</span>
+              <a href="/guides/prix/champagne-moins-de-40-euros/" class="imglink"><div class="imgbox">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1547595628-c61a29f496f0?q=80&w=800&auto=format&fit=crop" alt="Flûte de champagne aux bulles fines">
+              </div></a>
+              <span class="chip">Guide d’achat — Champagne</span>
             </div>
-            <h2>Médoc confidentiel&#8239;: chais et châteaux hors des sentiers battus<span class="badge-soon">À paraître</span></h2>
-            <p class="excerpt">Trois jours, 110 kilomètres et huit châteaux loin des circuits classiques.</p>
-            <p class="meta">À paraître<i>◆</i>3 jours · 110 km</p>
+            <h3><a href="/guides/prix/champagne-moins-de-40-euros/">Meilleur champagne à moins de 40 euros&#8239;: notre top 25 dégusté</a></h3>
+            <p class="excerpt">Gonet-Médeville, Fleury, Jérôme Dehours… 25 cuvées dégustées à l’aveugle, avec tableau comparatif et choix selon l’occasion.</p>
+            <p class="meta">16 juillet 2026<i>◆</i>Lecture 11 min</p>
           </article>
 
-        </div>
+          </div>
+        </section>
+
+        <section class="fam" id="millesimes">
+          <div class="fam-head">
+            <h2>Par millésime</h2>
+            <p>Boire ou attendre</p>
+          </div>
+          <div class="hub-grid">
+
+          <article class="card">
+            <div class="imgwrap">
+              <a href="/guides/millesimes/bordeaux/" class="imglink"><div class="imgbox">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1560148218-1a83060f7b32?q=80&w=800&auto=format&fit=crop" alt="Vieille bouteille de Bordeaux à l’étiquette patinée">
+              </div></a>
+              <span class="chip">Millésimes</span>
+            </div>
+            <h3><a href="/guides/millesimes/bordeaux/">Millésimes Bordeaux&#8239;: lesquels boire en 2026, lesquels attendre</a></h3>
+            <p class="excerpt">De la légende 2000 au «&#8239;millésime du siècle&#8239;» 2022&#8239;: la carte complète des années, sources Parker, Decanter et RVF.</p>
+            <p class="meta">16 juillet 2026<i>◆</i>Lecture 12 min</p>
+          </article>
+
+          </div>
+        </section>
+
+        <section class="fam" id="occasions">
+          <div class="fam-head">
+            <h2>Par occasion</h2>
+            <p>La bonne bouteille au bon moment</p>
+          </div>
+          <div class="hub-grid">
+
+          <article class="card">
+            <div class="imgwrap">
+              <a href="/guides/occasions/champagne-mariage/" class="imglink"><div class="imgbox">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1707707178778-bec9382d152c?q=80&w=800&auto=format&fit=crop" alt="Jeunes mariés trinquant au champagne">
+              </div></a>
+              <span class="chip">Occasions — Mariage</span>
+            </div>
+            <h3><a href="/guides/occasions/champagne-mariage/">Quel champagne pour un mariage&#8239;? Le calcul juste, les bons choix</a></h3>
+            <p class="excerpt">Une bouteille pour 3 invités au vin d’honneur, une pour 2 si le champagne coule toute la soirée&#8239;: le calcul complet.</p>
+            <p class="meta">16 juillet 2026<i>◆</i>Lecture 9 min</p>
+          </article>
+
+          </div>
+        </section>
+
+        <section class="fam" id="spiritueux">
+          <div class="fam-head">
+            <h2>Spiritueux</h2>
+            <p>Au-delà du vin</p>
+          </div>
+          <div class="hub-grid">
+
+          <article class="card">
+            <div class="imgwrap">
+              <a href="/spiritueux/whisky/meilleur-whisky-francais/" class="imglink"><div class="imgbox">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1597290282695-edc43d0e7129?q=80&w=800&auto=format&fit=crop" alt="Bouteilles de single malt sur les étagères d’un bar">
+              </div></a>
+              <span class="chip">Spiritueux — Whisky</span>
+            </div>
+            <h3><a href="/spiritueux/whisky/meilleur-whisky-francais/">Meilleur whisky français&#8239;: les 12 cuvées à connaître en 2026</a></h3>
+            <p class="excerpt">Armorik, Rozelieures, Hautes Glaces, Kornog… Les 12 meilleurs whiskys français dégustés et comparés, avec tableau des prix.</p>
+            <p class="meta">16 juillet 2026<i>◆</i>Lecture 11 min</p>
+          </article>
+
+          </div>
+        </section>
         <div class="center">
-          <a class="btn" href="/guides/">Découvrir nos guides</a>
+          <a class="btn" href="/recherche">Rechercher un article</a>
         </div>
       </div>
     </section>
