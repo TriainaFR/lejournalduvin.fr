@@ -392,25 +392,6 @@
     }
     .btn:hover{ background:var(--bordeaux); border-color:var(--bordeaux); color:var(--paper); }
 
-    /* ================= NEWSLETTER ================= */
-    .news{ background:var(--bordeaux); color:var(--paper); padding:4.4rem 0; position:relative; overflow:hidden; }
-    .news::before{
-      content:""; position:absolute; inset:0; opacity:.5; pointer-events:none;
-      background:
-        radial-gradient(ellipse 70% 120% at 110% 50%, rgba(23,17,12,.4), transparent 60%),
-        radial-gradient(ellipse 70% 120% at -10% 50%, rgba(23,17,12,.4), transparent 60%);
-    }
-    .news .wrap{ display:grid; grid-template-columns:1.1fr 1fr; gap:3rem; align-items:center; }
-    .news .kicker{ color:var(--gold-soft); }
-    .news h2{ font-family:var(--serif); font-weight:600; font-size:clamp(1.7rem, 3vw, 2.4rem); line-height:1.1; margin-top:.8rem; }
-    .news .sub{ margin-top:1rem; font-size:1rem; color:rgba(244,238,224,.82); max-width:44ch; }
-    .news form{ display:flex; border:1px solid rgba(244,238,224,.55); }
-    .news input{ flex:1; background:transparent; border:none; padding:1.1rem 1.3rem; color:var(--paper); font-family:var(--sans); font-size:.95rem; letter-spacing:.04em; min-width:0; }
-    .news input::placeholder{ color:rgba(244,238,224,.55); }
-    .news button{ background:var(--gold); color:var(--ink); border:none; padding:1.1rem 2rem; font-family:var(--sans); font-size:.72rem; letter-spacing:.24em; text-transform:uppercase; font-weight:500; cursor:pointer; transition:background .3s; }
-    .news button:hover{ background:var(--gold-soft); }
-    .news .rgpd{ margin-top:.9rem; font-size:.7rem; color:rgba(244,238,224,.55); letter-spacing:.03em; }
-
     /* ================= FOOTER ================= */
     footer{ background:var(--ink); color:rgba(244,238,224,.78); }
     .foot-bottom .wrap{
@@ -475,9 +456,6 @@
       .nav .search span{ display:none; }
       .art-hero .imgbox{ aspect-ratio:16/10; }
       ol.wines > li{ gap:1rem; }
-      .news .wrap{ grid-template-columns:1fr; gap:2rem; }
-      .news form{ flex-direction:column; border:none; gap:.8rem; }
-      .news input{ border:1px solid rgba(244,238,224,.55); }
       .foot-bottom .wrap{ flex-direction:column; gap:.8rem; text-align:center; }
       .author{ flex-direction:column; align-items:flex-start; }
       .crumbs .current{ display:none; }
@@ -491,7 +469,7 @@
   <div class="topbar">
     <div class="wrap">
       <span class="edition"><span id="date-jour">Édition du jour</span><i>◆</i>Édition digitale</span><script>(function(){var d=new Date().toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long',year:'numeric'});document.getElementById('date-jour').textContent=d.charAt(0).toUpperCase()+d.slice(1);})();</script>
-      <a href="/#newsletter">S’abonner à la newsletter</a>
+      <a href="/contact/">Nous écrire</a>
     </div>
   </div>
 
@@ -890,25 +868,6 @@
         </div><!-- /.layout -->
       </div><!-- /.wrap -->
     </article>
-
-    <!-- ================= NEWSLETTER ================= -->
-    <section class="news" aria-labelledby="news-title">
-      <div class="wrap">
-        <div>
-          <span class="kicker">La newsletter du Journal du Vin</span>
-          <h2 id="news-title">«&#8239;La Dégustation&#8239;», chaque jeudi matin</h2>
-          <p class="sub">Nos sélections, nos enquêtes et nos routes des caves, résumées en cinq minutes de lecture. Rien d’autre, promis.</p>
-        </div>
-        <div>
-          <form action="#" method="post">
-            <label for="email" class="sr-only">Votre adresse e-mail</label>
-            <input id="email" type="email" name="email" placeholder="Votre adresse e-mail" required>
-            <button type="submit">Je m’abonne</button>
-          </form>
-          <p class="rgpd">Un e-mail par semaine, zéro publicité déguisée. Désinscription en un clic, conformément au RGPD.</p>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- ================= FOOTER ================= -->

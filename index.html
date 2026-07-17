@@ -476,50 +476,6 @@
     .occ:hover .pict{ color:var(--gold-soft); }
     .occ:hover p{ color:rgba(244,238,224,.72); }
 
-    /* ================= NEWSLETTER ================= */
-    .news{
-      background:var(--bordeaux); color:var(--paper); padding:4.8rem 0; position:relative; overflow:hidden;
-    }
-    .news::before{
-      content:""; position:absolute; inset:0; opacity:.5; pointer-events:none;
-      background:
-        radial-gradient(ellipse 70% 120% at 110% 50%, rgba(23,17,12,.4), transparent 60%),
-        radial-gradient(ellipse 70% 120% at -10% 50%, rgba(23,17,12,.4), transparent 60%);
-    }
-    .news .wrap{ display:grid; grid-template-columns:1.1fr 1fr; gap:3rem; align-items:center; }
-    .news .kicker{ color:var(--gold-soft); }
-    .news h2{
-      font-family:var(--serif); font-weight:600; font-size:clamp(1.8rem, 3.2vw, 2.7rem);
-      line-height:1.1; margin-top:.8rem;
-    }
-    .news .sub{ margin-top:1rem; font-size:1.02rem; color:rgba(244,238,224,.82); max-width:44ch; }
-    .news form{ display:flex; border:1px solid rgba(244,238,224,.55); }
-    .news input{
-      flex:1; background:transparent; border:none; padding:1.1rem 1.3rem; color:var(--paper);
-      font-family:var(--sans); font-size:.95rem; letter-spacing:.04em; min-width:0;
-    }
-    .news input::placeholder{ color:rgba(244,238,224,.55); }
-    .news button{
-      background:var(--gold); color:var(--ink); border:none; padding:1.1rem 2rem;
-      font-family:var(--sans); font-size:.72rem; letter-spacing:.24em; text-transform:uppercase;
-      font-weight:500; cursor:pointer; transition:background .3s;
-    }
-    .news button:hover{ background:var(--gold-soft); }
-    .news .rgpd{
-      margin-top:.9rem; font-size:.7rem; color:rgba(244,238,224,.55); letter-spacing:.03em;
-    }
-
-    /* ================= MANIFESTE ================= */
-    .manifesto{ padding:4.8rem 0; border-bottom:1px solid var(--hairline); }
-    .manifesto .wrap{ max-width:820px; text-align:center; }
-    .manifesto .kicker{ display:block; margin-bottom:1.3rem; }
-    .manifesto p{
-      font-family:var(--serif); font-size:clamp(1.15rem, 2vw, 1.45rem); line-height:1.65; font-weight:400;
-    }
-    .manifesto p + p{ margin-top:1.2rem; }
-    .manifesto a{ border-bottom:1px solid var(--gold); transition:color .25s; }
-    .manifesto a:hover{ color:var(--bordeaux); }
-
     /* ================= FOOTER ================= */
     footer{ background:var(--ink); color:rgba(244,238,224,.78); }
     .foot-main{ padding:4.2rem 0 3.4rem; }
@@ -624,7 +580,6 @@
       .masthead .wrap{ grid-template-columns:1fr; padding:2rem 0 1.6rem; }
       .masthead-side{ display:none; }
       .brand .vine{ right:-2.4rem; }
-      .news .wrap{ grid-template-columns:1fr; gap:2rem; }
       .routes-grid{ grid-template-columns:1fr; max-width:460px; margin-inline:auto; }
       .foot-main .wrap{ grid-template-columns:1fr 1fr; gap:2.4rem; }
       .topbar .tagline-top{ display:none; }
@@ -636,8 +591,6 @@
       .occasions-grid{ grid-template-columns:repeat(2, 1fr); }
       .nav .search span{ display:none; }
       .foot-bottom .wrap{ flex-direction:column; gap:.8rem; }
-      .news form{ flex-direction:column; border:none; gap:.8rem; }
-      .news input{ border:1px solid rgba(244,238,224,.55); }
     }
   </style>
 </head>
@@ -649,7 +602,7 @@
       <span class="edition"><span id="date-jour">Édition du jour</span><i>◆</i>Édition digitale</span>
       <script>(function(){var d=new Date().toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long',year:'numeric'});document.getElementById('date-jour').textContent=d.charAt(0).toUpperCase()+d.slice(1);})();</script>
       <span class="tagline-top">Vins&nbsp;· Champagnes&nbsp;· Spiritueux&nbsp;· Caves</span>
-      <a href="#newsletter">S’abonner à la newsletter</a>
+      <a href="/contact/">Nous écrire</a>
     </div>
   </div>
 
@@ -1012,25 +965,6 @@
             <h3>À offrir</h3>
             <p>Cadeaux sûrs</p>
           </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= NEWSLETTER ================= -->
-    <section class="news" id="newsletter" aria-labelledby="news-title">
-      <div class="wrap">
-        <div class="reveal">
-          <span class="kicker">La lettre du Journal du Vin</span>
-          <h2 id="news-title">« La Dégustation », chaque jeudi matin</h2>
-          <p class="sub">Nos sélections, nos enquêtes et nos routes des caves, résumées en cinq minutes de lecture. Rien d’autre, promis.</p>
-        </div>
-        <div class="reveal d2">
-          <form action="#" method="post">
-            <label for="email" class="sr-only">Votre adresse e-mail</label>
-            <input id="email" type="email" name="email" placeholder="Votre adresse e-mail" required>
-            <button type="submit">Je m’abonne</button>
-          </form>
-          <p class="rgpd">Un e-mail par semaine, zéro publicité déguisée. Désinscription en un clic, conformément au RGPD.</p>
         </div>
       </div>
     </section>
