@@ -47,6 +47,14 @@ function serveFile(res, filePath) {
 }
 
 http.createServer((req, res) => {
+  // canonicalisation : www.lejournalduvin.fr → lejournalduvin.fr (301)
+  const host = (req.headers.host || '').toLowerCase();
+  if (host.startsWith('www.')) {
+    return send(res, 301, 'text/plain', 'Redirection', {
+      Location: 'https://' + host.slice(4) + req.url,
+    });
+  }
+
   let urlPath;
   try {
     urlPath = decodeURIComponent(req.url.split('?')[0]);

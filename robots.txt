@@ -1,0 +1,52 @@
+# ————————————————————————————————
+# Le Journal du Vin — https://lejournalduvin.fr/
+# Média français indépendant : vins, champagnes & spiritueux
+# ————————————————————————————————
+
+# Moteurs de recherche classiques
+User-agent: *
+Allow: /
+Disallow: /recherche
+
+# ————————————————————————————————
+# Crawlers IA — accès explicitement autorisé (GEO)
+# Le Journal du Vin souhaite être lu et cité par les moteurs de réponse.
+# ————————————————————————————————
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://lejournalduvin.fr/sitemap.xml
