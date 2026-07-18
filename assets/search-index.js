@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/prix/champagne-moins-de-30-euros/",
+    soon: false,
+    cat: "Guide d’achat — Champagne",
+    title: "Champagne à moins de 30 euros : notre sélection testée de 15 vignerons",
+    excerpt: "Zéro grande maison, 100 % vignerons récoltants : 15 cuvées de 17,40 € à 30 €, notées 87 à 92/100 par la RVF. Gonet-Médeville, Diebolt-Vallois, Furdyna… Prix moyen 24,61 €.",
+    date: "18 juillet 2026",
+    minutes: 11,
+    img: "https://images.unsplash.com/photo-1717240049346-b6a9f43f4e1c?q=80&w=600&auto=format&fit=crop",
+    tags: ["champagne", "champagne moins de 30 euros", "champagne pas cher", "champagne de vigneron", "récoltant manipulant", "rm", "vigneron indépendant", "moins de 30 euros", "prix", "budget", "gonet-médeville", "michel furdyna", "diebolt-vallois", "guy larmandier", "margaine", "emmanuel tassin", "gérard loriot", "blanc de blancs", "extra-brut", "brut", "brut zéro", "chardonnay", "pinot noir", "meunier", "côte des blancs", "montagne de reims", "vallée de la marne", "côte des bar", "aube", "cramant", "bulles", "classement", "comparatif", "rvf", "guide d’achat"]
+  },
+  {
     url: "/guides/prix/vin-blanc-moins-de-15-euros/",
     soon: false,
     cat: "Guide d’achat — Prix",
