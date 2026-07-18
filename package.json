@@ -2,7 +2,8 @@
   "name": "lejournalduvin",
   "version": "1.0.0",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "indexnow": "node indexnow.js"
   },
   "engines": {
     "node": ">=18"

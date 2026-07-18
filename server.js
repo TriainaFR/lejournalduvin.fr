@@ -27,9 +27,9 @@ const MIME = {
 const PAGE_404 = `<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Page introuvable — Le Journal du Vin</title>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&family=Jost:wght@300;500&display=swap" rel="stylesheet">
-<style>body{background:#F4EEE0;color:#17110C;font-family:Jost,sans-serif;font-weight:300;display:grid;place-items:center;min-height:100vh;margin:0;text-align:center}
-h1{font-family:"Bodoni Moda",serif;font-style:italic;font-weight:500;font-size:3rem;margin:0 0 .4rem}
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<style>body{background:#F4EEE0;color:#17110C;font-family:"Poppins",sans-serif;font-weight:400;display:grid;place-items:center;min-height:100vh;margin:0;text-align:center}
+h1{font-family:"Fraunces",Georgia,serif;font-style:italic;font-weight:500;font-size:3rem;margin:0 0 .4rem}
 p{color:#4A4038;margin:.3rem 0 1.8rem}
 a{display:inline-block;border:1px solid #17110C;padding:.9rem 2.2rem;color:#17110C;text-decoration:none;font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;font-weight:500;transition:.3s}
 a:hover{background:#6B1F30;border-color:#6B1F30;color:#F4EEE0}</style></head>
