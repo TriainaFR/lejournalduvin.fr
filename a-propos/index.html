@@ -9,6 +9,8 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <link rel="alternate" hreflang="fr-FR" href="https://www.lejournalduvin.fr/a-propos/">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <meta name="theme-color" content="#6B1F30">
   <meta name="author" content="Le Journal du Vin">
   <meta name="geo.placename" content="France">
@@ -29,9 +31,10 @@
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1568213816046-0ee1c42bd559?q=80&w=1200&h=630&fit=crop&auto=format">
   <meta name="twitter:site" content="@JournalVin">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts.css">
+  <link rel="preload" href="/assets/fonts/fraunces-roman-300-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-roman-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 
   <script type="application/ld+json">
   {
@@ -51,7 +54,7 @@
         "foundingLocation": { "@type": "Place", "name": "France" },
         "areaServed": { "@type": "Country", "name": "France" },
         "publishingPrinciples": "https://www.lejournalduvin.fr/a-propos/#principes",
-        "employee": { "@id": "https://www.lejournalduvin.fr/a-propos/#camille-rousseau" }
+        "employee": { "@id": "https://www.lejournalduvin.fr/auteur/camille-rousseau/#person" }
       },
       {
         "@type": "AboutPage",
@@ -65,7 +68,8 @@
       },
       {
         "@type": "Person",
-        "@id": "https://www.lejournalduvin.fr/a-propos/#camille-rousseau",
+        "@id": "https://www.lejournalduvin.fr/auteur/camille-rousseau/#person",
+        "url": "https://www.lejournalduvin.fr/auteur/camille-rousseau/",
         "name": "Camille Rousseau",
         "jobTitle": "Journaliste et consultante en vins et spiritueux",
         "description": "Journaliste spécialisée en vin, champagne et spiritueux. Autrice principale du Journal du Vin, avec un focus sur le rapport qualité-prix et les vignerons indépendants.",
@@ -393,6 +397,10 @@
       .crumbs .current{ display:none; }
       .crumbs i.last{ display:none; }
     }
+  
+    .foot-bottom .liens{ display:inline-flex; flex-wrap:wrap; gap:.4rem 1.4rem; }
+    .foot-bottom .liens a{ transition:color .25s; }
+    .foot-bottom .liens a:hover{ color:var(--bordeaux); }
   </style>
 </head>
 <body>
@@ -502,7 +510,7 @@
             <div class="imgbox">
               <img loading="lazy" src="https://images.unsplash.com/photo-1568213816046-0ee1c42bd559?q=80&w=900&auto=format&fit=crop" alt="Quatre verres de vin alignés sur un fût pour une dégustation comparative">
             </div>
-            <figcaption>Dégustation en rédaction — © Le Journal du Vin</figcaption>
+            <figcaption>Autour d’une table de dégustation — Photo Unsplash</figcaption>
           </figure>
         </div>
 
@@ -571,7 +579,7 @@
           <li>
             <div>
               <h3>L’indépendance des notes</h3>
-              <p>Nos classements ne s’achètent pas&#8239;: ils reposent sur la dégustation et sur des sources vérifiables. Nous étudions les demandes de collaboration, mais sous conditions — elles n’influencent ni nos notes, ni nos sélections, et tout contenu commercial est identifié comme tel, sans ambiguïté.</p>
+              <p>Nos classements ne s’achètent pas&#8239;: ils reposent sur le recoupement de dégustations publiées et de sources vérifiables. Nous étudions les demandes de collaboration, mais sous conditions — elles n’influencent ni nos notes, ni nos sélections, et tout contenu commercial est identifié comme tel, sans ambiguïté.</p>
             </div>
           </li>
           <li>
@@ -590,6 +598,12 @@
             <div>
               <h3>La transparence des sources</h3>
               <p>Chaque sélection cite ses sources — Guide Hachette, Revue du Vin de France, Concours Général Agricole — et ses prix relevés. Nos articles sont signés.</p>
+            </div>
+          </li>
+          <li id="methode">
+            <div>
+              <h3>Notre méthode de sélection</h3>
+              <p>Chaque guide est construit par recoupement de dégustations et de palmarès publiés par des sources vérifiables — Revue du Vin de France, Bettane+Desseauve, Guide Hachette, concours nationaux et internationaux — complété par la vérification des prix et de la disponibilité réelle en caviste et en grande distribution. Les notes citées sont toujours attribuées à leur source. Lorsqu’une information ne peut pas être vérifiée, elle ne figure pas dans nos pages.</p>
             </div>
           </li>
         </ol>
@@ -613,6 +627,7 @@
             <h3>Camille Rousseau</h3>
             <p class="role">Journaliste &amp; consultante</p>
             <p>Camille est l’autrice principale du Journal du Vin. Journaliste spécialisée en vin, champagne et spiritueux, elle apporte une expertise pointue doublée d’une passion pour l’accessibilité. Ses sélections et ses guides — du Cahors à 9&#8239;€ aux grands crus classés de Bordeaux — sont le cœur éditorial du média.</p>
+            <a class="lk" href="/auteur/camille-rousseau/">Voir sa page auteur</a>
             <a class="lk" href="https://www.linkedin.com/in/camille-rousseau-a44488413/?skipRedirect=true" target="_blank" rel="noopener">Voir le profil LinkedIn</a>
           </div>
         </div>
@@ -646,7 +661,7 @@
       <div class="wrap">
         <span class="kicker">Rejoignez-nous</span>
         <h2>Explorez Le Journal du Vin</h2>
-        <p>Nos sélections dégustées, nos guides d’achat et nos routes des caves — tout est en accès libre, sans compte ni abonnement.</p>
+        <p>Nos sélections, nos guides d’achat et nos routes des caves — tout est en accès libre, sans compte ni abonnement.</p>
         <div class="row">
           <a class="btn btn--solid" href="/">Explorer le Journal du Vin</a>
           <a class="btn" href="/contact/">Nous écrire</a>
@@ -659,7 +674,7 @@
     <div class="foot-bottom">
       <div class="wrap">
         <span>© 2026 Le Journal du Vin — Tous droits réservés</span>
-        <a href="/">← Retour à l’accueil</a>
+        <nav class="liens" aria-label="Pages du site"><a href="/">Accueil</a><a href="/a-propos/">À propos</a><a href="/contact/">Contact</a><a href="/mentions-legales/">Mentions légales</a><a href="/politique-de-confidentialite/">Confidentialité</a></nav>
         <span class="abus">L’abus d’alcool est dangereux pour la santé, à consommer avec modération.</span>
       </div>
     </div>

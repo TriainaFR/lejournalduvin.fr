@@ -1,0 +1,34 @@
+# Le Journal du Vin
+
+> Le Journal du Vin est un média français indépendant qui déguste, compare et recommande vins, champagnes et spiritueux, et raconte les plus belles caves de France.
+
+Édité par Triaina SAS (Paris). Méthode : sélections construites par recoupement de dégustations et palmarès publiés par des sources vérifiables (Revue du Vin de France, Bettane+Desseauve, Guide Hachette, concours internationaux), avec prix et notes systématiquement attribués à leur source.
+
+## Guides d'achat
+
+- [Champagne à moins de 30 €](https://www.lejournalduvin.fr/guides/prix/champagne-moins-de-30-euros/) : 15 cuvées de vignerons récoltants de 17,40 € à 30 €, notées 87 à 92/100 (RVF), prix moyen 24,61 €
+- [Meilleur champagne à moins de 40 €](https://www.lejournalduvin.fr/guides/prix/champagne-moins-de-40-euros/) : top 25 grandes maisons et vignerons, avec tableau comparatif par style
+- [Vin blanc à moins de 15 €](https://www.lejournalduvin.fr/guides/prix/vin-blanc-moins-de-15-euros/) : top 15 par région (Loire, Alsace, Bourgogne, Languedoc), prix moyen 12,59 €
+- [Meilleur vin à moins de 15 €](https://www.lejournalduvin.fr/guides/prix/vin-moins-de-15-euros/) : 30 valeurs sûres rouges et blanches par style
+- [Vin rouge qualité-prix à moins de 20 €](https://www.lejournalduvin.fr/guides/prix/vin-rouge-moins-de-20-euros/) : top 20 avec appellations et millésimes précis
+- [Millésimes de Bordeaux](https://www.lejournalduvin.fr/guides/millesimes/bordeaux/) : quels millésimes boire maintenant, lesquels attendre
+- [Quel champagne pour un mariage ?](https://www.lejournalduvin.fr/guides/occasions/champagne-mariage/) : calcul des quantités par invité et sélections par budget
+- [Meilleur whisky français](https://www.lejournalduvin.fr/spiritueux/whisky/meilleur-whisky-francais/) : top 12 des distilleries françaises (plus de 130 en activité en France)
+
+## Univers
+
+- [Vin](https://www.lejournalduvin.fr/vin/) : guides, millésimes et sélections
+- [Champagne](https://www.lejournalduvin.fr/champagne/) : sélections et guides
+- [Spiritueux](https://www.lejournalduvin.fr/spiritueux/) : whisky, rhum, cognac
+- [Tous les guides d'achat](https://www.lejournalduvin.fr/guides/)
+
+## À propos
+
+- [À propos et charte éditoriale](https://www.lejournalduvin.fr/a-propos/) : mission, principes, méthodologie
+- [Camille Rousseau](https://www.lejournalduvin.fr/auteur/camille-rousseau/) : journaliste et consultante en vins et spiritueux, autrice des guides
+- [Contact](https://www.lejournalduvin.fr/contact/)
+
+## Politiques
+
+- [Mentions légales](https://www.lejournalduvin.fr/mentions-legales/) : éditeur Triaina SAS, RCS Paris
+- [Politique de confidentialité](https://www.lejournalduvin.fr/politique-de-confidentialite/)

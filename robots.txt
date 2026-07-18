@@ -11,42 +11,72 @@ Disallow: /recherche
 # ————————————————————————————————
 # Crawlers IA — accès explicitement autorisé (GEO)
 # Le Journal du Vin souhaite être lu et cité par les moteurs de réponse.
+# NB : chaque groupe nommé répète Disallow /recherche — par spécification
+# robots.txt, un bot qui trouve son groupe nommé ignore le groupe générique.
 # ————————————————————————————————
 
 User-agent: GPTBot
 Allow: /
+Disallow: /recherche
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /recherche
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /recherche
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /recherche
 
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /recherche
 
 User-agent: Claude-User
 Allow: /
+Disallow: /recherche
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /recherche
 
 User-agent: Perplexity-User
 Allow: /
+Disallow: /recherche
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /recherche
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /recherche
 
 User-agent: meta-externalagent
 Allow: /
+Disallow: /recherche
 
 User-agent: Bytespider
 Allow: /
+Disallow: /recherche
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /recherche
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /recherche
+
+User-agent: MistralAI-User
+Allow: /
+Disallow: /recherche
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /recherche
 
 Sitemap: https://www.lejournalduvin.fr/sitemap.xml

@@ -8,6 +8,8 @@
   <link rel="canonical" href="https://www.lejournalduvin.fr/guides/prix/champagne-moins-de-30-euros/">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <meta name="theme-color" content="#6B1F30">
 
   <meta property="og:type" content="article">
@@ -30,9 +32,10 @@
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1717240049346-b6a9f43f4e1c?q=80&w=1200&h=630&fit=crop&auto=format">
   <meta name="twitter:site" content="@JournalVin">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts.css">
+  <link rel="preload" href="/assets/fonts/fraunces-roman-300-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-roman-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 
   <script type="application/ld+json">
   {
@@ -62,6 +65,8 @@
         ],
         "author": {
           "@type": "Person",
+          "@id": "https://www.lejournalduvin.fr/auteur/camille-rousseau/#person",
+          "url": "https://www.lejournalduvin.fr/auteur/camille-rousseau/",
           "name": "Camille Rousseau",
           "jobTitle": "Journaliste et consultante en vins et spiritueux",
           "sameAs": ["https://www.linkedin.com/in/camille-rousseau-a44488413/"]
@@ -113,7 +118,7 @@
           {
             "@type": "Question",
             "name": "Peut-on vraiment trouver un bon champagne à moins de 30 euros ?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Oui, à condition de sortir des grandes marques distribuées en grande surface et de se tourner vers des vignerons récoltants manipulants (mention RM sur l’étiquette). Notre sélection contient 15 cuvées entre 17,40 € et 30 €, notées de 87 à 92 sur 100 par la RVF ou dégustées par notre rédaction." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Oui, à condition de sortir des grandes marques distribuées en grande surface et de se tourner vers des vignerons récoltants manipulants (mention RM sur l’étiquette). Notre sélection contient 15 cuvées entre 17,40 € et 30 €, notées de 87 à 92 sur 100 par la RVF ou retenues d’après des dégustations publiées par des sources spécialisées vérifiables." }
           },
           {
             "@type": "Question",
@@ -334,7 +339,7 @@
     .study{ display:grid; grid-template-columns:auto 1fr; gap:2.4rem; align-items:center; margin:1.6rem 0 2.2rem; }
     .donut svg{ width:190px; height:190px; }
     .donut .center-num{ font-family:var(--serif); font-style:italic; font-weight:600; font-size:1.7rem; fill:var(--bordeaux); }
-    .donut .center-lab{ font-family:var(--sans); font-size:.42rem; letter-spacing:.14em; text-transform:uppercase; fill:var(--ink-soft); }
+    .donut .center-lab{ font-family:var(--sans); font-size:.6rem; letter-spacing:.14em; text-transform:uppercase; fill:var(--ink-soft); }
     .legend li{ display:flex; align-items:baseline; gap:.7rem; padding:.5rem 0; border-bottom:1px solid var(--hairline); font-size:.95rem; }
     .legend li:last-child{ border-bottom:none; }
     .legend .sw{ flex:none; width:13px; height:13px; transform:translateY(1px); }
@@ -475,6 +480,10 @@
       .crumbs .current{ display:none; }
       .crumbs i.last{ display:none; }
     }
+  
+    .foot-bottom .liens{ display:inline-flex; flex-wrap:wrap; gap:.4rem 1.4rem; }
+    .foot-bottom .liens a{ transition:color .25s; }
+    .foot-bottom .liens a:hover{ color:var(--bordeaux); }
   </style>
 </head>
 <body>
@@ -538,12 +547,12 @@
       <figure class="art-hero">
         <div class="wrap">
           <div class="imgbox">
-            <img src="https://images.unsplash.com/photo-1717240049346-b6a9f43f4e1c?q=80&w=1600&auto=format&fit=crop"
-                 srcset="https://images.unsplash.com/photo-1717240049346-b6a9f43f4e1c?q=80&w=640&auto=format&fit=crop 640w, https://images.unsplash.com/photo-1717240049346-b6a9f43f4e1c?q=80&w=800&auto=format&fit=crop 800w, https://images.unsplash.com/photo-1717240049346-b6a9f43f4e1c?q=80&w=1000&auto=format&fit=crop 1000w, https://images.unsplash.com/photo-1717240049346-b6a9f43f4e1c?q=80&w=1200&auto=format&fit=crop 1200w, https://images.unsplash.com/photo-1717240049346-b6a9f43f4e1c?q=80&w=1600&auto=format&fit=crop 1600w"
+            <img src="https://images.unsplash.com/photo-1717240049346-b6a9f43f4e1c?q=70&w=1280&auto=format&fit=crop"
+                 srcset="https://images.unsplash.com/photo-1717240049346-b6a9f43f4e1c?q=70&w=640&auto=format&fit=crop 640w, https://images.unsplash.com/photo-1717240049346-b6a9f43f4e1c?q=70&w=800&auto=format&fit=crop 800w, https://images.unsplash.com/photo-1717240049346-b6a9f43f4e1c?q=70&w=1000&auto=format&fit=crop 1000w, https://images.unsplash.com/photo-1717240049346-b6a9f43f4e1c?q=70&w=1200&auto=format&fit=crop 1200w, https://images.unsplash.com/photo-1717240049346-b6a9f43f4e1c?q=70&w=1280&auto=format&fit=crop 1280w"
                  sizes="(min-width: 1288px) 1240px, calc(100vw - 48px)"
                  alt="Vignoble champenois à flanc de coteau, avec une petite chapelle" fetchpriority="high">
           </div>
-          <figcaption>En Champagne, les vignerons cachent les meilleures affaires — © Le Journal du Vin</figcaption>
+          <figcaption>En Champagne, les vignerons cachent les meilleures affaires — Photo Unsplash</figcaption>
         </div>
       </figure>
 
@@ -568,7 +577,7 @@
             <!-- ————— l’essentiel ————— -->
             <section class="essentiel" aria-label="L’essentiel">
               <span class="kicker">L’essentiel — la réponse en bref</span>
-              <p>Oui, on trouve de très bons <strong>champagnes à moins de 30 euros</strong>, à condition de sortir des rayons des grandes marques. Notre sélection réunit 15 cuvées de vignerons indépendants, de 17,40&#8239;€ à 30&#8239;€, notées de 87 à 92/100 par la Revue du Vin de France ou dégustées par notre rédaction. En tête&#8239;: le <strong>Gonet-Médeville Brut Premier Cru Tradition</strong> (28&#8239;€, 92/100 RVF) et le <strong>Michel Furdyna Brut La Secrète</strong> (29,50&#8239;€, 90/100 RVF). Prix moyen du panier testé&#8239;: 24,61&#8239;€.</p>
+              <p>Oui, on trouve de très bons <strong>champagnes à moins de 30 euros</strong>, à condition de sortir des rayons des grandes marques. Notre sélection réunit 15 cuvées de vignerons indépendants, de 17,40&#8239;€ à 30&#8239;€, notées de 87 à 92/100 par la Revue du Vin de France ou retenues d’après des dégustations publiées par des sources spécialisées vérifiables. En tête&#8239;: le <strong>Gonet-Médeville Brut Premier Cru Tradition</strong> (28&#8239;€, 92/100 RVF) et le <strong>Michel Furdyna Brut La Secrète</strong> (29,50&#8239;€, 90/100 RVF). Prix moyen du panier testé&#8239;: 24,61&#8239;€.</p>
             </section>
 
             <!-- ————— méthodologie ————— -->
@@ -581,8 +590,8 @@
 
             <!-- ————— classement ————— -->
             <section id="classement">
-              <h2>Le classement&#8239;: 15 champagnes à moins de 30&#8239;€</h2>
-              <p class="muted">Du meilleur rapport qualité-prix au plus abordable. Chaque cuvée est notée sur 100 selon l’échelle RVF, ou décrite d’après la dégustation de la rédaction.</p>
+              <h2>Quels sont les 15 meilleurs champagnes à moins de 30&#8239;€&#8239;?</h2>
+              <p class="muted">Du meilleur rapport qualité-prix au plus abordable. Chaque cuvée est notée sur 100 selon l’échelle RVF, ou décrite d’après les dégustations publiées par nos sources (détaillées en fin d’article).</p>
               <ol class="wines">
                 <li class="podium">
                   <div>
@@ -734,7 +743,7 @@
                        sizes="(min-width: 1080px) 720px, calc(100vw - 48px)"
                        alt="Rangs de vigne d’un coteau champenois au coucher du soleil">
                 </div>
-                <figcaption>Montagne de Reims — © Le Journal du Vin</figcaption>
+                <figcaption>Montagne de Reims — Photo Unsplash</figcaption>
               </figure>
             </section>
 
@@ -813,7 +822,7 @@
                        sizes="(min-width: 1080px) 720px, calc(100vw - 48px)"
                        alt="Deux verres de champagne pétillant à la lumière du soir">
                 </div>
-                <figcaption>Dégustation — © Le Journal du Vin</figcaption>
+                <figcaption>Dégustation — Photo Unsplash</figcaption>
               </figure>
             </section>
 
@@ -822,7 +831,7 @@
               <h2>FAQ — Vos questions sur le champagne de vigneron</h2>
               <details>
                 <summary>Peut-on vraiment trouver un bon champagne à moins de 30 euros&#8239;?</summary>
-                <p class="a">Oui, à condition de sortir des grandes marques distribuées en grande surface et de se tourner vers des vignerons récoltants manipulants (mention RM sur l’étiquette). Notre sélection contient 15 cuvées entre 17,40&#8239;€ et 30&#8239;€, notées de 87 à 92/100 par la RVF ou dégustées par notre rédaction.</p>
+                <p class="a">Oui, à condition de sortir des grandes marques distribuées en grande surface et de se tourner vers des vignerons récoltants manipulants (mention RM sur l’étiquette). Notre sélection contient 15 cuvées entre 17,40&#8239;€ et 30&#8239;€, notées de 87 à 92/100 par la RVF ou retenues d’après des dégustations publiées par des sources spécialisées vérifiables.</p>
               </details>
               <details>
                 <summary>Quelle est la différence entre un champagne de vigneron et une grande maison&#8239;?</summary>
@@ -858,7 +867,7 @@
                 <div>
                   <span class="who">Article rédigé par</span>
                   <p class="name">Camille Rousseau</p>
-                  <p>Journaliste et consultante vin, Camille couvre le marché du champagne et des vins effervescents pour Le Journal du Vin depuis plusieurs années. Elle accompagne aussi des cavistes indépendants dans la sélection de leurs assortiments de vignerons. <a href="https://www.linkedin.com/in/camille-rousseau-a44488413/?skipRedirect=true" target="_blank" rel="noopener">Retrouver Camille Rousseau sur LinkedIn</a>.</p>
+                  <p>Journaliste et consultante en vins et spiritueux, Camille Rousseau conçoit les guides d’achat du Journal du Vin&#8239;: sélections construites par recoupement de dégustations et de palmarès publiés (Revue du Vin de France, Bettane+Desseauve, Guide Hachette, concours), prix vérifiés en caviste et en grande distribution. Elle accompagne par ailleurs des cavistes indépendants dans la construction de leur gamme. <a href="/auteur/camille-rousseau/">Voir sa page auteur</a> · <a href="https://www.linkedin.com/in/camille-rousseau-a44488413/?skipRedirect=true" target="_blank" rel="noopener">LinkedIn</a>.</p>
                 </div>
               </div>
 
@@ -878,7 +887,7 @@
     <div class="foot-bottom">
       <div class="wrap">
         <span>© 2026 Le Journal du Vin — Tous droits réservés</span>
-        <a href="/">← Retour à l’accueil</a>
+        <nav class="liens" aria-label="Pages du site"><a href="/">Accueil</a><a href="/a-propos/">À propos</a><a href="/contact/">Contact</a><a href="/mentions-legales/">Mentions légales</a><a href="/politique-de-confidentialite/">Confidentialité</a></nav>
         <span class="abus">L’abus d’alcool est dangereux pour la santé, à consommer avec modération.</span>
       </div>
     </div>

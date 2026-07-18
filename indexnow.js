@@ -55,9 +55,14 @@ function submit(urlList) {
   req.end();
 }
 
-const args = process.argv.slice(2).filter((a) => /^https?:\/\//.test(a));
-const urls = args.length ? args : urlsFromSitemap();
-if (!urls.length) { console.error('Aucune URL à soumettre.'); process.exit(1); }
-console.log(`Soumission de ${urls.length} URL(s) à IndexNow…`);
-urls.forEach((u) => console.log('  • ' + u));
-submit(urls);
+// Utilisable en CLI (node indexnow.js [urls…]) comme en module (require → submit)
+module.exports = { submit, urlsFromSitemap };
+
+if (require.main === module) {
+  const args = process.argv.slice(2).filter((a) => /^https?:\/\//.test(a));
+  const urls = args.length ? args : urlsFromSitemap();
+  if (!urls.length) { console.error('Aucune URL à soumettre.'); process.exit(1); }
+  console.log(`Soumission de ${urls.length} URL(s) à IndexNow…`);
+  urls.forEach((u) => console.log('  • ' + u));
+  submit(urls);
+}

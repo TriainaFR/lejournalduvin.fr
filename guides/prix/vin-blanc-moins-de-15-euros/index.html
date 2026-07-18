@@ -8,6 +8,8 @@
   <link rel="canonical" href="https://www.lejournalduvin.fr/guides/prix/vin-blanc-moins-de-15-euros/">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <meta name="theme-color" content="#6B1F30">
 
   <meta property="og:type" content="article">
@@ -30,9 +32,10 @@
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1566995541428-f2246c17cda1?q=80&w=1200&h=630&fit=crop&auto=format">
   <meta name="twitter:site" content="@JournalVin">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts.css">
+  <link rel="preload" href="/assets/fonts/fraunces-roman-300-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-roman-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 
   <script type="application/ld+json">
   {
@@ -62,6 +65,8 @@
         ],
         "author": {
           "@type": "Person",
+          "@id": "https://www.lejournalduvin.fr/auteur/camille-rousseau/#person",
+          "url": "https://www.lejournalduvin.fr/auteur/camille-rousseau/",
           "name": "Camille Rousseau",
           "jobTitle": "Journaliste et consultante en vins et spiritueux",
           "sameAs": ["https://www.linkedin.com/in/camille-rousseau-a44488413/"]
@@ -476,6 +481,10 @@
       .crumbs .current{ display:none; }
       .crumbs i.last{ display:none; }
     }
+  
+    .foot-bottom .liens{ display:inline-flex; flex-wrap:wrap; gap:.4rem 1.4rem; }
+    .foot-bottom .liens a{ transition:color .25s; }
+    .foot-bottom .liens a:hover{ color:var(--bordeaux); }
   </style>
 </head>
 <body>
@@ -543,12 +552,12 @@
       <figure class="art-hero">
         <div class="wrap">
           <div class="imgbox">
-            <img src="https://images.unsplash.com/photo-1566995541428-f2246c17cda1?q=80&w=1600&auto=format&fit=crop"
-                 srcset="https://images.unsplash.com/photo-1566995541428-f2246c17cda1?q=80&w=640&auto=format&fit=crop 640w, https://images.unsplash.com/photo-1566995541428-f2246c17cda1?q=80&w=800&auto=format&fit=crop 800w, https://images.unsplash.com/photo-1566995541428-f2246c17cda1?q=80&w=1000&auto=format&fit=crop 1000w, https://images.unsplash.com/photo-1566995541428-f2246c17cda1?q=80&w=1200&auto=format&fit=crop 1200w, https://images.unsplash.com/photo-1566995541428-f2246c17cda1?q=80&w=1600&auto=format&fit=crop 1600w"
+            <img src="https://images.unsplash.com/photo-1566995541428-f2246c17cda1?q=70&w=1280&auto=format&fit=crop"
+                 srcset="https://images.unsplash.com/photo-1566995541428-f2246c17cda1?q=70&w=640&auto=format&fit=crop 640w, https://images.unsplash.com/photo-1566995541428-f2246c17cda1?q=70&w=800&auto=format&fit=crop 800w, https://images.unsplash.com/photo-1566995541428-f2246c17cda1?q=70&w=1000&auto=format&fit=crop 1000w, https://images.unsplash.com/photo-1566995541428-f2246c17cda1?q=70&w=1200&auto=format&fit=crop 1200w, https://images.unsplash.com/photo-1566995541428-f2246c17cda1?q=70&w=1280&auto=format&fit=crop 1280w"
                  sizes="(min-width: 1288px) 1240px, calc(100vw - 48px)"
                  alt="Bouteille et verre de vin blanc posés sur une nappe claire, à côté d’un pain" fetchpriority="high">
           </div>
-          <figcaption>À la recherche du bon blanc à petit prix — © Le Journal du Vin</figcaption>
+          <figcaption>À la recherche du bon blanc à petit prix — Photo Unsplash</figcaption>
         </div>
       </figure>
 
@@ -637,7 +646,7 @@
                        sizes="(min-width: 1080px) 720px, calc(100vw - 48px)"
                        alt="Rangs de vigne d’un vignoble ligérien sous un ciel dégagé">
                 </div>
-                <figcaption>Le melon de Bourgogne, cépage du Muscadet — © Le Journal du Vin</figcaption>
+                <figcaption>Le melon de Bourgogne, cépage du Muscadet — Photo Unsplash</figcaption>
               </figure>
             </section>
 
@@ -697,6 +706,7 @@
                   </div>
                 </li>
               </ol>
+              <p>Au-delà de ces deux cuvées, la Bourgogne blanche à moins de 15&#8239;€ se joue sur les appellations régionales et le sud du vignoble&#8239;: Mâcon-Villages, Saint-Véran ou Petit Chablis offrent l’expression du chardonnay — tension, fruits blancs, discrètes notes beurrées — sans le tarif des villages de la Côte de Beaune. Deux réflexes aident à bien acheter&#8239;: viser les caves coopératives historiques du Mâconnais, régulières et largement distribuées, et privilégier les millésimes récents (2023, 2024), mûrs mais restés équilibrés. Servi entre 10 et 12&#8239;°C, un chardonnay bourguignon d’entrée de gamme accompagne volaille à la crème, poissons de rivière et fromages à pâte pressée comme le comté.</p>
             </section>
 
             <!-- ————— Languedoc-Roussillon ————— -->
@@ -726,6 +736,7 @@
                   </div>
                 </li>
               </ol>
+              <p>Le Languedoc-Roussillon reste le premier réservoir de blancs de caractère à petit prix&#8239;: picpoul de Pinet iodé taillé pour les huîtres, Terrasses du Larzac et Limoux pour des profils plus frais portés par l’altitude, côtes catalanes pour la générosité méditerranéenne. La montée en qualité y est réelle — vendanges de nuit, élevages plus précis, grenache blanc et roussanne mieux maîtrisés — et les prix n’ont pas encore entièrement suivi, ce qui en fait le meilleur terrain de chasse sous les 15&#8239;€. À table, ces assemblages du Sud aiment la cuisine provençale, les poissons grillés et les fromages de chèvre affinés.</p>
             </section>
 
             <!-- ————— tableau ————— -->
@@ -817,7 +828,7 @@
 
             <!-- ————— servir ————— -->
             <section id="servir">
-              <h2>Comment bien choisir et servir son vin blanc à moins de 15&#8239;€</h2>
+              <h2>Comment bien choisir et servir son vin blanc à moins de 15&#8239;€&#8239;?</h2>
               <p>Quelques repères simples pour profiter au mieux de ces bouteilles&#8239;:</p>
               <ul class="tips">
                 <li><strong>Température de service&#8239;:</strong> 8 à 10&#8239;°C pour un muscadet ou un sauvignon vif, 10 à 12&#8239;°C pour un chenin ou un chardonnay plus ample.</li>
@@ -833,7 +844,7 @@
                        sizes="(min-width: 1080px) 720px, calc(100vw - 48px)"
                        alt="Deux verres de vin blanc servis à bonne température à la lumière du soir">
                 </div>
-                <figcaption>Le bon blanc se sert frais, jamais glacé — © Le Journal du Vin</figcaption>
+                <figcaption>Le bon blanc se sert frais, jamais glacé — Photo Unsplash</figcaption>
               </figure>
             </section>
 
@@ -877,7 +888,7 @@
                 <div>
                   <span class="who">Article rédigé par</span>
                   <p class="name">Camille Rousseau</p>
-                  <p>Journaliste et consultante, Camille couvre les guides d’achat et les sélections dégustées pour Le Journal du Vin, avec un œil particulier sur le rapport qualité-prix des vignobles français. <a href="https://www.linkedin.com/in/camille-rousseau-a44488413/?skipRedirect=true" target="_blank" rel="noopener">Retrouver Camille Rousseau sur LinkedIn</a>.</p>
+                  <p>Journaliste et consultante en vins et spiritueux, Camille Rousseau conçoit les guides d’achat du Journal du Vin&#8239;: sélections construites par recoupement de dégustations et de palmarès publiés (Revue du Vin de France, Bettane+Desseauve, Guide Hachette, concours), prix vérifiés en caviste et en grande distribution. Elle accompagne par ailleurs des cavistes indépendants dans la construction de leur gamme. <a href="/auteur/camille-rousseau/">Voir sa page auteur</a> · <a href="https://www.linkedin.com/in/camille-rousseau-a44488413/?skipRedirect=true" target="_blank" rel="noopener">LinkedIn</a>.</p>
                 </div>
               </div>
 
@@ -898,7 +909,7 @@
     <div class="foot-bottom">
       <div class="wrap">
         <span>© 2026 Le Journal du Vin — Tous droits réservés</span>
-        <a href="/">← Retour à l’accueil</a>
+        <nav class="liens" aria-label="Pages du site"><a href="/">Accueil</a><a href="/a-propos/">À propos</a><a href="/contact/">Contact</a><a href="/mentions-legales/">Mentions légales</a><a href="/politique-de-confidentialite/">Confidentialité</a></nav>
         <span class="abus">L’abus d’alcool est dangereux pour la santé, à consommer avec modération.</span>
       </div>
     </div>
