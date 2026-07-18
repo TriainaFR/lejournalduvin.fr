@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/prix/vin-blanc-moins-de-15-euros/",
+    soon: false,
+    cat: "Guide d’achat — Prix",
+    title: "Vin blanc : les 15 meilleurs à moins de 15 euros en 2026",
+    excerpt: "Loire, Alsace, Bourgogne, Languedoc : 15 blancs notés 90 à 94/100 par la RVF et le Figaro Vin, avec prix, cépages, tableau comparatif et accords. Note moyenne 91/100.",
+    date: "18 juillet 2026",
+    minutes: 11,
+    img: "https://images.unsplash.com/photo-1566995541428-f2246c17cda1?q=80&w=600&auto=format&fit=crop",
+    tags: ["vin blanc", "vin blanc pas cher", "moins de 15 euros", "meilleur vin blanc", "rapport qualité-prix", "budget", "chenin", "muscadet", "melon de bourgogne", "sauvignon", "auxerrois", "pinot gris", "pinot blanc", "chardonnay", "assemblage", "loire", "anjou", "touraine", "muscadet sèvre-et-maine", "alsace", "bourgogne", "beaujolais", "languedoc", "roussillon", "collioure", "sec", "rvf", "figaro vin", "note", "classement", "comparatif", "accords", "guide d’achat", "prix"]
+  },
+  {
     url: "/guides/prix/vin-rouge-moins-de-20-euros/",
     soon: false,
     cat: "Guide d’achat — Prix",
