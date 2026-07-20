@@ -114,7 +114,12 @@ function cacheFor(filePath, ext) {
 // Header Link (RFC 8288) sur les pages HTML : découverte du sitemap et du
 // llms.txt par les agents. Pas de rel="canonical" ici — les canonicals
 // restent exclusivement dans le <head> des pages (aucune interférence SEO).
-const LINK_HEADER = '<https://www.lejournalduvin.fr/sitemap.xml>; rel="sitemap", <https://www.lejournalduvin.fr/llms.txt>; rel="llms-txt"';
+const LINK_HEADER = [
+  '<https://www.lejournalduvin.fr/sitemap.xml>; rel="sitemap"',
+  '<https://www.lejournalduvin.fr/llms.txt>; rel="llms-txt"',
+  '<https://www.lejournalduvin.fr/politique-de-confidentialite/>; rel="privacy-policy"',
+  '<https://www.lejournalduvin.fr/mentions-legales/>; rel="terms-of-service"',
+].join(', ');
 
 function serveFile(req, res, filePath) {
   if (!isPublic(filePath)) return notFound(res);
