@@ -6,10 +6,13 @@
 # Moteurs de recherche classiques
 User-agent: *
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /recherche
 
 # ————————————————————————————————
 # Crawlers IA — accès explicitement autorisé (GEO)
+# Content-Signal (contentsignals.org) : recherche, réponses IA et
+# entraînement autorisés — le média souhaite être lu, cité et appris.
 # Le Journal du Vin souhaite être lu et cité par les moteurs de réponse.
 # NB : chaque groupe nommé répète Disallow /recherche — par spécification
 # robots.txt, un bot qui trouve son groupe nommé ignore le groupe générique.
@@ -17,66 +20,82 @@ Disallow: /recherche
 
 User-agent: GPTBot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /recherche
 
 User-agent: OAI-SearchBot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /recherche
 
 User-agent: ChatGPT-User
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /recherche
 
 User-agent: ClaudeBot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /recherche
 
 User-agent: Claude-SearchBot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /recherche
 
 User-agent: Claude-User
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /recherche
 
 User-agent: PerplexityBot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /recherche
 
 User-agent: Perplexity-User
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /recherche
 
 User-agent: Google-Extended
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /recherche
 
 User-agent: Applebot-Extended
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /recherche
 
 User-agent: meta-externalagent
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /recherche
 
 User-agent: Bytespider
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /recherche
 
 User-agent: Amazonbot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /recherche
 
 User-agent: DuckAssistBot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /recherche
 
 User-agent: MistralAI-User
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /recherche
 
 User-agent: cohere-ai
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /recherche
 
 Sitemap: https://www.lejournalduvin.fr/sitemap.xml

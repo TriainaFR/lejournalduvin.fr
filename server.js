@@ -111,6 +111,11 @@ function cacheFor(filePath, ext) {
   return 'public, max-age=3600';
 }
 
+// Header Link (RFC 8288) sur les pages HTML : découverte du sitemap et du
+// llms.txt par les agents. Pas de rel="canonical" ici — les canonicals
+// restent exclusivement dans le <head> des pages (aucune interférence SEO).
+const LINK_HEADER = '<https://www.lejournalduvin.fr/sitemap.xml>; rel="sitemap", <https://www.lejournalduvin.fr/llms.txt>; rel="llms-txt"';
+
 function serveFile(req, res, filePath) {
   if (!isPublic(filePath)) return notFound(res);
   const ext = path.extname(filePath).toLowerCase();
@@ -119,6 +124,7 @@ function serveFile(req, res, filePath) {
 
     const type = MIME[ext] || 'application/octet-stream';
     const headers = { 'Cache-Control': cacheFor(filePath, ext), Vary: 'Accept-Encoding' };
+    if (ext === '.html') headers.Link = LINK_HEADER;
 
     const encoding = pickEncoding(req);
     if (!encoding || !COMPRESSIBLE.test(type) || data.length < MIN_COMPRESS_BYTES) {
