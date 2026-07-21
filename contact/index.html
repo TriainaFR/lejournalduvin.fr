@@ -45,7 +45,6 @@
         "url": "https://www.lejournalduvin.fr/",
         "logo": { "@type": "ImageObject", "url": "https://www.lejournalduvin.fr/assets/favicon.svg" },
         "description": "Le Journal du Vin est un média français indépendant qui déguste, compare et recommande vins, champagnes et spiritueux, et raconte les plus belles caves de France.",
-        "email": "lecoq.lucas@gmail.com",
         "sameAs": ["https://x.com/JournalVin", "https://www.facebook.com/journalvin"],
         "foundingDate": "2026",
         "foundingLocation": { "@type": "Place", "name": "France" },
@@ -54,7 +53,6 @@
         "contactPoint": {
           "@type": "ContactPoint",
           "contactType": "Editorial",
-          "email": "lecoq.lucas@gmail.com",
           "url": "https://www.lejournalduvin.fr/contact/",
           "availableLanguage": ["French"],
           "areaServed": "FR"
@@ -204,6 +202,36 @@
       font-size:.9rem; color:var(--ink-soft);
     }
 
+    /* ————— Formulaire ————— */
+    .cform{ margin-top:2rem; text-align:left; position:relative; }
+    .cform .frow{ display:grid; grid-template-columns:1fr 1fr; gap:0 1.1rem; }
+    .cform .fgroup{ margin-bottom:1.15rem; }
+    .cform label{
+      display:block; margin-bottom:.45rem;
+      font-size:.66rem; letter-spacing:.22em; text-transform:uppercase; font-weight:500; color:var(--ink-soft);
+    }
+    .cform input[type="text"], .cform input[type="email"], .cform select, .cform textarea{
+      width:100%; background:var(--paper); border:1px solid var(--hairline-strong); border-radius:0;
+      padding:.85rem 1rem; font-family:var(--sans); font-size:.95rem; color:var(--ink);
+      transition:border-color .25s; -webkit-appearance:none; appearance:none;
+    }
+    .cform select{
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23A9822F' stroke-width='1.6'/%3E%3C/svg%3E");
+      background-repeat:no-repeat; background-position:right 1rem center; padding-right:2.6rem; cursor:pointer;
+    }
+    .cform select:invalid{ color:var(--ink-soft); }
+    .cform textarea{ resize:vertical; min-height:150px; }
+    .cform input:focus, .cform select:focus, .cform textarea:focus{ outline:none; border-color:var(--bordeaux); }
+    .cform .hpot{ position:absolute; left:-9999px; top:auto; width:1px; height:1px; opacity:0; }
+    .cform .btn-mail{ width:100%; justify-content:center; margin-top:.5rem; }
+    .cform .btn-mail:disabled{ opacity:.55; cursor:wait; transform:none; }
+    .form-status{ margin-top:1rem; font-size:.92rem; text-align:center; min-height:1.4em; }
+    .form-status.ok{ color:#2F5D3A; font-weight:500; }
+    .form-status.err{ color:var(--bordeaux); font-weight:500; }
+    .rgpd{ margin-top:.7rem; font-size:.78rem; color:var(--ink-soft); text-align:center; }
+    .rgpd a{ border-bottom:1px solid var(--gold-soft); transition:color .25s, border-color .25s; }
+    .rgpd a:hover{ color:var(--bordeaux); border-color:var(--bordeaux); }
+
     /* ================= MOTIFS ================= */
     .reasons{ padding:0 0 4.6rem; }
     .reasons .inner{ width:min(1000px, calc(100vw - 48px)); margin-inline:auto; }
@@ -294,6 +322,7 @@
     @media (max-width: 640px){
       .nav .search span{ display:none; }
       .mailcard{ padding:2.2rem 1.4rem 2rem; }
+      .cform .frow{ grid-template-columns:1fr; gap:0; }
       .foot-bottom .wrap{ flex-direction:column; gap:.8rem; text-align:center; }
       .crumbs .current{ display:none; }
       .crumbs i.last{ display:none; }
@@ -353,11 +382,11 @@
       <div class="inner">
         <span class="kicker">Écrire à la rédaction</span>
         <h1>Contact</h1>
-        <p class="subtitle">Une question, une suggestion de sujet, une erreur à signaler&#8239;? Un seul interlocuteur, une seule adresse.</p>
+        <p class="subtitle">Une question, une suggestion de sujet, une erreur à signaler&#8239;? Un message suffit — il arrive directement à la rédaction.</p>
       </div>
     </header>
 
-    <section class="mailzone" aria-label="Adresse de contact">
+    <section class="mailzone" aria-label="Formulaire de contact">
       <div class="mailcard">
         <div class="seal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
@@ -367,14 +396,46 @@
         </div>
         <p class="lab">Écrire à la rédaction</p>
         <p class="baseline">Une question, un sujet, une proposition&#8239;?</p>
-        <a class="btn-mail" href="mailto:lecoq.lucas@gmail.com">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
-            <rect x="2.5" y="5" width="19" height="14" rx="1"/>
-            <path d="m2.5 6.5 9.5 7 9.5-7"/>
-          </svg>
-          Nous envoyer un e-mail
-        </a>
-        <p class="delay">Le bouton ouvre votre messagerie. Nous lisons tous les messages et répondons généralement sous quelques jours ouvrés.</p>
+
+        <form id="contact-form" class="cform">
+          <div class="frow">
+            <div class="fgroup">
+              <label for="cf-nom">Votre nom</label>
+              <input id="cf-nom" name="nom" type="text" autocomplete="name" required maxlength="80">
+            </div>
+            <div class="fgroup">
+              <label for="cf-email">Votre e-mail</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" required maxlength="120">
+            </div>
+          </div>
+          <div class="fgroup">
+            <label for="cf-sujet">Sujet</label>
+            <select id="cf-sujet" name="sujet" required>
+              <option value="" selected disabled>Choisir un sujet…</option>
+              <option>Suggestion de sujet</option>
+              <option>Signaler une erreur</option>
+              <option>Partenariat / demande presse</option>
+              <option>Envoi d’échantillons</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="fgroup">
+            <label for="cf-message">Votre message</label>
+            <textarea id="cf-message" name="message" rows="6" required maxlength="4000"></textarea>
+          </div>
+          <input class="hpot" type="text" name="site_web" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn-mail" type="submit" id="cf-send">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <rect x="2.5" y="5" width="19" height="14" rx="1"/>
+              <path d="m2.5 6.5 9.5 7 9.5-7"/>
+            </svg>
+            Envoyer le message
+          </button>
+          <p class="form-status" id="cf-status" role="status" aria-live="polite"></p>
+          <p class="rgpd">Ces informations ne servent qu’à vous répondre — voir notre <a href="/politique-de-confidentialite/">politique de confidentialité</a>.</p>
+        </form>
+
+        <p class="delay">Nous lisons tous les messages et répondons généralement sous quelques jours ouvrés.</p>
       </div>
     </section>
 
@@ -443,6 +504,52 @@
     document.getElementById('search-open').addEventListener('click', soOpen);
     document.getElementById('search-close').addEventListener('click', soClose);
     addEventListener('keydown', (e) => { if (e.key === 'Escape' && so.classList.contains('open')) soClose(); });
+
+    // ————— Formulaire de contact (EmailJS, API REST directe — pas de SDK) —————
+    (function () {
+      const form = document.getElementById('contact-form');
+      const status = document.getElementById('cf-status');
+      const btn = document.getElementById('cf-send');
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        if (form.site_web.value) return; // piège anti-spam : un humain ne remplit pas ce champ
+        btn.disabled = true;
+        status.className = 'form-status';
+        status.textContent = 'Envoi en cours…';
+        const nom = form.nom.value.trim();
+        const email = form.email.value.trim();
+        const sujet = form.sujet.value;
+        const message = form.message.value.trim();
+        try {
+          const r = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              service_id: 'service_w7bdow2',
+              template_id: 'template_4n5km5l',
+              user_id: 'E7cFvIw50eYZ8er2v',
+              template_params: {
+                // noms multiples pour couvrir les variables usuelles du template
+                name: nom, from_name: nom,
+                email: email, from_email: email, reply_to: email,
+                subject: sujet, title: sujet,
+                message: message,
+                page: location.href,
+              },
+            }),
+          });
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          status.className = 'form-status ok';
+          status.textContent = 'Message envoyé — merci ! Nous vous répondrons sous quelques jours ouvrés.';
+          form.reset();
+        } catch (err) {
+          status.className = 'form-status err';
+          status.textContent = 'L’envoi a échoué. Merci de réessayer dans quelques minutes.';
+        } finally {
+          btn.disabled = false;
+        }
+      });
+    })();
   </script>
 </body>
 </html>

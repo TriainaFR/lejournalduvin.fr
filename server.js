@@ -61,7 +61,7 @@ const SECURITY_HEADERS = {
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' https://images.unsplash.com data:",
     "font-src 'self'",
-    "connect-src 'self'",
+    "connect-src 'self' https://api.emailjs.com",
     "object-src 'none'",
     "frame-ancestors 'self'",
     "base-uri 'self'",
