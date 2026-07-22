@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.lejournalduvin.fr/</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-07-22</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/a-propos/</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/auteur/camille-rousseau/</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-07-22</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/contact/</loc>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-07-22</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/vin/</loc>
@@ -71,5 +71,9 @@
   <url>
     <loc>https://www.lejournalduvin.fr/politique-de-confidentialite/</loc>
     <lastmod>2026-07-20</lastmod>
+  </url>
+  <url>
+    <loc>https://www.lejournalduvin.fr/guides/occasions/que-boire-a-noel/</loc>
+    <lastmod>2026-07-22</lastmod>
   </url>
 </urlset>

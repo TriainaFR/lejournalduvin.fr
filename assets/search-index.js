@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/occasions/que-boire-a-noel/",
+    soon: false,
+    cat: "Occasions — Noël",
+    title: "Que boire à Noël : notre sélection par budget",
+    excerpt: "De 9 € à 75 € : douze bouteilles pour les fêtes, avec prix relevés et notes attribuées. Muscadet Landron, Cahors, champagnes Colin et Gremillet, Gevrey-Chambertin, Bollinger, Ruinart.",
+    date: "22 juillet 2026",
+    minutes: 11,
+    img: "/assets/img/cave-vieillissement-bourgogne-480.jpg",
+    tags: ["noël", "que boire à noël", "vin de noël", "champagne de noël", "fêtes", "réveillon", "budget", "cadeau", "apéritif", "repas de fêtes", "muscadet", "landron", "cahors", "gewurztraminer", "agapé", "champagne colin", "gremillet", "duval-leroy", "lallier", "chidaine", "montlouis", "gevrey-chambertin", "dominique laurent", "bollinger", "ruinart", "gosset", "blanc de blancs", "foie gras", "saint-jacques", "huîtres", "accord mets vins", "rvf", "figaro vin", "guide d’achat"]
+  },
+  {
     url: "/guides/prix/champagne-moins-de-30-euros/",
     soon: false,
     cat: "Guide d’achat — Champagne",
