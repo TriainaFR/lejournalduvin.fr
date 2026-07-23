@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/vins-rouges/",
+    soon: false,
+    cat: "Guide d’achat — Vins rouges",
+    title: "Meilleurs vins rouges 2026 : notre sélection par région",
+    excerpt: "15 cuvées de 12,95 € à 400 €, notées 90 à 100/100 : Ledogar, Marcel Lapierre, Marionnet, Cellier aux Moines, Château d’Issan, Guigal La Mouline. Indice qualité-prix par région.",
+    date: "23 juillet 2026",
+    minutes: 12,
+    img: "/assets/img/vignoble-pommard-bourgogne-480.jpg",
+    tags: ["vin rouge", "meilleurs vins rouges", "meilleurs vins rouges 2026", "rouge", "classement", "comparatif", "millésime 2022", "millésime 2023", "languedoc", "beaujolais", "loire", "bourgogne", "bordeaux", "rhône", "alsace", "jura", "ledogar", "marcel lapierre", "henry marionnet", "domaine du somail", "mas amiel", "cellier aux moines", "simonnet-febvre", "fumey-châtelain", "patrick dreyer", "les grandes vignes", "château d’issan", "pontet-canet", "giscours", "guigal", "la mouline", "château rayas", "margaux", "pauillac", "côte-rôtie", "châteauneuf-du-pape", "givry", "irancy", "arbois", "anjou", "touraine", "gamay", "pinot noir", "cinsault", "pineau d’aunis", "trousseau", "syrah", "grenache", "rapport qualité-prix", "indice", "bio", "nature", "guide hachette", "figaro vin", "decanter", "guide d’achat"]
+  },
+  {
     url: "/guides/occasions/que-boire-a-noel/",
     soon: false,
     cat: "Occasions — Noël",
