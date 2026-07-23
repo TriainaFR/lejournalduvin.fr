@@ -1,9 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <rect width="128" height="128" rx="24" fill="#F4EEE0"/>
-  <circle cx="64" cy="64" r="52" fill="none" stroke="#B08A3E" stroke-width="3.5"/>
-  <g fill="#17110C" font-family="Didot, 'Bodoni MT', 'Bodoni Moda', 'Playfair Display', Georgia, serif" font-weight="700">
-    <text x="38" y="86" font-size="58" letter-spacing="-2">J</text>
-    <text x="54" y="80" font-size="64">D</text>
-    <text x="76" y="60" font-size="44">V</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Le Journal du Vin — JDV">
+  <rect width="128" height="128" fill="#FFFFFF"/>
+  <rect x="9" y="9" width="110" height="110" fill="none" stroke="#6B1F30" stroke-width="4.5"/>
+
+  <g fill="#6B1F30">
+    <!-- feuille de vigne -->
+    <path d="M46 41 c -2 -12 4 -22 14 -25 c 3 10 -2 20 -14 25 z" transform="translate(6,-3) scale(0.9)"/>
+    <!-- rameau + vrille en boucle -->
+    <path d="M62 34 q 7 -6 13 -5" fill="none" stroke="#6B1F30" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M75 29 c 7 -1 10 5 7 9 c -2 3 -7 2 -7 -2 c 0 -3 4 -4 6 -2"
+          fill="none" stroke="#6B1F30" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- grappe -->
+    <g transform="translate(-31.5,-8) scale(0.95)">
+      <circle cx="97" cy="46" r="4.6"/><circle cx="106" cy="50" r="4.6"/><circle cx="88" cy="50" r="4.6"/>
+      <circle cx="101" cy="57" r="4.6"/><circle cx="92" cy="58" r="4.6"/><circle cx="110" cy="58" r="4.4"/>
+      <circle cx="97" cy="65" r="4.4"/><circle cx="105" cy="66" r="4.2"/><circle cx="101" cy="73" r="4"/>
+    </g>
   </g>
+
+  <text x="64" y="106" text-anchor="middle" fill="#6B1F30"
+        font-family="Didot, 'Bodoni MT', 'Bodoni Moda', Fraunces, 'Playfair Display', Georgia, serif"
+        font-weight="700" font-size="42" letter-spacing="1">JDV</text>
 </svg>
