@@ -107,6 +107,11 @@ function cacheFor(filePath, ext) {
   const rel = path.relative(ROOT, filePath);
   if (ext === '.html') return 'no-cache';
   if (rel === path.join('assets', 'search-index.js')) return 'no-cache';
+  // Icônes d'identité : remplacées en place lors d'un changement de logo.
+  // Cache court, sinon une copie périmée reste figée un an à l'edge (vécu le
+  // 22/07/2026 : il a fallu renommer en -v2 pour sortir du cache Cloudflare,
+  // qui ignore la query string — un ?v= ne suffit donc PAS à casser le cache).
+  if (/^assets[/\\](favicon|apple-touch-icon)/.test(rel)) return 'public, max-age=86400';
   if (rel.startsWith('assets' + path.sep)) return 'public, max-age=31536000, immutable';
   return 'public, max-age=3600';
 }
