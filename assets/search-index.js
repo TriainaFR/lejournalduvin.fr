@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/vins-rouges/bourgogne/",
+    soon: false,
+    cat: "Guide d’achat — Vins rouges",
+    title: "Meilleurs vins rouges de Bourgogne 2026 : notre sélection",
+    excerpt: "16 cuvées de 13,50 € à 495 € : Domaine Bart Marsannay, Jacqueson Rully, Duroché Gevrey-Chambertin, A.-F. Gros Échézeaux. Millésimes 2020-2023 et classement qualité-prix.",
+    date: "24 juillet 2026",
+    minutes: 13,
+    img: "/assets/img/village-chambolle-musigny-480.jpg",
+    tags: ["bourgogne", "vin rouge bourgogne", "pinot noir", "marsannay", "rully", "mercurey", "givry", "chorey-les-beaune", "gevrey-chambertin", "nuits-saint-georges", "volnay", "pommard", "beaune", "irancy", "chitry", "mâcon", "gamay", "côte de nuits", "côte de beaune", "côte chalonnaise", "mâconnais", "grand cru", "premier cru", "village", "générique", "millésime 2023", "millésime 2022", "millésime 2021", "millésime 2020", "domaine bart", "jacqueson", "jeannin-naltet", "soeur cadette", "simonnet-febvre", "sainte barbe", "chaland", "drouhin", "carillon", "lafouge", "arnoux", "duroché", "armand rousseau", "marquis d’angerville", "a.-f. gros", "échézeaux", "clos de vougeot", "rapport qualité-prix", "garde", "cave", "guide d’achat"]
+  },
+  {
     url: "/guides/vins-rouges/",
     soon: false,
     cat: "Guide d’achat — Vins rouges",
