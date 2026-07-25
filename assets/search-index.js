@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/vins-rouges/bordeaux/",
+    soon: false,
+    cat: "Guide d’achat — Vins rouges",
+    title: "Meilleurs vins rouges de Bordeaux 2026 : notre sélection",
+    excerpt: "15 crus de 18 € à 250 € : Cantemerle, Ducluzeau, Pontet-Canet, Beychevelle, Troplong Mondot, Léoville-Las Cases. Millésimes 2019, 2020 et 2022, prix relevés et notes attribuées.",
+    date: "25 juillet 2026",
+    minutes: 13,
+    img: "/assets/img/chateau-fonplegade-saint-emilion-480.jpg",
+    tags: ["bordeaux", "vin rouge bordeaux", "meilleurs vins rouges bordeaux", "grands crus classés", "classement 1855", "cru bourgeois", "médoc", "haut-médoc", "pauillac", "saint-julien", "margaux", "saint-estèphe", "listrac-médoc", "moulis", "pessac-léognan", "graves", "saint-émilion", "pomerol", "rive gauche", "rive droite", "cabernet sauvignon", "merlot", "cabernet franc", "petit verdot", "millésime 2019", "millésime 2020", "millésime 2022", "millésime 2018", "millésime 2021", "cantemerle", "ducluzeau", "fleur de cantelys", "cadet-bon", "cantin", "beychevelle", "gruaud-larose", "léoville-barton", "pontet-canet", "troplong mondot", "lynch-bages", "la conseillante", "pichon baron", "léoville-las cases", "biodynamie", "garde", "cave", "carafage", "accord mets vins", "agneau de pauillac", "entrecôte bordelaise", "lamproie", "decanter", "figaro vin", "rvf", "guide hachette", "wine advocate", "idealwine", "rapport qualité-prix", "guide d’achat"]
+  },
+  {
     url: "/guides/vins-rouges/bourgogne/",
     soon: false,
     cat: "Guide d’achat — Vins rouges",
