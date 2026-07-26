@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node server.js",
+    "check": "node validate.js",
     "indexnow": "node indexnow.js"
   },
   "engines": {

@@ -1,0 +1,13 @@
+#!/bin/sh
+# Contrôle avant chaque commit : dates ISO 8601, hôte canonique, crédits
+# photo, sitemap, assets, réutilisation d'images.
+#
+# Activation (une fois par clone) :   git config core.hooksPath .githooks
+# Contourner exceptionnellement :     git commit --no-verify
+
+node validate.js || {
+  echo ""
+  echo "Commit bloqué par validate.js. Corrige les erreurs ci-dessus,"
+  echo "ou force avec : git commit --no-verify"
+  exit 1
+}
