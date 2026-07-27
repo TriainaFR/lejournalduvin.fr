@@ -136,9 +136,12 @@
 
     .guides{ border-top:1px solid var(--hairline); padding:2.4rem 0 3.4rem; }
     .guides h2{ font-family:var(--serif); font-style:italic; font-weight:500; font-size:1.7rem; margin:.5rem 0 1.4rem; }
-    .guides p.avenir{ color:var(--ink-soft); max-width:64ch; }
-    .guides p.avenir a{ border-bottom:1px solid var(--gold-soft); transition:.25s; }
-    .guides p.avenir a:hover{ color:var(--bordeaux); border-color:var(--bordeaux); }
+    .guides ul{ list-style:none; }
+    .guides li{ border-bottom:1px solid var(--hairline); }
+    .guides li a{ display:flex; justify-content:space-between; gap:1.5rem; align-items:baseline; padding:.95rem 0; transition:color .25s; }
+    .guides li a:hover{ color:var(--bordeaux); }
+    .guides .t{ font-family:var(--serif); font-weight:500; font-size:1.08rem; }
+    .guides .d{ flex:0 0 auto; font-size:.7rem; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); }
 
     footer{ border-top:1px solid var(--hairline-strong); }
     .foot-bottom .wrap{
@@ -152,6 +155,7 @@
 
     @media (max-width:640px){
       .head{ flex-direction:column; align-items:flex-start; }
+      .guides li a{ flex-direction:column; gap:.15rem; }
     }
   </style>
 </head>
@@ -194,7 +198,9 @@
       <div class="wrap">
         <span class="kicker kicker--bordeaux">Ses articles</span>
         <h2>Les guides signés Swann Bertaud</h2>
-        <p class="avenir">Ses premiers guides sont en préparation. En attendant, retrouvez les articles de l’univers <a href="/champagne/">champagne</a> et l’ensemble de nos <a href="/guides/">guides d’achat</a>.</p>
+        <ul>
+          <li><a href="/guides/occasions/champagne-noel/"><span class="t">Champagne pour Noël 2026&#8239;: notre sélection de 24 cuvées</span><span class="d">27 juillet 2026</span></a></li>
+        </ul>
       </div>
     </section>
   </main>

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.lejournalduvin.fr/</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-07-27</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/a-propos/</loc>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/auteur/swann-bertaud/</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-07-27</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/contact/</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-07-27</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/vin/</loc>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/champagne/</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-07-27</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/spiritueux/</loc>
@@ -55,6 +55,10 @@
   <url>
     <loc>https://www.lejournalduvin.fr/guides/millesimes/bordeaux/</loc>
     <lastmod>2026-07-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.lejournalduvin.fr/guides/occasions/champagne-noel/</loc>
+    <lastmod>2026-07-27</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/occasions/champagne-mariage/</loc>

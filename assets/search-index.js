@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/occasions/champagne-noel/",
+    soon: false,
+    cat: "Guide d’achat — Champagne",
+    title: "Champagne pour Noël 2026 : notre sélection de 24 cuvées",
+    excerpt: "24 cuvées de 20 € à 290 € : Jonot Frères, Devaux Cœur des Bar, Delamotte, Bollinger, Krug, Dom Pérignon. Accords du foie gras au dessert, budget et température de service.",
+    date: "27 juillet 2026",
+    minutes: 12,
+    img: "/assets/img/vignoble-cramant-cote-des-blancs-480.jpg",
+    tags: ["champagne", "champagne noël", "champagne de noël", "fêtes", "réveillon", "apéritif", "cadeau", "brut", "extra-brut", "brut nature", "demi-sec", "dosage", "blanc de blancs", "blanc de noirs", "rosé", "millésimé", "chardonnay", "pinot noir", "meunier", "côte des blancs", "côte des bar", "montagne de reims", "vallée de la marne", "cramant", "avize", "le mesnil-sur-oger", "hautvillers", "aÿ", "récoltant-manipulant", "jonot frères", "pierre bertrand", "montaudon", "nicolas feuillatte", "devaux", "de saint-gall", "hugues godmé", "drappier", "alfred gratien", "delamotte", "piper-heidsieck", "louis roederer", "collery", "laurent-perrier", "bollinger", "perrier-jouët", "taittinger", "krug", "jacquesson", "dom pérignon", "ruinart", "bio", "biodynamie", "foie gras", "volaille", "chapon", "huîtres", "saint-jacques", "bûche", "dessert", "accord mets vins", "température de service", "flûte", "carafage", "comité champagne", "civc", "guide d’achat"]
+  },
+  {
     url: "/guides/vins-rouges/bordeaux/",
     soon: false,
     cat: "Guide d’achat — Vins rouges",
