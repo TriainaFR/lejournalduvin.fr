@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/spiritueux/whisky/meilleur-whisky-tourbe/",
+    soon: false,
+    cat: "Guide d’achat — Spiritueux",
+    title: "Meilleur whisky tourbé : les 12 incontournables en 2026",
+    excerpt: "12 bouteilles de 40 € à 220 €, de 10 à 128,9 ppm : Ardbeg, Laphroaig, Lagavulin, Octomore, Kilchoman, Armorik Yeun Elez. Le PPM expliqué, prix relevés et notes attribuées.",
+    date: "28 juillet 2026",
+    minutes: 13,
+    img: "/assets/img/distillerie-lagavulin-islay-480.jpg",
+    tags: ["whisky", "whisky tourbé", "meilleur whisky tourbé", "tourbe", "ppm", "phénols", "fumé", "single malt", "scotch", "islay", "skye", "highlands", "speyside", "hébrides", "écosse", "ardbeg", "laphroaig", "lagavulin", "caol ila", "kilchoman", "machir bay", "port charlotte", "octomore", "bruichladdich", "talisker", "ballechin", "edradour", "benromach", "amrut", "inde", "armorik", "yeun elez", "warenghem", "bretagne", "monts d’arrée", "whisky français", "cask strength", "brut de fût", "dégustation", "verre glencairn", "tourbière", "guide d’achat", "whiskybase", "jim murray"]
+  },
+  {
     url: "/guides/occasions/champagne-noel/",
     soon: false,
     cat: "Guide d’achat — Champagne",
