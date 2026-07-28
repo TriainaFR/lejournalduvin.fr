@@ -196,6 +196,24 @@ for (const [slug, used] of usage) {
   if (used.length > 1) err('assets/img', `${slug} utilisée par ${used.length} articles : ${used.join(', ')}`);
 }
 
+/* ————— 9. Pages indexables trop maigres —————
+   Le 28/07/2026, la Search Console a classé /auteur/camille-rousseau/ en
+   « Explorée, actuellement non indexée » : 332 mots, pour l'essentiel du
+   texte que l'on retrouve ailleurs sur le site. Google indexe d'autant
+   moins volontiers qu'une page apporte peu de contenu propre. Seuil
+   d'alerte volontairement bas : il signale, il ne bloque pas. */
+const SEUIL_MOTS = 350;
+for (const page of pages) {
+  if (page.noindex) continue;
+  const texte = page.html
+    .replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<!--[\s\S]*?-->/g, ' ')
+    .replace(/<[^>]+>/g, ' ');
+  const n = texte.split(/\s+/).filter(Boolean).length;
+  if (n < SEUIL_MOTS) {
+    warn(page.rel, `${n} mots seulement — risque de « Explorée, actuellement non indexée » (seuil ${SEUIL_MOTS})`);
+  }
+}
+
 /* ————— rapport ————— */
 const label = (n, s, p) => `${n} ${n > 1 ? p : s}`;
 if (warnings.length) {
