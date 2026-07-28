@@ -48,7 +48,9 @@ const MIME = {
 };
 
 // Headers de sécurité posés sur TOUTES les réponses (pages, assets, 404,
-// redirections) — indépendants de Cloudflare, qui ne proxifie pas www à ce jour.
+// redirections). Ils ne dépendent pas de Cloudflare — lequel proxifie bien www
+// depuis au moins le 28/07/2026 (constaté : il injecte son propre bloc dans
+// robots.txt et écrase le cache-control d'origine).
 const SECURITY_HEADERS = {
   'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
   'X-Content-Type-Options': 'nosniff',
@@ -100,13 +102,21 @@ function pickEncoding(req) {
 
 // Stratégie de cache :
 // - .html et l'index de recherche : no-cache (doivent suivre chaque publication)
+// - fichiers de contrôle (robots.txt, sitemap.xml, llms.txt) : no-cache — ils
+//   pilotent l'exploration et doivent prendre effet immédiatement. Vécu le
+//   28/07/2026 : un Disallow retiré de robots.txt est resté servi 4 h par
+//   Cloudflare, qui écrase le max-age d'origine avec son Browser Cache TTL
+//   par défaut. Un no-cache à l'origine ne suffit pas toujours : purger côté
+//   Cloudflare pour un effet immédiat.
 // - /assets/ (polices, favicons, CSS) : 1 an immutable — en cas de refonte d'un
 //   asset, changer son nom de fichier (cache-busting)
-// - robots.txt, sitemap.xml, llms.txt, clé IndexNow : 1 h
+// - clé IndexNow : 1 h
+const FICHIERS_DE_CONTROLE = new Set(['robots.txt', 'sitemap.xml', 'llms.txt']);
 function cacheFor(filePath, ext) {
   const rel = path.relative(ROOT, filePath);
   if (ext === '.html') return 'no-cache';
   if (rel === path.join('assets', 'search-index.js')) return 'no-cache';
+  if (FICHIERS_DE_CONTROLE.has(rel)) return 'no-cache';
   // Icônes d'identité : remplacées en place lors d'un changement de logo.
   // Cache court, sinon une copie périmée reste figée un an à l'edge (vécu le
   // 22/07/2026 : il a fallu renommer en -v2 pour sortir du cache Cloudflare,
