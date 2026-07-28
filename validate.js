@@ -214,6 +214,51 @@ for (const page of pages) {
   }
 }
 
+/* ————— 10. Indexation : seules les vraies pages de contenu —————
+   Règle posée par Lucas le 28/07/2026 : n'ouvrir à l'indexation que les
+   articles et les vraies pages. Les pages de recherche, de résultats ou
+   les hubs sans contenu n'ont rien à y faire.
+   Le piège associé, constaté le même jour : /recherche portait un noindex
+   ET un Disallow dans robots.txt. Un robots.txt qui interdit l'exploration
+   empêche de lire le noindex — l'URL finit indexée sans contenu. Les deux
+   sont exclusifs. */
+const robotsPath = path.join(ROOT, 'robots.txt');
+if (!fs.existsSync(robotsPath)) {
+  err('robots.txt', 'fichier absent');
+} else {
+  const robots = fs.readFileSync(robotsPath, 'utf8');
+  const disallows = [...robots.matchAll(/^\s*Disallow:\s*(\S+)\s*$/gim)]
+    .map((m) => m[1])
+    .filter((v) => v !== '/' && v.length > 1);
+
+  for (const page of pages) {
+    const bloque = disallows.some((d) => page.url.startsWith(d) || page.url === d + '/');
+    if (bloque && page.noindex) {
+      err(page.rel, `noindex ET bloquée par « Disallow: ${disallows.find((d) => page.url.startsWith(d))} » — le noindex ne sera jamais lu, retirer le Disallow`);
+    }
+    if (bloque && !page.noindex) {
+      err(page.rel, 'bloquée par robots.txt mais sans noindex — elle peut être indexée sans contenu');
+    }
+  }
+
+  // Routes utilitaires : jamais indexables
+  for (const page of pages) {
+    if (/^\/(recherche|search|tag|page|filtre)/.test(page.url) && !page.noindex) {
+      err(page.rel, `${page.url} est une page utilitaire (recherche, filtre, pagination) : elle doit être en noindex`);
+    }
+  }
+
+  // Un hub qui ne liste presque rien n'est pas une vraie page
+  for (const page of pages) {
+    if (page.noindex) continue;
+    const cartes = (page.html.match(/class="card"/g) || []).length;
+    const estHub = cartes > 0 || /class="hub-grid"/.test(page.html);
+    if (estHub && cartes < 2) {
+      warn(page.rel, `hub indexable ne listant que ${cartes} article(s) — passer en noindex jusqu'à ce qu'il en ait au moins 2`);
+    }
+  }
+}
+
 /* ————— rapport ————— */
 const label = (n, s, p) => `${n} ${n > 1 ? p : s}`;
 if (warnings.length) {
