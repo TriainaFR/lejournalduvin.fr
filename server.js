@@ -2,6 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const zlib = require('zlib');
+const { htmlToMarkdown, veutMarkdown } = require('./markdown.js');
 
 const PORT = process.env.PORT || 8080;
 const ROOT = __dirname;
@@ -136,15 +137,40 @@ const LINK_HEADER = [
   '<https://www.lejournalduvin.fr/mentions-legales/>; rel="terms-of-service"',
 ].join(', ');
 
+// Chemin disque -> URL publique (/dossier/index.html -> /dossier/)
+function urlPourPage(filePath) {
+  let u = '/' + path.relative(ROOT, filePath).split(path.sep).join('/');
+  if (u.endsWith('/index.html')) u = u.slice(0, -10);
+  return u === '/index.html' ? '/' : u;
+}
+
 function serveFile(req, res, filePath) {
   if (!isPublic(filePath)) return notFound(res);
   const ext = path.extname(filePath).toLowerCase();
-  fs.readFile(filePath, (err, data) => {
+  fs.readFile(filePath, (err, fileData) => {
+    let data = fileData;
     if (err) return notFound(res);
 
-    const type = MIME[ext] || 'application/octet-stream';
-    const headers = { 'Cache-Control': cacheFor(filePath, ext), Vary: 'Accept-Encoding' };
+    let type = MIME[ext] || 'application/octet-stream';
+    // Vary: Accept est indispensable dès qu'on négocie le format — sans lui, un
+    // cache intermédiaire servirait du markdown à un navigateur, ou l'inverse.
+    const headers = {
+      'Cache-Control': cacheFor(filePath, ext),
+      Vary: ext === '.html' ? 'Accept-Encoding, Accept' : 'Accept-Encoding',
+    };
     if (ext === '.html') headers.Link = LINK_HEADER;
+
+    // Markdown pour les agents : uniquement sur demande explicite, jamais sur
+    // un Accept générique — Googlebot et les navigateurs gardent le HTML.
+    if (ext === '.html' && veutMarkdown(req.headers.accept)) {
+      const url = 'https://' + HOST_CANONIQUE + urlPourPage(filePath);
+      const md = Buffer.from(htmlToMarkdown(data.toString('utf8'), url), 'utf8');
+      type = 'text/markdown; charset=utf-8';
+      // Estimation grossière (≈ 4 caractères par token), utile aux agents pour
+      // budgéter leur contexte avant de télécharger.
+      headers['X-Markdown-Tokens'] = String(Math.ceil(md.length / 4));
+      data = md;
+    }
 
     const encoding = pickEncoding(req);
     if (!encoding || !COMPRESSIBLE.test(type) || data.length < MIN_COMPRESS_BYTES) {

@@ -259,6 +259,41 @@ if (!fs.existsSync(robotsPath)) {
   }
 }
 
+/* ————— 11. Négociation markdown —————
+   Depuis le 28/07/2026, une requête `Accept: text/markdown` reçoit l'article
+   en markdown (voir markdown.js). Le convertisseur s'appuie sur le gabarit du
+   site : une page qui s'en écarte produirait un markdown vide ou truffé de
+   balises, sans que rien ne le signale à la publication. */
+const { htmlToMarkdown } = require('./markdown.js');
+for (const page of pages) {
+  if (page.noindex) continue;
+  let md;
+  try {
+    md = htmlToMarkdown(page.html, HOST + page.url);
+  } catch (e) {
+    err(page.rel, `conversion markdown en échec : ${e.message}`);
+    continue;
+  }
+  const mots = md.split(/\s+/).filter(Boolean).length;
+  const balises = (md.match(/<[a-z\/][^>]*>/gi) || []).length;
+  if (balises) err(page.rel, `markdown contenant ${balises} balise(s) HTML résiduelle(s)`);
+  if (mots < 80) err(page.rel, `markdown quasi vide (${mots} mots) — le gabarit n’a pas été reconnu`);
+
+  // Le titre du markdown doit être celui de la page. htmlToMarkdown retombe sur
+  // un titre générique quand il ne trouve pas de <h1> : sans ce contrôle, une
+  // page au gabarit cassé passerait inaperçue (et une page sans <h1> aussi).
+  const h1 = (page.html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i) || [])[1];
+  if (!h1) {
+    err(page.rel, 'aucun <h1> — titre indispensable pour les moteurs comme pour la version markdown');
+  } else {
+    const attendu = h1.replace(/<[^>]+>/g, '').replace(/&#\d+;|&[a-z]+;/gi, ' ').replace(/\s+/g, ' ').trim().slice(0, 30);
+    const obtenu = (md.match(/^# (.+)$/m) || [, ''])[1].replace(/\*/g, '').replace(/\s+/g, ' ').trim().slice(0, 30);
+    if (attendu && obtenu.slice(0, 12) !== attendu.slice(0, 12)) {
+      err(page.rel, `titre markdown « ${obtenu} » ≠ <h1> « ${attendu} » — gabarit non reconnu`);
+    }
+  }
+}
+
 /* ————— rapport ————— */
 const label = (n, s, p) => `${n} ${n > 1 ? p : s}`;
 if (warnings.length) {
