@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/prix/vin-rouge-bourgogne-moins-de-20-euros/",
+    soon: false,
+    cat: "Guide d’achat — Prix",
+    title: "Vin rouge de Bourgogne à moins de 20 € : les 12 meilleurs en 2026",
+    excerpt: "12 cuvées de 13 € à 19,50 €, notées 90 à 92/100 RVF : Coteaux des Margots, Nicolas Delfaud, Domaine Bart, Berthaut-Gerbet, Tupinier-Bautista, Jacqueson. Neuf appellations sous la barre.",
+    date: "29 juillet 2026",
+    minutes: 11,
+    img: "/assets/img/roche-de-solutre-maconnais-480.jpg",
+    tags: ["bourgogne", "vin rouge bourgogne", "bourgogne pas cher", "moins de 20 euros", "petit budget", "rapport qualité-prix", "pinot noir", "gamay", "mâconnais", "mâcon-bussières", "mâcon-verzé", "mâcon-burgy", "mâcon-davayé", "solutré", "prissé", "côte chalonnaise", "mercurey", "rully", "givry", "marsannay", "hautes-côtes de nuits", "hautes-côtes de beaune", "maranges", "côtes d’auxerre", "yonne", "vézelay", "bourgogne générique", "coteaux des margots", "nicolas delfaud", "jeannin-naltet", "croix senaillet", "domaine bart", "berthaut-gerbet", "sainte barbe", "chaland", "domaine d’édouard", "tupinier-bautista", "soeur cadette", "chevrot", "jacqueson", "millésime 2023", "millésime 2022", "millésime 2021", "rvf", "guide hachette", "carafage", "accord mets vins", "guide d’achat"]
+  },
+  {
     url: "/spiritueux/whisky/meilleur-whisky-tourbe/",
     soon: false,
     cat: "Guide d’achat — Spiritueux",

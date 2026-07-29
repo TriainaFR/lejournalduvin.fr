@@ -179,15 +179,17 @@ for (const page of pages) {
 /* ————— 8. Une photo = un article —————
    Le 22/07/2026, une même photo illustrait trois articles avec trois
    légendes différentes. Les hubs et la home réutilisent légitimement
-   l'image d'un article pour sa carte : seuls les articles sont comparés. */
+   l'image d'un article pour sa carte : seuls les articles sont comparés.
+   Les portraits d'auteur sont exclus — ils figurent par construction sur
+   tous les articles signés par la même personne (JSON-LD Person.image). */
 const usage = new Map();
 for (const page of pages) {
   const isArticle = nodesOf(page).some((n) => n['@type'] === 'Article');
   if (!isArticle) continue;
   for (const slug of new Set(
-    (page.html.match(/\/assets\/img\/([a-z0-9-]+)-(?:480|800|1280)\.jpg/g) || []).map((s) =>
-      s.replace(/-(?:480|800|1280)\.jpg$/, '').replace('/assets/img/', '')
-    )
+    (page.html.match(/\/assets\/img\/([a-z0-9-]+)-(?:480|800|1280)\.jpg/g) || [])
+      .map((s) => s.replace(/-(?:480|800|1280)\.jpg$/, '').replace('/assets/img/', ''))
+      .filter((slug) => !slug.startsWith('portrait-'))
   )) {
     usage.set(slug, [...(usage.get(slug) || []), page.rel]);
   }

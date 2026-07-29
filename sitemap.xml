@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.lejournalduvin.fr/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-07-29</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/a-propos/</loc>
@@ -22,11 +22,11 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-07-29</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/vin/</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-07-29</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/champagne/</loc>
@@ -41,8 +41,12 @@
     <lastmod>2026-07-25</lastmod>
   </url>
   <url>
+    <loc>https://www.lejournalduvin.fr/guides/prix/vin-rouge-bourgogne-moins-de-20-euros/</loc>
+    <lastmod>2026-07-29</lastmod>
+  </url>
+  <url>
     <loc>https://www.lejournalduvin.fr/guides/prix/vin-rouge-moins-de-20-euros/</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-07-29</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/spiritueux/whisky/meilleur-whisky-tourbe/</loc>
@@ -94,7 +98,7 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/vins-rouges/bourgogne/</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-07-29</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/vins-rouges/bordeaux/</loc>
