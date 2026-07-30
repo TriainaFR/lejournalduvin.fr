@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/prix/vin-rouge-bordeaux-moins-de-20-euros/",
+    soon: false,
+    cat: "Guide d’achat — Prix",
+    title: "Vin rouge de Bordeaux à moins de 20 € : les 15 meilleurs en 2026",
+    excerpt: "15 bouteilles de 8,50 € à 19,90 €, prix moyen 15,61 €, notées 90 à 95/100 par la RVF et Le Figaro Vin : Château Ferran, Clos Floridène, Pierre 1er, La Brande, La Rose Garnier. Dix appellations sous la barre.",
+    date: "30 juillet 2026",
+    minutes: 12,
+    img: "/assets/img/vignoble-saint-emilion-coteaux-480.jpg",
+    tags: ["bordeaux", "vin rouge bordeaux", "bordeaux pas cher", "moins de 20 euros", "petit budget", "rapport qualité-prix", "merlot", "cabernet sauvignon", "cabernet franc", "malbec", "petit verdot", "graves", "pessac-léognan", "léognan", "martillac", "saint-émilion", "saint-émilion grand cru", "montagne-saint-émilion", "satellites saint-émilion", "lussac", "puisseguin", "castillon", "castillon côtes de bordeaux", "fronsac", "canon-fronsac", "moulis", "moulis-en-médoc", "listrac", "médoc", "haut-médoc", "bordeaux supérieur", "entre-deux-mers", "sainte-croix-du-mont", "second vin", "cru classé de graves", "cru bourgeois", "château joinin", "château marjosse", "pierre lurton", "château tire pé", "barrault", "château ferran", "château franc baudron", "château la peyre", "burdigala", "amphore", "bordeaux pirate", "château la brande", "château mangot", "les aigles d’anthonic", "château anthonic", "agroforesterie", "le dauphin d’olivier", "château olivier", "château la rose garnier", "jean-yves millaire", "biodynamie", "ostrica", "vignobles fraigneau", "madame de beaucaillou", "ducru-beaucaillou", "clos floridène", "denis dubourdieu", "château pierre 1er", "michel rolland", "domaine de la solitude", "millésime 2022", "millésime 2023", "millésime 2021", "millésime 2020", "rvf", "figaro vin", "guide hachette", "carafage", "accord mets vins", "guide d’achat"]
+  },
+  {
     url: "/guides/prix/vin-rouge-bourgogne-moins-de-20-euros/",
     soon: false,
     cat: "Guide d’achat — Prix",
