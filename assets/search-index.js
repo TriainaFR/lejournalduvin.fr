@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/spiritueux/cognac/meilleur-cognac-francais/",
+    soon: false,
+    cat: "Guide d’achat — Spiritueux",
+    title: "Meilleur cognac français : notre sélection 2026 en 12 bouteilles",
+    excerpt: "12 cognacs de 35 € à 1 150 €, du VS au Hors d’âge : Frapin Château Fontpinot XO, Navarre Souvenir Impérial, Delamain, Camus Borderies, Hennessy Paradis. Les six crus et les mentions d’âge expliqués.",
+    date: "31 juillet 2026",
+    minutes: 14,
+    img: "/assets/img/vignoble-borderies-cherves-richemont-480.jpg",
+    tags: ["cognac", "meilleur cognac", "cognac français", "eau-de-vie", "spiritueux", "charente", "charente-maritime", "vs", "vsop", "napoléon", "xo", "xxo", "hors d’âge", "millésime", "grande champagne", "petite champagne", "fine champagne", "borderies", "fins bois", "bons bois", "bois ordinaires", "bois à terroirs", "cru", "premier cru", "rancio", "alambic charentais", "distillation", "bnic", "henri coquand", "frapin", "château fontpinot", "delamain", "pale & dry", "camus", "single estate", "martell", "cordon bleu", "single distillery", "rémy martin", "xo excellence", "hennessy", "paradis", "courvoisier", "navarre", "jacky navarre", "souvenir impérial", "bache-gabrielsen", "grateaud", "lavenat", "tiffon", "artisan distillateur", "cognac pas cher", "cognac à offrir", "cadeau", "cocktail", "sidecar", "armagnac", "guide d’achat"]
+  },
+  {
     url: "/guides/prix/vin-rouge-bordeaux-moins-de-20-euros/",
     soon: false,
     cat: "Guide d’achat — Prix",
