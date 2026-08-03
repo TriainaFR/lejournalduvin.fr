@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/occasions/champagne-anniversaire/",
+    soon: false,
+    cat: "Guide d’achat — Occasions",
+    title: "Champagne pour un anniversaire : que choisir en 2026 ?",
+    excerpt: "16 cuvées de 24 € à 180 € : Billecart-Salmon, Deutz, Ayala, Bollinger, Dom Pérignon. La zone de valeur se situe entre 35 et 40 €, plus le calcul des bouteilles par invité.",
+    date: "3 août 2026",
+    minutes: 13,
+    img: "/assets/img/vignoble-champagne-ay-marne-480.jpg",
+    tags: ["champagne", "champagne anniversaire", "champagne pour anniversaire", "anniversaire", "cadeau", "50 ans", "40 ans", "30 ans", "noces d’argent", "occasion", "brut sans année", "bsa", "millésimé", "rosé", "cuvée de prestige", "blanc de blancs", "chardonnay", "pinot noir", "meunier", "dosage", "malolactique", "jacquart", "mosaïque", "drappier", "carte d’or", "piper-heidsieck", "ayala", "brut majeur", "lanson", "black label", "pommery", "brut royal", "deutz", "brut classic", "billecart-salmon", "brut réserve", "billecart rosé", "taittinger", "gosset", "grande réserve", "laurent-perrier", "la cuvée", "cuvée rosé", "macération", "veuve clicquot", "yellow label", "bollinger", "special cuvée", "dom pérignon", "vintage 2015", "aÿ", "mareuil-sur-aÿ", "reims", "côte des bar", "magnum", "coffret", "étiquette personnalisée", "combien de bouteilles", "quantité", "température de service", "comité champagne", "guide d’achat"]
+  },
+  {
     url: "/spiritueux/cognac/meilleur-cognac-francais/",
     soon: false,
     cat: "Guide d’achat — Spiritueux",
