@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/vins-rouges/rhone/",
+    soon: false,
+    cat: "Guide d’achat — Vins rouges",
+    title: "Meilleurs vins rouges du Rhône 2026 : notre sélection en 15 cuvées",
+    excerpt: "15 cuvées de 14 € à 1 200 € : Le Sang des Cailloux, Jamet, Pégau, Gonon, Guigal La Mouline, Rayas. Rhône Nord et Rhône Sud comparés, avec notre indice qualité-prix.",
+    date: "4 août 2026",
+    minutes: 14,
+    img: "/assets/img/vignes-tain-hermitage-480.jpg",
+    tags: ["rhône", "vallée du rhône", "vins rouges rhône", "rhône nord", "rhône septentrional", "rhône sud", "rhône méridional", "syrah", "grenache", "mourvèdre", "cinsault", "viognier", "côte-rôtie", "côte blonde", "hermitage", "tain-l’hermitage", "cornas", "saint-joseph", "crozes-hermitage", "châteauneuf-du-pape", "gigondas", "vacqueyras", "rasteau", "côtes-du-rhône", "côtes-du-rhône villages", "dentelles de montmirail", "galets roulés", "granit", "e. guigal", "la mouline", "la landonne", "la turque", "jean-louis chave", "auguste clape", "domaine jamet", "pierre gonon", "m. chapoutier", "les meysonniers", "delas frères", "saint-esprit", "château mont-redon", "le sang des cailloux", "santa duc", "domaine du pégau", "cuvée réservée", "domaine de la janasse", "vieilles vignes", "clos des papes", "château de beaucastel", "château rayas", "emmanuel reynaud", "millésime 2022", "millésime 2023", "millésime 2021", "carafage", "vin de garde", "inter rhône", "guide d’achat"]
+  },
+  {
     url: "/guides/occasions/champagne-anniversaire/",
     soon: false,
     cat: "Guide d’achat — Occasions",
