@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/prix/vin-rouge-bourgogne-moins-de-30-euros/",
+    soon: false,
+    cat: "Guide d’achat — Prix",
+    title: "Vin rouge de Bourgogne à moins de 30 € : les 12 meilleurs en 2026",
+    excerpt: "12 cuvées de 18 € à 31 €, prix moyen 25,67 € : Garaudet, Tollot-Beaut, Collotte, Simon Bize, Faiveley, Joblot. Le palier où les villages de la Côte d’Or deviennent accessibles.",
+    date: "5 août 2026",
+    minutes: 13,
+    img: "/assets/img/vignoble-givry-cote-chalonnaise-480.jpg",
+    tags: ["bourgogne", "vin rouge bourgogne", "bourgogne pas cher", "moins de 30 euros", "petit budget", "rapport qualité-prix", "pinot noir", "côte d’or", "côte de beaune", "côte de nuits", "côte chalonnaise", "monthélie", "chorey-lès-beaune", "savigny-lès-beaune", "maranges", "marsannay", "fixin", "mercurey", "givry", "hautes-côtes de nuits", "bourgogne côte d’or", "bourgogne régional", "appellation villages", "climat", "domaine garaudet", "tollot-beaut", "simon bize", "domaine bachelet", "domaine collotte", "domaine joliet", "gros frère et sœur", "domaine faiveley", "vieilles vignes", "domaine joblot", "bouchard père et fils", "édouard delaunay", "septembre", "marc colin", "saint-aubin", "millésime 2022", "millésime 2021", "carafage", "température de service", "accord mets vins", "bivb", "guide d’achat"]
+  },
+  {
     url: "/guides/vins-rouges/rhone/",
     soon: false,
     cat: "Guide d’achat — Vins rouges",
