@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/vins-rouges/bordeaux-grands-crus-classes/",
+    soon: false,
+    cat: "Guide d’achat — Vins rouges",
+    title: "Grand cru classé de Bordeaux : les 12 meilleurs rapports qualité-prix 2026",
+    excerpt: "12 crus classés de 30 € à 150 €, prix moyen 87,33 € : Cantemerle, Olivier, Jean Faure, Léoville-Barton, Pontet-Canet, Cos d’Estournel. Les trois classements bordelais expliqués.",
+    date: "6 août 2026",
+    minutes: 14,
+    img: "/assets/img/vignoble-pauillac-pichon-480.jpg",
+    tags: ["bordeaux", "grand cru classé", "grand cru classé bordeaux", "classement 1855", "premier cru", "deuxième cru", "cinquième cru", "cru classé de graves", "classement saint-émilion 2022", "premier grand cru classé", "premier grand cru classé a", "figeac", "pavie", "cru bourgeois", "médoc", "haut-médoc", "pauillac", "saint-julien", "saint-estèphe", "margaux", "pessac-léognan", "saint-émilion", "rapport qualité-prix", "château cantemerle", "château olivier", "château cadet-bon", "château jean faure", "cabernet franc", "olivier decelle", "château léoville-barton", "famille barton", "château gruaud-larose", "château beychevelle", "château troplong mondot", "château pichon baron", "château pontet-canet", "biodynamie", "tesseron", "château cos d’estournel", "château lynch-bages", "millésime 2019", "millésime 2020", "millésime 2022", "mouton rothschild", "haut-brion", "inao", "guide d’achat"]
+  },
+  {
     url: "/guides/vins-blancs/alsace/",
     soon: false,
     cat: "Guide d’achat — Vins blancs",
