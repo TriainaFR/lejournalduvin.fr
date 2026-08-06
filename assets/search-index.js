@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/vins-blancs/alsace/",
+    soon: false,
+    cat: "Guide d’achat — Vins blancs",
+    title: "Meilleurs vins blancs d’Alsace 2026 : notre sélection en 15 cuvées",
+    excerpt: "15 cuvées de 9 € à 280 €, médiane 16,50 € : Kuehn Kaefferkopf, Zind-Humbrecht Clos Windsbuhl, Weinbach Furstentum, Trimbach Clos Sainte-Hune. Dix passent sous 20 €, grands crus compris.",
+    date: "6 août 2026",
+    minutes: 14,
+    img: "/assets/img/grand-cru-schlossberg-kaysersberg-480.jpg",
+    tags: ["alsace", "vin blanc alsace", "vins d’alsace", "riesling", "gewurztraminer", "pinot gris", "muscat", "sylvaner", "pinot blanc", "tokay", "grand cru alsace", "51 grands crus", "schlossberg", "kaefferkopf", "mambourg", "furstentum", "altenberg de bergheim", "zotzenberg", "rosacker", "clos sainte-hune", "clos windsbuhl", "vendanges tardives", "sélection de grains nobles", "sucre résiduel", "sec", "moelleux", "demi-sec", "kaysersberg", "riquewihr", "hunawihr", "ammerschwihr", "sigolsheim", "kientzheim", "bergheim", "traenheim", "bas-rhin", "haut-rhin", "route des vins", "trimbach", "zind-humbrecht", "domaine weinbach", "maison kuehn", "frédéric mochel", "jean geiler", "cave de ribeauvillé", "koeberlé-bléger", "vonville", "ruhlmann-schutz", "biodynamie", "bio", "millésime 2022", "millésime 2023", "millésime 2020", "civa", "température de service", "accord mets vins", "guide d’achat"]
+  },
+  {
     url: "/guides/prix/vin-rouge-bourgogne-moins-de-30-euros/",
     soon: false,
     cat: "Guide d’achat — Prix",
