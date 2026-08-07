@@ -4,6 +4,28 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/vins-tendance/",
+    soon: false,
+    cat: "Guide d’achat — Vin",
+    title: "Vins tendance 2026 : notre sélection à moins de 20 €",
+    excerpt: "12 vins de 9 € à 18 €, prix moyen 13,24 € : Cahors Haut-Monplaisir, Monnières-Saint Fiacre, pét-nat Perles Grises, Fleurie Cuvée Tardive. La Loire pèse la moitié du panel.",
+    date: "7 août 2026",
+    minutes: 14,
+    img: "/assets/img/vignoble-cahors-vallee-du-lot-480.jpg",
+    tags: ["vin tendance", "vins tendance 2026", "vin moins de 20 euros", "vin abordable", "vin nature", "vin méthode nature", "vin bio", "biodynamie", "demeter", "pét-nat", "pétillant naturel", "méthode ancestrale", "vin orange", "macération pelliculaire", "rouge léger", "gamay", "pineau d’aunis", "chenin", "melon de bourgogne", "muscat ottonel", "sauvignon", "malbec", "cahors", "château haut-monplaisir", "clos du mont-olivet", "côtes du rhône", "patrice colin", "coteaux du vendômois", "perles grises", "clos de la roilette", "fleurie", "beaujolais", "jacky marteau", "touraine-chenonceaux", "château de la cormerais", "monnières-saint fiacre", "muscadet", "cru communal", "hauts-perrays", "anjou", "la gargouille", "reverdy", "sancerre", "domaine rietsch", "murmure", "mittelbergheim", "bestheim", "crémant d’alsace", "blanc de blancs", "château léoube", "côtes de provence", "rosé", "loire", "guide hachette", "guide d’achat"]
+  },
+  {
+    url: "/spiritueux/rhum/meilleur-rhum-agricole/",
+    soon: false,
+    cat: "Guide d’achat — Spiritueux",
+    title: "Meilleur rhum agricole : notre sélection 2026 en 12 bouteilles",
+    excerpt: "12 rhums de 14 € à 66 €, prix moyen 39 € : Bologne Blanc 50° or 2026, Bielle Canne Grise, Braud & Quennesson, HSE XO. L’AOC Martinique et l’IG Guadeloupe expliquées.",
+    date: "7 août 2026",
+    minutes: 15,
+    img: "/assets/img/champ-canne-bologne-guadeloupe-480.jpg",
+    tags: ["rhum agricole", "meilleur rhum agricole", "rhum martinique", "rhum guadeloupe", "rhum blanc", "rhum vieux", "aoc martinique", "aoc rhum agricole martinique", "ig guadeloupe", "marie-galante", "pur jus de canne", "mélasse", "rhum traditionnel", "rhum de sucrerie", "colonne créole", "ti-punch", "concours général agricole", "cga 2026", "saint james", "royal ambré", "bologne", "dillon", "canne bleue", "trois rivières", "cuvée de l’océan", "anse trabaud", "bielle", "canne grise", "j.bally", "neisson", "mapipi", "braud et quennesson", "habitation grand-fonds", "le marin", "clément", "hse", "habitation saint-étienne", "vsop", "xo", "j.m", "macouba", "réunion", "rivière du mât", "savanna", "part des anges", "spiritueux", "guide d’achat"]
+  },
+  {
     url: "/guides/vins-rouges/bordeaux-grands-crus-classes/",
     soon: false,
     cat: "Guide d’achat — Vins rouges",
