@@ -296,6 +296,131 @@ for (const page of pages) {
   }
 }
 
+/* ————— 12. ItemList sur les pages qui présentent une liste —————
+   Constaté le 07/08/2026 : la home affichait neuf articles sans le moindre
+   ItemList, et quatre pages listant des cuvées n'en avaient pas non plus.
+   Une page qui énumère (sélection de bouteilles, grille d'articles, liste
+   d'un auteur) doit le déclarer : c'est ce qui permet aux moteurs et aux
+   moteurs de réponse de comprendre qu'il s'agit d'une liste, et non d'un
+   texte suivi. On accepte l'ItemList à la racine du @graph ou imbriquée
+   dans mainEntity / hasPart. */
+// Les classes sont composées (« card reveal d2 », « card card--lead reveal ») :
+// on cherche le mot dans l'attribut, jamais l'attribut entier. Une comparaison
+// stricte sur class="card" laissait passer la home, dont toutes les cartes
+// portent une classe d'animation en plus — c'est précisément le cas qui avait
+// échappé au contrôle le 07/08/2026.
+const compteClasse = (html, nom) =>
+  (html.match(new RegExp(`class="[^"]*\\b${nom}\\b[^"]*"`, 'g')) || []).length;
+
+const listeVisible = (page) => {
+  // Deux gabarits d'article coexistent : ol.wines (les premiers guides) et
+  // ul.bottles (depuis le guide champagne-30). Les deux énumèrent des cuvées.
+  const bouteilles = compteClasse(page.html, 'bottles') + compteClasse(page.html, 'wines');
+  const cartes = compteClasse(page.html, 'card') + compteClasse(page.html, 'feature');
+  const articlesAuteur = (page.html.match(/<span class="t">/g) || []).length;
+  if (bouteilles) return `sélection de bouteilles (${bouteilles} bloc.bottles)`;
+  if (cartes >= 2) return `grille de ${cartes} articles`;
+  if (articlesAuteur >= 2) return `liste de ${articlesAuteur} articles d'auteur`;
+  return null;
+};
+
+for (const page of pages) {
+  if (page.noindex) continue;
+  const raison = listeVisible(page);
+  if (!raison) continue;
+
+  const noeuds = nodesOf(page);
+  const aItemList = noeuds.some((n) => {
+    if (n['@type'] === 'ItemList') return true;
+    for (const clef of ['mainEntity', 'hasPart', 'about']) {
+      const v = n[clef];
+      if (v && typeof v === 'object' && v['@type'] === 'ItemList') return true;
+    }
+    return false;
+  });
+  if (!aItemList) {
+    err(page.rel, `présente une ${raison} mais aucun ItemList dans le JSON-LD`);
+    continue;
+  }
+
+  // numberOfItems doit correspondre au nombre réel d'entrées
+  const listes = noeuds.flatMap((n) => {
+    const out = n['@type'] === 'ItemList' ? [n] : [];
+    for (const clef of ['mainEntity', 'hasPart', 'about']) {
+      const v = n[clef];
+      if (v && typeof v === 'object' && v['@type'] === 'ItemList') out.push(v);
+    }
+    return out;
+  });
+  for (const l of listes) {
+    const reel = Array.isArray(l.itemListElement) ? l.itemListElement.length : 0;
+    if (!reel) {
+      err(page.rel, `ItemList « ${l['@id'] || l.name || 'sans @id'} » sans itemListElement`);
+      continue;
+    }
+    if (l.numberOfItems !== undefined && l.numberOfItems !== reel) {
+      err(page.rel, `ItemList « ${l['@id'] || l.name} » : numberOfItems = ${l.numberOfItems} pour ${reel} entrée(s)`);
+    }
+    const positions = l.itemListElement.map((e) => e && e.position);
+    const attendues = positions.map((_, i) => i + 1);
+    if (positions.join(',') !== attendues.join(',')) {
+      err(page.rel, `ItemList « ${l['@id'] || l.name} » : positions non séquentielles (${positions.join(',')})`);
+    }
+  }
+}
+
+/* ————— 13. JSON-LD : clés dupliquées dans un même objet —————
+   Écrit le 07/08/2026 après avoir introduit deux « mainEntity » sur le
+   ProfilePage de Camille Rousseau. JSON.parse ne bronche pas : la dernière
+   clé écrase silencieusement la première, et la relation déclarée disparaît
+   sans qu'aucun contrôle ne le signale. On compare le nombre de clés
+   présentes dans le texte source au nombre de clés réellement conservées
+   après analyse : tout écart trahit un doublon. */
+const compteClefsSource = (src) => {
+  const compte = Object.create(null);
+  // les clés d'objet JSON sont les chaînes suivies de « : »
+  for (const m of src.matchAll(/"((?:[^"\\]|\\.)*)"\s*:/g)) {
+    compte[m[1]] = (compte[m[1]] || 0) + 1;
+  }
+  return compte;
+};
+const compteClefsArbre = (valeur, compte = Object.create(null)) => {
+  if (Array.isArray(valeur)) {
+    for (const v of valeur) compteClefsArbre(v, compte);
+  } else if (valeur && typeof valeur === 'object') {
+    for (const [k, v] of Object.entries(valeur)) {
+      compte[k] = (compte[k] || 0) + 1;
+      compteClefsArbre(v, compte);
+    }
+  }
+  return compte;
+};
+
+for (const page of pages) {
+  const re = /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g;
+  let m;
+  while ((m = re.exec(page.html))) {
+    let arbre;
+    try {
+      arbre = JSON.parse(m[1]);
+    } catch {
+      continue; // déjà signalé par la règle 1
+    }
+    // On ne compte dans la source que les clés hors valeurs de chaîne :
+    // on repart du JSON ré-encodé pour la comparaison, en neutralisant les
+    // valeurs textuelles susceptibles de contenir « … » : …
+    const source = m[1].replace(/:\s*"(?:[^"\\]|\\.)*"/g, ': ""');
+    const src = compteClefsSource(source);
+    const tree = compteClefsArbre(arbre);
+    for (const [clef, n] of Object.entries(src)) {
+      const garde = tree[clef] || 0;
+      if (n > garde) {
+        err(page.rel, `JSON-LD : clé « ${clef} » déclarée ${n} fois pour ${garde} conservée(s) — un doublon écrase silencieusement l'autre`);
+      }
+    }
+  }
+}
+
 /* ————— rapport ————— */
 const label = (n, s, p) => `${n} ${n > 1 ? p : s}`;
 if (warnings.length) {
