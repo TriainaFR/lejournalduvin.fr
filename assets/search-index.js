@@ -4,6 +4,28 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/vins-rouges/loire/",
+    soon: false,
+    cat: "Guide d’achat — Vins rouges",
+    title: "Meilleurs vins rouges de Loire 2026 : notre sélection en 15 cuvées",
+    excerpt: "15 rouges de 14,50 € à 38 €, prix moyen 23,37 € : Alliet Coteau de Noiré, Baudry La Croix Boissée, Ogereau Les Tailles, Amirault La Petite Cave. Bourgueil est l’appellation la moins chère du panel.",
+    date: "10 août 2026",
+    minutes: 15,
+    img: "/assets/img/vignes-cabernet-franc-saumur-champigny-480.jpg",
+    tags: ["vin rouge loire", "meilleurs vins rouges de loire", "cabernet franc", "chinon", "saumur-champigny", "bourgueil", "saint-nicolas-de-bourgueil", "sancerre rouge", "anjou rouge", "saumur puy-notre-dame", "côte roannaise", "coteaux du vendômois", "pineau d’aunis", "gamay", "pinot noir", "tuffeau", "terrasses de graviers", "philippe alliet", "coteau de noiré", "bernard baudry", "la croix boissée", "charles joguet", "clos de la dioterie", "roches neuves", "thierry germain", "terres chaudes", "marginale", "antoine sanzay", "la paterne", "varrains", "yannick amirault", "la petite cave", "domaine de la chevalerie", "galichets", "domaine ogereau", "les tailles", "domaine de l’austral", "vigneaux", "patrice colin", "domaine des pothiers", "vacheron", "henri bourgeois", "les baronnes", "millésime 2022", "millésime 2023", "guide d’achat"]
+  },
+  {
+    url: "/guides/vins-blancs/",
+    soon: false,
+    cat: "Guide d’achat — Vins blancs",
+    title: "Meilleurs vins blancs 2026 : notre sélection en 20 bouteilles",
+    excerpt: "20 vins blancs de 8,75 € à 49 €, prix moyen 31,09 € : Simonnet-Febvre Saint-Bris, Huet Le Mont sec, Drouhin Chablis Vaudon, Dirler-Cadé Saering. Loire, Alsace et Bourgogne pèsent 65 % du panel.",
+    date: "10 août 2026",
+    minutes: 16,
+    img: "/assets/img/vignoble-chablis-printemps-480.jpg",
+    tags: ["vin blanc", "meilleurs vins blancs", "chenin", "riesling", "chardonnay", "sauvignon", "gewurztraminer", "vermentino", "roussanne", "melon de bourgogne", "saint-bris", "simonnet-febvre", "chablis", "joseph drouhin", "réserve de vaudon", "samuel billaud", "montée de tonnerre", "saint-aubin", "françoise et denis clair", "leflaive", "mâcon-verzé", "vouvray", "domaine huet", "le mont sec", "biodynamie", "sancerre", "henri bourgeois", "la bourgeoise", "vacheron", "vincent pinard", "chêne marchand", "weinbach", "cuvée théo", "dirler-cadé", "grand cru saering", "bott-geyl", "sonnenglanz", "valentin zusslin", "sunna", "carbonnieux", "pessac-léognan", "les charmes-godard", "châteauneuf-du-pape blanc", "andré brunel", "clos la roquète", "clos nicrosi", "cap corse", "montcalmès", "sainte marguerite", "guide d’achat"]
+  },
+  {
     url: "/guides/vins-tendance/",
     soon: false,
     cat: "Guide d’achat — Vin",

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.lejournalduvin.fr/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-10</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/a-propos/</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/auteur/camille-rousseau/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-10</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/auteur/swann-bertaud/</loc>
@@ -22,11 +22,11 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-10</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/vin/</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-10</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/champagne/</loc>
@@ -94,7 +94,7 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/vins-rouges/</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-10</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/vins-rouges/bourgogne/</loc>
@@ -126,7 +126,7 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/vins-blancs/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-08-10</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/vins-blancs/alsace/</loc>
@@ -143,5 +143,9 @@
   <url>
     <loc>https://www.lejournalduvin.fr/spiritueux/rhum/meilleur-rhum-agricole/</loc>
     <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.lejournalduvin.fr/guides/vins-rouges/loire/</loc>
+    <lastmod>2026-08-10</lastmod>
   </url>
 </urlset>
