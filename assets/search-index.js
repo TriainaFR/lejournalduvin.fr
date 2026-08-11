@@ -4,6 +4,28 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/vins-blancs/bourgogne/",
+    soon: false,
+    cat: "Guide d’achat — Vins blancs",
+    title: "Meilleurs vins blancs de Bourgogne : notre sélection 2026 en 15 cuvées",
+    excerpt: "15 chardonnays de 20 € à 950 €, médiane 45 € : Rully Clos Saint-Jacques, Chablis Les Clos, Meursault Grands Charrons. Le meilleur achat est en Côte Chalonnaise, à 32 €.",
+    date: "11 août 2026",
+    minutes: 14,
+    img: "/assets/img/vignoble-meursault-cote-de-beaune-480.jpg",
+    tags: ["vin blanc bourgogne", "bourgogne blanc", "chardonnay", "chablis", "chablis grand cru", "les clos", "montée de tonnerre", "kimméridgien", "meursault", "meursault charmes", "les grands charrons", "puligny-montrachet", "les pucelles", "chassagne-montrachet", "les vergers", "côte de beaune", "côte chalonnaise", "rully", "clos saint-jacques", "monopole", "mercurey", "montagny", "les bassets", "la grande pièce", "givry", "bouzeron", "mâconnais", "mâcon-verzé", "pouilly-fuissé", "william fèvre", "domaine leflaive", "domaine ramonet", "louis jadot", "michel bouzereau", "domaine de la folie", "laurent cognard", "château de davenay", "domaine faiveley", "domaine vocoret", "domaine des malandes", "domaine rijckaert", "domaine valette", "joseph drouhin", "laforêt", "premier cru", "grand cru", "millésime 2022", "gel 2021", "oxydation prématurée", "guide d’achat"]
+  },
+  {
+    url: "/guides/occasions/champagne-nouvel-an/",
+    soon: false,
+    cat: "Guide d’achat — Champagne",
+    title: "Champagne pour le Nouvel An : de l’apéritif au toast de minuit",
+    excerpt: "Quel style à chacun des six moments du réveillon, les quantités pour une soirée de six heures, le magnum comme format du toast, et le vrai prix des cuvées de prestige.",
+    date: "11 août 2026",
+    minutes: 12,
+    img: "/assets/img/vignoble-chatillon-sur-marne-champagne-480.jpg",
+    tags: ["champagne nouvel an", "réveillon", "31 décembre", "toast de minuit", "saint-sylvestre", "combien de bouteilles", "magnum", "brut sans année", "extra-brut", "blanc de blancs", "blanc de noirs", "demi-sec", "champagne rosé", "rosé d’assemblage", "rosé de macération", "dosage", "température de service", "seau à glace", "tsarine", "isabelle tellier", "chanoine frères", "veuve clicquot", "carte jaune", "billecart-salmon", "ruinart", "laurent-perrier", "krug", "dom pérignon", "gosset", "plus ancienne maison de champagne", "accords mets champagne", "guide d’achat"]
+  },
+  {
     url: "/guides/vins-rouges/loire/",
     soon: false,
     cat: "Guide d’achat — Vins rouges",
