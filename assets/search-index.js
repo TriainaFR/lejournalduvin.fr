@@ -9,7 +9,7 @@ window.JDV_ARTICLES = [
     cat: "Guide d’achat — Spiritueux",
     title: "Meilleur gin français : notre sélection 2026 en 12 bouteilles",
     excerpt: "12 gins de 30 € à 50 €, médiane 39,50 € : Citadelle Original, Magellan Iris, Melifera à la fleur d’immortelle, Awen Nature Smoky. La moitié du panel vient des Charentes.",
-    date: "11 août 2026",
+    date: "12 août 2026",
     minutes: 13,
     img: "/assets/img/baies-de-genievre-juniperus-communis-480.jpg",
     tags: ["gin français", "meilleur gin", "gin artisanal", "london dry", "distilled gin", "gin vieilli", "genévrier", "juniperus communis", "botaniques", "gin tonic", "citadelle", "maison ferrand", "ars charente", "magellan", "iris", "angeac", "melifera", "fleur d’immortelle", "île d’oléron", "awen nature", "la bouëxière", "gin kanol", "world gin awards", "normindia", "domaine du coquerel", "manche", "generous gin", "fair gin", "quinoa équitable", "distillerie de paris", "bartavelle", "drôme provençale", "coscorra", "landes", "franc-tireur", "gin bio", "alambic charentais", "spiritueux", "guide d’achat"]
@@ -20,7 +20,7 @@ window.JDV_ARTICLES = [
     cat: "Guide d’achat — Vins blancs",
     title: "Meilleurs vins blancs de Loire : notre sélection 2026 en 15 cuvées",
     excerpt: "15 blancs de 10 € à 200 €, médiane 24 € : Menetou-Salon Pellé, Muscadet Granite, Vouvray Huet, Coulée de Serrant. Le meilleur achat est un Menetou-Salon à 18 €.",
-    date: "11 août 2026",
+    date: "12 août 2026",
     minutes: 15,
     img: "/assets/img/vignoble-savennieres-anjou-480.jpg",
     tags: ["vin blanc loire", "meilleurs vins blancs de loire", "sancerre", "pouilly-fumé", "rive gauche", "rive droite", "silex", "terres blanches", "caillottes", "kimméridgien", "menetou-salon", "morogues", "henri pellé", "quincy", "adèle rouzé", "vouvray", "domaine huet", "le haut-lieu", "montlouis", "la taille aux loups", "rémus", "jacky blot", "savennières", "coulée de serrant", "nicolas joly", "roche-aux-moines", "baumard", "clos du papillon", "anjou blanc", "ogereau", "richou", "muscadet", "sèvre et maine", "sur lie", "domaine de l’écu", "granite", "château de la ragotière", "melon de bourgogne", "chenin", "sauvignon", "vacheron", "henri bourgeois", "monts damnés", "chavignol", "château de tracy", "de ladoucette", "baron de l", "dagueneau", "silex dagueneau", "guide d’achat"]

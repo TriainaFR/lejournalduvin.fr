@@ -421,6 +421,83 @@ for (const page of pages) {
   }
 }
 
+/* ————— 14. datePublished cohérente avec la date réelle —————
+   Constaté le 12/08/2026 : deux guides publiés le 12 portaient une
+   datePublished au 11. La cause est banale et se reproduira — on écrit
+   l'article un jour, on le pousse le lendemain, ou la date du contexte
+   n'est plus celle de l'horloge. Deux contrôles :
+   (a) aucune date dans le futur, ce que les briefs fournis proposent
+       régulièrement (« publié demain ») ;
+   (b) la datePublished doit tomber exactement sur le jour de l'un des
+       commits qui ont touché le fichier. On compare à TOUS les commits
+       et non à la seule création : plusieurs pages du site sont nées
+       comme hubs avant d'être transformées en articles, et leur date de
+       publication est celle de la transformation, pas celle du fichier
+       vide. La comparaison est stricte et non tolérante à un jour près :
+       l'erreur du 12/08 était précisément un décalage d'un jour, qu'une
+       tolérance aurait laissé passer. Les dates git et les dates du
+       balisage sont dans le même fuseau, il n'y a donc rien à absorber.
+
+   Contrainte de mise en œuvre découverte le 12/08 : appeler `git log` une
+   fois par page fait expirer le hook pre-commit. On lit donc TOUT
+   l'historique en un seul appel, avec un délai de garde, et en purgeant
+   les variables GIT_* que git exporte à ses hooks — sans quoi le
+   sous-processus lit l'index en cours d'écriture du commit parent. */
+const { execFileSync } = require('child_process');
+
+const jour = (iso) => String(iso).slice(0, 10);
+const AUJOURDHUI = new Date();
+
+// path relatif → liste des jours de commit, en un seul git log
+const historique = (() => {
+  const map = new Map();
+  try {
+    const env = Object.fromEntries(Object.entries(process.env).filter(([k]) => !k.startsWith('GIT_')));
+    const brut = execFileSync(
+      'git',
+      ['log', '--format=@%ad', '--date=format:%Y-%m-%d', '--name-only'],
+      { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'], timeout: 20000, env }
+    );
+    let courant = null;
+    for (const ligne of brut.split('\n')) {
+      if (ligne.startsWith('@')) courant = ligne.slice(1);
+      else if (ligne && courant) {
+        if (!map.has(ligne)) map.set(ligne, []);
+        const l = map.get(ligne);
+        if (!l.includes(courant)) l.push(courant);
+      }
+    }
+  } catch {
+    /* pas de dépôt git, git absent, ou délai dépassé : on ne contrôle pas (b) */
+  }
+  return map;
+})();
+
+const commitsDe = (rel) => historique.get(rel.replace(/\\/g, '/')) || [];
+
+for (const page of pages) {
+  for (const node of nodesOf(page)) {
+    const pub = node.datePublished;
+    if (!pub) continue;
+
+    // (a) pas de date dans le futur
+    if (new Date(pub) > AUJOURDHUI) {
+      err(page.rel, `datePublished « ${pub} » est dans le futur — un article ne se publie pas demain`);
+      continue;
+    }
+
+    // (b) la date doit correspondre au jour d'un commit réel du fichier
+    const commits = commitsDe(page.rel);
+    if (!commits.length) continue; // fichier pas encore committé : rien à comparer
+    if (!commits.includes(jour(pub))) {
+      err(
+        page.rel,
+        `datePublished au ${jour(pub)} ne correspond à aucun commit du fichier (${commits[commits.length - 1]} → ${commits[0]}) — reprendre la date dans l'historique git`
+      );
+    }
+  }
+}
+
 /* ————— rapport ————— */
 const label = (n, s, p) => `${n} ${n > 1 ? p : s}`;
 if (warnings.length) {
