@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/occasions/vin-rouge-anniversaire/",
+    soon: false,
+    cat: "Guide d’achat — Occasions",
+    title: "Quel vin rouge offrir pour un anniversaire ? Notre sélection 2026",
+    excerpt: "12 rouges de 22 € à 330 €, médiane 58,50 € : Cantemerle, Chinon Couly-Dutheil, Léoville-Barton, Guigal Côte-Rôtie. Et le millésime de naissance : quelles années offrir, lesquelles éviter.",
+    date: "13 août 2026",
+    minutes: 13,
+    img: "/assets/img/bouteille-coffret-cadeau-480.jpg",
+    tags: ["vin rouge anniversaire", "quel vin offrir", "cadeau vin", "bouteille cadeau", "millésime de naissance", "année de naissance vin", "vin de garde", "provenance", "château cantemerle", "cru classé 1855", "haut-médoc", "couly-dutheil", "chinon", "cabernet franc", "chave sélection", "silène", "crozes-hermitage", "faiveley", "gevrey-chambertin", "domaine weinbach", "pinot noir alsace", "clos des capucins", "mas de daumas gassac", "guigal", "côte-rôtie", "brune et blonde", "henri gouges", "nuits-saint-georges", "les pruliers", "léoville-barton", "saint-julien", "canon-la-gaffelière", "premier grand cru classé b", "saint-émilion", "pichon baron", "pichon comtesse de lalande", "pauillac", "millésime 1990", "millésime 2000", "millésime 2005", "millésime 2009", "millésime 2016", "guide d’achat"]
+  },
+  {
     url: "/spiritueux/gin/meilleur-gin-francais/",
     soon: false,
     cat: "Guide d’achat — Spiritueux",
