@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/oenotourisme/route-des-vins-de-provence/",
+    soon: false,
+    cat: "Œnotourisme — Provence",
+    title: "Route des vins de Provence : itinéraires et guide pratique 2026",
+    excerpt: "10 itinéraires officiels de 9 à 102 km, 8 territoires, 431 domaines adhérents et les 8 AOC provençales. Et pourquoi la route ne va pas à Nice.",
+    date: "14 août 2026",
+    minutes: 12,
+    img: "/assets/img/vignoble-pourcieux-var-480.jpg",
+    tags: ["route des vins de provence", "œnotourisme provence", "oenotourisme provence", "visite domaine provence", "route des vins du sud", "vignobles et découvertes", "côtes de provence", "bandol", "cassis", "bellet", "palette", "les baux-de-provence", "coteaux d’aix-en-provence", "coteaux varois en provence", "sainte-victoire", "la londe", "fréjus", "pierrefeu", "notre-dame des anges", "rosé de provence", "appellation 100 % bio", "château margüi", "george lucas", "château de crémat", "clos saint-vincent", "domaine dupuy de lôme", "château simone", "mourvèdre", "dégustation", "var", "bouches-du-rhône", "alpilles", "vendanges", "itinéraire vins"]
+  },
+  {
     url: "/guides/prix/vin-blanc-alsace-moins-de-15-euros/",
     soon: false,
     cat: "Guide d’achat — Prix",
