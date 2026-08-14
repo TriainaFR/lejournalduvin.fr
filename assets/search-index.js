@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/prix/vin-blanc-alsace-moins-de-15-euros/",
+    soon: false,
+    cat: "Guide d’achat — Prix",
+    title: "Vin blanc d’Alsace à moins de 15 € : notre sélection 2026",
+    excerpt: "13 cuvées de 5,70 € à 13,90 €, prix producteur vérifiés : un grand cru Ollwiller à 13,90 €, le coup de cœur Hachette d’Allimant-Laugner à 11 €. Et le piège du sucre résiduel, que l’étiquette annonce à peine.",
+    date: "14 août 2026",
+    minutes: 12,
+    img: "/assets/img/grand-cru-ollwiller-wuenheim-480.jpg",
+    tags: ["vin blanc alsace moins de 15 euros", "vin blanc alsace pas cher", "riesling alsace", "riesling pas cher", "gewurztraminer", "pinot gris alsace", "sylvaner", "muscat d’alsace", "alsace grand cru", "grand cru ollwiller", "cave du vieil armand", "allimant-laugner", "coup de cœur guide hachette", "domaine henri klée", "domaine pierre adam", "domaine anstotz", "westerweingarten", "wolfberger", "cave de beblenheim", "cave de turckheim", "grand cru brand", "sucre résiduel", "vin blanc sec alsace", "demi-sec", "décret 28 mai 2021", "mention de sucrosité", "coopérative alsace", "vin bio alsace", "eguisheim", "orschwiller", "balbronn", "ammerschwihr", "wuenheim", "millésime 2023 alsace", "millésime 2024 alsace", "guide d’achat"]
+  },
+  {
     url: "/guides/occasions/vin-rouge-anniversaire/",
     soon: false,
     cat: "Guide d’achat — Occasions",
