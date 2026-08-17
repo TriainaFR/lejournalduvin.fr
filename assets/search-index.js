@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/oenotourisme/caves-champagne-reims-epernay/",
+    soon: false,
+    cat: "Œnotourisme — Champagne",
+    title: "Visiter les caves de Champagne : de Reims à Épernay",
+    excerpt: "12 maisons avec leurs tarifs réels, de 20 € à 460 €. Les 370 crayères de la colline Saint-Nicaise, l’Avenue de Champagne — et pourquoi le budget qui circule est deux fois trop bas.",
+    date: "17 août 2026",
+    minutes: 12,
+    img: "/assets/img/avenue-de-champagne-epernay-480.jpg",
+    tags: ["visite caves champagne", "caves champagne reims", "caves champagne épernay", "avenue de champagne", "crayères", "colline saint-nicaise", "unesco champagne", "maisons de champagne", "taittinger", "vranken-pommery", "veuve clicquot", "g.h. mumm", "ruinart", "moët & chandon", "perrier-jouët", "pol roger", "mercier", "de castellane", "bollinger", "gosset", "aÿ-champagne", "montagne de reims", "verzenay", "bouzy", "ambonnay", "faux de verzy", "pupitre de remuage", "tarif visite cave", "réservation visite champagne", "œnotourisme champagne", "vendanges", "récoltant-manipulant"]
+  },
+  {
     url: "/guides/vins-rouges/beaujolais/",
     soon: false,
     cat: "Guide d’achat — Vins rouges",

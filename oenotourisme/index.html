@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visites de caves & routes des vins | Le Journal du Vin</title>
-  <meta name="description" content="Itinéraires de visites de caves et routes des vins : Champagne, Bourgogne, Bordeaux — les feuilles de route œnotourisme du Journal du Vin arrivent bientôt.">
+  <meta name="description" content="Nos itinéraires œnotouristiques : visiter les caves de Champagne entre Reims et Épernay, et la route des vins de Provence. Tarifs, réservations et conseils pratiques vérifiés.">
   <link rel="canonical" href="https://www.lejournalduvin.fr/oenotourisme/">
-  <meta name="robots" content="noindex, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon-v2.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-v2-32.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon-v2.png">
@@ -16,7 +16,7 @@
   <meta property="og:site_name" content="Le Journal du Vin">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:title" content="Les Visites de caves — Le Journal du Vin">
-  <meta property="og:description" content="Itinéraires de visites de caves et routes des vins : Champagne, Bourgogne, Bordeaux — les feuilles de route œnotourisme du Journal du Vin arrivent bientôt.">
+  <meta property="og:description" content="Nos itinéraires œnotouristiques : visiter les caves de Champagne entre Reims et Épernay, et la route des vins de Provence. Tarifs, réservations et conseils pratiques vérifiés.">
   <meta property="og:url" content="https://www.lejournalduvin.fr/oenotourisme/">
   <meta property="og:image" content="https://images.unsplash.com/photo-1561906814-23da9a8bfee0?q=80&w=1200&h=630&fit=crop&auto=format">
   <meta name="twitter:card" content="summary_large_image">
@@ -48,9 +48,19 @@
         "@id": "https://www.lejournalduvin.fr/oenotourisme/#collection",
         "url": "https://www.lejournalduvin.fr/oenotourisme/",
         "name": "Visites de caves — itinéraires et routes des vins",
-        "description": "Les itinéraires œnotourisme du Journal du Vin : visites de caves en Champagne, Bourgogne et Bordeaux.",
+        "description": "Les itinéraires œnotouristiques du Journal du Vin : caves de Champagne entre Reims et Épernay, route des vins de Provence.",
         "inLanguage": "fr-FR",
-        "publisher": { "@id": "https://www.lejournalduvin.fr/#organization" }
+        "publisher": { "@id": "https://www.lejournalduvin.fr/#organization" },
+        "mainEntity": {
+          "@type": "ItemList",
+          "name": "Nos itinéraires de visites de caves",
+          "numberOfItems": 2,
+          "itemListOrder": "https://schema.org/ItemListOrderDescending",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "url": "https://www.lejournalduvin.fr/oenotourisme/caves-champagne-reims-epernay/", "name": "Visiter les caves de Champagne\u202f: de Reims à Épernay" },
+            { "@type": "ListItem", "position": 2, "url": "https://www.lejournalduvin.fr/oenotourisme/route-des-vins-de-provence/", "name": "Route des vins de Provence\u202f: itinéraires et guide pratique 2026" }
+          ]
+        }
       },
       {
         "@type": "BreadcrumbList",
@@ -157,6 +167,16 @@
     }
     .hub-head .orn::before, .hub-head .orn::after{ content:""; width:72px; border-top:1px solid var(--hairline-strong); }
     .hub-head .orn svg{ width:14px; height:14px; }
+
+    /* ——— chapô éditorial ——— */
+    .lede{
+      width:min(760px, calc(100vw - 48px)); margin:2.2rem auto 0; text-align:left;
+      font-family:var(--serif); font-size:1.06rem; line-height:1.75; color:var(--ink-soft);
+      border-top:1px solid var(--hairline); padding-top:1.8rem;
+    }
+    .lede p{ margin-bottom:1.05rem; }
+    .lede p:last-child{ margin-bottom:0; }
+    .lede strong{ font-weight:500; color:var(--ink); }
 
     /* ——— grille d’articles ——— */
     .hub-zone{ padding:0 0 4.6rem; }
@@ -305,7 +325,13 @@
         <span class="kicker">Univers</span>
         <h1>Les Visites de caves</h1>
         <p class="sub">Itinéraires · Routes des vins</p>
-        <p class="intro">Week-ends dans les vignobles, caves à visiter, kilomètres et domaines comptés&#8239;: la rédaction prépare ses premières feuilles de route — Champagne, Bourgogne, Bordeaux. En attendant, voici ce qui arrive.</p>
+        <p class="intro">Week-ends dans les vignobles, caves à visiter, kilomètres et domaines comptés&#8239;: nos feuilles de route pour organiser un séjour au milieu des vignes, sans y laisser son budget ni sa journée en voiture.</p>
+
+        <div class="lede">
+          <p>Un voyage œnotouristique se prépare mal avec les informations disponibles en ligne. Les distances y sont approximatives, les tarifs de visite souvent périmés ou sous-évalués de moitié, et les itinéraires décrits se révèlent parfois n’exister nulle part ailleurs que dans l’article qui les propose. Nous construisons donc chacune de ces feuilles de route sur les sources qui font foi&#8239;: les réseaux officiels qui balisent et entretiennent les routes des vins, les cahiers des charges déposés à l’INAO, les interprofessions régionales et les tarifs publiés par les maisons et les domaines eux-mêmes.</p>
+          <p>Ce que vous trouverez dans chaque itinéraire&#8239;: <strong>le budget réel des visites</strong>, relevé à la source et daté&#8239;; <strong>les distances et les temps de trajet</strong> qui déterminent ce qu’une journée permet vraiment&#8239;; <strong>les délais de réservation</strong> selon la saison&#8239;; et les appellations expliquées par leur géologie plutôt que par des formules d’usage. Nous signalons aussi ce que nous n’avons pas pu vérifier, plutôt que de combler les trous.</p>
+          <p>Ce que vous n’y trouverez pas&#8239;: des récits de dégustation que nous n’avons pas faites. Nos itinéraires servent à préparer votre voyage, pas à raconter le nôtre — et une visite de cave ne se note pas comme une bouteille.</p>
+        </div>
         <div class="orn">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c1.8 3.2 4.5 4.6 4.5 8a4.5 4.5 0 0 1-9 0C7.5 6.6 10.2 5.2 12 2Zm-.9 13.5h1.8V20h2.3v1.5H8.8V20h2.3v-4.5Z"/></svg>
         </div>
@@ -328,16 +354,16 @@
             <p class="meta">14 août 2026<i>◆</i>Lecture 12 min</p>
           </article>
 
-          <article class="card soon">
+          <article class="card">
             <div class="imgwrap">
-              <div class="imgbox">
-                <img loading="lazy" src="https://images.unsplash.com/photo-1717240049346-b6a9f43f4e1c?q=80&w=800&auto=format&fit=crop" alt="Vignoble champenois à flanc de coteau">
-              </div>
+              <a href="/oenotourisme/caves-champagne-reims-epernay/" class="imglink"><div class="imgbox">
+                <img loading="lazy" src="/assets/img/avenue-de-champagne-epernay-800.jpg" alt="L’Avenue de Champagne à Épernay et ses hôtels particuliers">
+              </div></a>
               <span class="chip">Champagne</span>
             </div>
-            <h2>De Reims à Épernay, les caves des grandes maisons<span class="badge-soon">À paraître</span></h2>
-            <p class="excerpt">Trois jours et neuf caves dans les crayères champenoises, des grandes maisons aux vignerons.</p>
-            <p class="meta">À paraître<i>◆</i>3 jours · 92 km</p>
+            <h2><a href="/oenotourisme/caves-champagne-reims-epernay/">Visiter les caves de Champagne&#8239;: de Reims à Épernay</a></h2>
+            <p class="excerpt">Douze maisons avec leurs tarifs réels, de 20 € à 460 €, les 370 crayères de la colline Saint-Nicaise et le vrai budget d’un séjour.</p>
+            <p class="meta">17 août 2026<i>◆</i>Lecture 12 min</p>
           </article>
 
           <article class="card soon">
