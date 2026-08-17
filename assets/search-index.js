@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/vins-rouges/beaujolais/",
+    soon: false,
+    cat: "Guide d’achat — Vins rouges",
+    title: "Meilleurs vins rouges du Beaujolais 2026 : notre sélection en 16 cuvées",
+    excerpt: "Six références de 13 € à 27 €, prix relevés en caviste, et les dix trophées 2026 du Concours des Grands Vins du Beaujolais attribués cuvée par cuvée. Les dix crus expliqués par leurs sols.",
+    date: "17 août 2026",
+    minutes: 12,
+    img: "/assets/img/vignoble-moulin-a-vent-beaujolais-480.jpg",
+    tags: ["vins rouges beaujolais", "meilleur beaujolais", "crus du beaujolais", "gamay", "morgon", "côte du py", "moulin-à-vent", "fleurie", "chiroubles", "brouilly", "côte de brouilly", "juliénas", "chénas", "saint-amour", "régnié", "marcel lapierre", "jean foillard", "château des jacques", "louis jadot", "domaine chignard", "domaine ruet", "émile cheysson", "concours des grands vins du beaujolais", "trophée 2026", "vinescence", "christophe coquard", "roche pourrie", "granit rose", "beaujolais nouveau", "température de service", "vin de garde", "guide d’achat"]
+  },
+  {
     url: "/oenotourisme/route-des-vins-de-provence/",
     soon: false,
     cat: "Œnotourisme — Provence",
