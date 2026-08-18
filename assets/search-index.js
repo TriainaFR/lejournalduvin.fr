@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/prix/champagne-moins-de-20-euros/",
+    soon: false,
+    cat: "Guide d’achat — Prix",
+    title: "Champagne à moins de 20 € : ce que ce budget permet vraiment",
+    excerpt: "Six bouteilles vérifiées, dont le podium de la dégustation à l’aveugle de l’UFC-Que Choisir. Et les mentions RM, NM, CM, MA de l’étiquette, seul vrai repère à ce prix.",
+    date: "18 août 2026",
+    minutes: 11,
+    img: "/assets/img/vignoble-courthiezy-vallee-marne-480.jpg",
+    tags: ["champagne pas cher", "champagne moins de 20 euros", "champagne petit prix", "champagne qualité prix", "meilleur champagne pas cher", "récoltant-manipulant", "négociant-manipulant", "marque d’acheteur", "mention RM", "mention NM", "mention MA", "mention CM", "étiquette champagne", "capsule champagne", "CIVC", "UFC-Que Choisir", "dégustation à l’aveugle", "pierre courtois", "paul menand", "thiercelin carte d’or", "pol carson", "gérard loriot", "emmanuel tassin", "côte des bar", "vallée de la marne", "meunier", "vieillissement sur lattes", "brut sans année", "crémant", "champagne de grande surface", "foire aux vins", "guide d’achat"]
+  },
+  {
     url: "/oenotourisme/caves-champagne-reims-epernay/",
     soon: false,
     cat: "Œnotourisme — Champagne",
