@@ -30,11 +30,11 @@ window.JDV_ARTICLES = [
     soon: false,
     cat: "Œnotourisme — Champagne",
     title: "Visiter les caves de Champagne : de Reims à Épernay",
-    excerpt: "12 maisons avec leurs tarifs réels, de 20 € à 460 €. Les 370 crayères de la colline Saint-Nicaise, l’Avenue de Champagne — et pourquoi le budget qui circule est deux fois trop bas.",
+    excerpt: "15 maisons avec leurs tarifs réels de 20 € à 460 €, les quatre routes par cépage, six adresses où dormir et trois budgets chiffrés pour trois jours.",
     date: "17 août 2026",
-    minutes: 12,
+    minutes: 16,
     img: "/assets/img/avenue-de-champagne-epernay-480.jpg",
-    tags: ["visite caves champagne", "caves champagne reims", "caves champagne épernay", "avenue de champagne", "crayères", "colline saint-nicaise", "unesco champagne", "maisons de champagne", "taittinger", "vranken-pommery", "veuve clicquot", "g.h. mumm", "ruinart", "moët & chandon", "perrier-jouët", "pol roger", "mercier", "de castellane", "bollinger", "gosset", "aÿ-champagne", "montagne de reims", "verzenay", "bouzy", "ambonnay", "faux de verzy", "pupitre de remuage", "tarif visite cave", "réservation visite champagne", "œnotourisme champagne", "vendanges", "récoltant-manipulant"]
+    tags: ["visite caves champagne", "caves champagne reims", "caves champagne épernay", "avenue de champagne", "crayères", "colline saint-nicaise", "unesco champagne", "maisons de champagne", "taittinger", "vranken-pommery", "veuve clicquot", "g.h. mumm", "ruinart", "moët & chandon", "perrier-jouët", "pol roger", "mercier", "de castellane", "bollinger", "gosset", "aÿ-champagne", "montagne de reims", "verzenay", "bouzy", "ambonnay", "faux de verzy", "pupitre de remuage", "krug", "vilmart", "leclerc briant", "où dormir en champagne", "royal champagne", "les crayères", "assiette champenoise", "caserne chanzy", "château de sacy", "budget week-end champagne", "côte des blancs", "vallée de la marne", "côte des bar", "routes du champagne", "tarif visite cave", "réservation visite champagne", "œnotourisme champagne", "vendanges", "récoltant-manipulant"]
   },
   {
     url: "/guides/vins-rouges/beaujolais/",
