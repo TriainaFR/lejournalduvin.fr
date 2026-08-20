@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/prix/vin-blanc-bourgogne-moins-de-20-euros/",
+    soon: false,
+    cat: "Guide d’achat — Prix",
+    title: "Vin blanc de Bourgogne à moins de 20 € : où le trouver vraiment",
+    excerpt: "Les 27 dénominations du Mâconnais, la clé que personne n’explique. Les distinctions Hachette 2026 vérifiées, et pourquoi une note sur 100 attribuée à Hachette est toujours fausse.",
+    date: "20 août 2026",
+    minutes: 11,
+    img: "/assets/img/vignes-clesse-maconnais-480.jpg",
+    tags: ["vin blanc bourgogne moins de 20 euros", "bourgogne blanc pas cher", "mâconnais", "mâcon-villages", "dénomination géographique", "mâcon-verzé", "mâcon-solutré-pouilly", "mâcon-péronne", "mâcon-pierreclos", "viré-clessé", "saint-véran", "petit chablis", "chablis", "la chablisienne", "montagny", "rully", "bouzeron", "bourgogne aligoté", "aligoté", "aline beauné", "coup de cœur hachette", "guide hachette étoiles", "domaine carrette", "domaine du bicheron", "domaines loron", "joseph drouhin", "jacqueson", "chardonnay", "côte chalonnaise", "côte de beaune", "millésime 2023", "millésime 2024", "guide d’achat"]
+  },
+  {
     url: "/guides/vins-roses/",
     soon: false,
     cat: "Guide d’achat — Vins rosés",
