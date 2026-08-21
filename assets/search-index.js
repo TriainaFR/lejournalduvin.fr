@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/vins-roses/provence/",
+    soon: false,
+    cat: "Guide d’achat — Vins rosés",
+    title: "Meilleurs vins rosés de Provence 2026 : notre sélection en 14 cuvées",
+    excerpt: "Sainte-Victoire est devenue en 2025 le premier cru officiel de Provence. Ce que cela change, les appellations remises à plat, le tibouren, et 14 cuvées de 12 € à 150 €.",
+    date: "21 août 2026",
+    minutes: 12,
+    img: "/assets/img/vignes-puyloubier-sainte-victoire-480.jpg",
+    tags: ["vins rosés de provence", "meilleur rosé provence", "côtes de provence", "cru sainte-victoire", "sainte-victoire", "puyloubier", "bandol", "mourvèdre", "coteaux varois en provence", "coteaux d’aix-en-provence", "bellet", "palette", "cru classé de provence", "château minuty", "château du galoupet", "château sainte-marguerite", "château de l’aumérade", "clos cibonne", "tibouren", "mas de cadenet", "château cavalier", "château léoube", "château d’ollières", "château la bégude", "domaine tempier", "château d’esclans", "whispering angel", "garrus", "rosé le plus cher", "la tour de l’évêque", "inao", "température de service", "rosé de garde", "guide d’achat"]
+  },
+  {
     url: "/guides/prix/vin-blanc-bourgogne-moins-de-20-euros/",
     soon: false,
     cat: "Guide d’achat — Prix",
