@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.lejournalduvin.fr/</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-24</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/a-propos/</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/auteur/camille-rousseau/</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-24</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/auteur/swann-bertaud/</loc>
@@ -22,11 +22,11 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-24</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/vin/</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-24</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/champagne/</loc>
@@ -194,7 +194,7 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/vins-roses/</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-24</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/prix/vin-blanc-bourgogne-moins-de-20-euros/</loc>
@@ -202,6 +202,10 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/vins-roses/provence/</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-24</lastmod>
+  </url>
+  <url>
+    <loc>https://www.lejournalduvin.fr/guides/prix/vin-rose-moins-de-15-euros/</loc>
+    <lastmod>2026-08-24</lastmod>
   </url>
 </urlset>

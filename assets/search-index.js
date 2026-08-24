@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/prix/vin-rose-moins-de-15-euros/",
+    soon: false,
+    cat: "Guide d’achat — Prix",
+    title: "Vin rosé à moins de 15 € : le mieux noté du monde en fait partie",
+    excerpt: "Le rosé élu meilleur du monde par Decanter en 2025 se vend 13,90 €, prix vérifié. Huit repères sous 15 €, tous adossés à une distinction publiée, et les trois erreurs d’appellation qui circulent partout.",
+    date: "24 août 2026",
+    minutes: 11,
+    img: "/assets/img/vignes-chateau-aqueria-tavel-480.jpg",
+    tags: ["vin rosé moins de 15 euros", "rosé pas cher", "meilleur rosé qualité prix", "rosé abordable", "rosé petit prix", "château cavalier", "marafiance", "decanter world wine awards", "best in show", "tavel", "domaine liravel", "vignerons de tavel et lirac", "cuvée royale", "domaine lafage", "miraflors", "côtes catalanes", "château de calavon", "coteaux d’aix-en-provence", "château de gragnos", "saint-chinian", "domaine brizi", "patrimonio", "domaine de montcalm", "sable de camargue", "guide hachette", "gault&millau", "rosé des riceys", "bandol", "studio by miraval", "la vieille ferme", "ventoux", "millésime rosé", "guide d’achat"]
+  },
+  {
     url: "/guides/vins-roses/provence/",
     soon: false,
     cat: "Guide d’achat — Vins rosés",
