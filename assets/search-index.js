@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/oenotourisme/itineraire-caves-bourgogne/",
+    soon: false,
+    cat: "Œnotourisme — Bourgogne",
+    title: "Itinéraire caves de Bourgogne : ce qui se visite vraiment",
+    excerpt: "Les grands noms de la Côte de Nuits n’ouvrent pas leurs portes. Ce qui se visite réellement, les tarifs relevés à la source — de la visite gratuite à 350 € — et les deux maisons Bouchard qu’on confond partout.",
+    date: "25 août 2026",
+    minutes: 13,
+    img: "/assets/img/village-vosne-romanee-vignoble-480.jpg",
+    tags: ["itinéraire caves bourgogne", "visite caves bourgogne", "route des grands crus", "œnotourisme bourgogne", "côte de nuits", "côte de beaune", "beaune", "clos de vougeot", "gevrey-chambertin", "vosne-romanée", "meursault", "pommard", "volnay", "chablis", "mâconnais", "climats de bourgogne", "unesco", "cité des climats", "caves patriarche", "bouchard aîné", "bouchard père et fils", "château de meursault", "domaine rené leclerc", "domaine philippe leclerc", "hospices de beaune", "vente des vins", "aloxe-corton", "ladoix-serrigny", "corgoloin", "marsannay", "tarifs visite cave", "réservation cave"]
+  },
+  {
     url: "/guides/prix/vin-rose-moins-de-15-euros/",
     soon: false,
     cat: "Guide d’achat — Prix",

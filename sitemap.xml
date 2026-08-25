@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.lejournalduvin.fr/</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-25</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/a-propos/</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/auteur/camille-rousseau/</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-25</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/auteur/swann-bertaud/</loc>
@@ -182,7 +182,7 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/oenotourisme/</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-25</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/oenotourisme/caves-champagne-reims-epernay/</loc>
@@ -207,5 +207,9 @@
   <url>
     <loc>https://www.lejournalduvin.fr/guides/prix/vin-rose-moins-de-15-euros/</loc>
     <lastmod>2026-08-24</lastmod>
+  </url>
+  <url>
+    <loc>https://www.lejournalduvin.fr/oenotourisme/itineraire-caves-bourgogne/</loc>
+    <lastmod>2026-08-25</lastmod>
   </url>
 </urlset>
