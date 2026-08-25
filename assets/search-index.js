@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/champagne/bereche-et-fils/",
+    soon: false,
+    cat: "Champagne — Portrait",
+    title: "Bérèche et Fils : ce que « champagne de vigneron » veut encore dire",
+    excerpt: "Onze hectares en huit villages, zéro herbicide depuis 2003, et un changement de statut en octobre 2013 — de récoltant à négociant — que presque aucun portrait ne mentionne.",
+    date: "25 août 2026",
+    minutes: 9,
+    img: "/assets/img/vignoble-mailly-champagne-grand-cru-480.jpg",
+    tags: ["bérèche et fils", "bérêche et fils", "champagne de vigneron", "champagne grower", "ludes", "montagne de reims", "craon de ludes", "raphaël bérèche", "vincent bérèche", "récoltant-manipulant", "négociant-manipulant", "rm nm champagne", "reflet d’antan", "le cran", "les beaux regards", "campania remensis", "brut réserve", "mailly-champagne", "ambonnay", "cramant", "aÿ", "trépail", "ormes", "mareuil-le-port", "hve", "réserve perpétuelle", "vinous", "gault&millau", "portrait de maison"]
+  },
+  {
     url: "/oenotourisme/itineraire-caves-bourgogne/",
     soon: false,
     cat: "Œnotourisme — Bourgogne",
