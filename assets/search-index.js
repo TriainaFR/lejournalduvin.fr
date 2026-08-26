@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/spiritueux/whisky/meilleur-whisky-ecossais/",
+    soon: false,
+    cat: "Spiritueux — Whisky",
+    title: "Meilleur whisky écossais : le palmarès 2026, région par région",
+    excerpt: "Cinq régions sont protégées par la loi écossaise, six figurent sur les étiquettes. Les lauréats des World Whiskies Awards 2026 par région, et trois erreurs de classement qui circulent partout.",
+    date: "26 août 2026",
+    minutes: 10,
+    img: "/assets/img/distillerie-bowmore-islay-480.jpg",
+    tags: ["meilleur whisky écossais", "whisky écossais", "single malt", "scotch whisky", "régions whisky écossais", "scotch whisky regulations 2009", "highland", "speyside", "lowland", "islay", "campbeltown", "islands", "world whiskies awards 2026", "bowmore 21 ans", "glen scotia 15 ans", "aberfeldy 21", "glenlivet founder's reserve", "inchdairnie", "isle of raasay", "springbank", "kilkerran", "glengyle", "ancnoc", "knockdhu", "bunnahabhain toiteach a dha", "dalwhinnie", "braeval", "guide d’achat"]
+  },
+  {
     url: "/champagne/bereche-et-fils/",
     soon: false,
     cat: "Champagne — Portrait",

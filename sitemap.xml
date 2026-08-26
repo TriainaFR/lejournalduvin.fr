@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.lejournalduvin.fr/</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-08-26</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/a-propos/</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/auteur/camille-rousseau/</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-08-26</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/auteur/swann-bertaud/</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-26</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/vin/</loc>
@@ -54,7 +54,7 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/spiritueux/</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-08-26</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/spiritueux/whisky/meilleur-whisky-francais/</loc>
@@ -215,5 +215,9 @@
   <url>
     <loc>https://www.lejournalduvin.fr/champagne/bereche-et-fils/</loc>
     <lastmod>2026-08-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.lejournalduvin.fr/spiritueux/whisky/meilleur-whisky-ecossais/</loc>
+    <lastmod>2026-08-26</lastmod>
   </url>
 </urlset>
