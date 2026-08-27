@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/oenotourisme/itineraire-caves-bordeaux/",
+    soon: false,
+    cat: "Œnotourisme — Bordeaux",
+    title: "Itinéraire caves de Bordeaux : les châteaux qui reçoivent vraiment",
+    excerpt: "Margaux, Pétrus, Ausone, Cheval Blanc et Haut-Brion ne reçoivent pas le public. Ce qui ouvre réellement, les tarifs vérifiés de la Cité du Vin, et deux rives qui ne classent pas leurs crus pareil.",
+    date: "27 août 2026",
+    minutes: 12,
+    img: "/assets/img/panorama-saint-emilion-gironde-480.jpg",
+    tags: ["itinéraire caves bordeaux", "visite caves bordeaux", "œnotourisme bordeaux", "route des vins bordeaux", "médoc", "saint-émilion", "pomerol", "sauternes", "graves", "pessac-léognan", "fronsac", "blaye", "entre-deux-mers", "cité du vin", "château margaux", "classement 1855", "classement saint-émilion 2022", "premier grand cru classé a", "pavie", "figeac", "ausone", "cheval blanc", "angélus", "cru bourgeois", "citadelle de blaye", "église monolithe", "pourriture noble", "ciron", "arrachage vignoble bordelais"]
+  },
+  {
     url: "/spiritueux/whisky/meilleur-whisky-ecossais/",
     soon: false,
     cat: "Spiritueux — Whisky",
