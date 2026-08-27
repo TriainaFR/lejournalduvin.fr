@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/champagne/drappier-blanc-de-blancs/",
+    soon: false,
+    cat: "Champagne — Portrait de cuvée",
+    title: "Drappier Blanc de Blancs : le chardonnay d’une maison de pinot noir",
+    excerpt: "Le chardonnay ne pèse que 9 % du vignoble Drappier, et la maison en tire pourtant un blanc de blancs. Caves cisterciennes d’Urville, première maison carbone neutre de Champagne, tarifs de visite vérifiés.",
+    date: "27 août 2026",
+    minutes: 9,
+    img: "/assets/img/bouteilles-champagne-drappier-480.jpg",
+    tags: ["champagne drappier", "drappier blanc de blancs", "blanc de blancs", "blanc vrai", "pinot blanc", "côte des bar", "urville", "aube", "kimméridgien", "michel drappier", "charline drappier", "carbone neutre", "écoact", "grande sendrée", "quattuor", "carte d’or", "clarevallis", "brut nature sans soufre", "caves cisterciennes", "clairvaux", "cépages anciens", "arbane", "petit meslier", "fromenteau", "visite champagne", "portrait de cuvée"]
+  },
+  {
     url: "/oenotourisme/itineraire-caves-bordeaux/",
     soon: false,
     cat: "Œnotourisme — Bordeaux",
