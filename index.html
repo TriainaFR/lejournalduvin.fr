@@ -472,12 +472,12 @@
     }
     .routes .section-head h2{ color:var(--paper); }
     .routes .section-head .orn::before, .routes .section-head .orn::after{ border-color:rgba(244,238,224,.28); }
-    .routes-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; }
+    .routes-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; }
     .route-card{ position:relative; display:block; }
     .route-card .imgbox{ overflow:hidden; aspect-ratio:4/5; position:relative; }
     .route-card .imgbox::after{
       content:""; position:absolute; inset:0;
-      background:linear-gradient(to top, rgba(13,9,6,.82) 8%, rgba(13,9,6,.12) 48%, transparent 70%);
+      background:linear-gradient(to top, rgba(13,9,6,.88) 6%, rgba(13,9,6,.62) 30%, rgba(13,9,6,.22) 52%, transparent 76%);
     }
     .route-card:hover img{ transform:scale(1.05); }
     .route-card .num{
@@ -491,11 +491,11 @@
       font-weight:500;
     }
     .route-card h3{
-      font-family:var(--serif); font-weight:600; font-size:1.55rem; line-height:1.15;
+      font-family:var(--serif); font-weight:600; font-size:1.3rem; line-height:1.18;
       margin:.5rem 0 .8rem; color:#FAF6EB;
     }
     .route-card .specs{
-      display:flex; gap:1.1rem; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase;
+      display:flex; flex-wrap:wrap; gap:.5rem 1.1rem; font-size:.66rem; letter-spacing:.12em; text-transform:uppercase;
       color:rgba(244,238,224,.75);
     }
     .route-card .specs span::before{ content:"◆ "; color:var(--gold); font-size:.55rem; }
@@ -624,6 +624,7 @@
       .arch:nth-child(4), .arch:nth-child(5){ display:block; }
       .occasions-grid{ grid-template-columns:repeat(3, 1fr); }
       .guides-grid{ grid-template-columns:1fr 1fr; }
+      .routes-grid{ grid-template-columns:repeat(2,1fr); }
       .card--lead{ grid-row:auto; grid-column:span 2; }
       .card--lead .imgbox{ aspect-ratio:16/9; }
     }
@@ -637,6 +638,7 @@
       .topbar .tagline-top{ display:none; }
     }
     @media (max-width: 640px){
+      .brand .vine{ right:-1rem; }
       .univers-grid{ grid-template-columns:repeat(2, 1fr); gap:1.1rem; }
       .guides-grid{ grid-template-columns:1fr; }
       .card--lead{ grid-column:auto; }
@@ -941,30 +943,41 @@
             </div>
             <div class="body">
               <span class="region">Bordeaux</span>
-              <h3>Les châteaux de Bordeaux qui reçoivent vraiment</h3>
-              <div class="specs"><span>4 itinéraires</span><span>36 AOC</span><span>Cité du Vin 23 €</span></div>
+              <h3>Les châteaux qui reçoivent vraiment</h3>
+              <div class="specs"><span>4 itinéraires</span><span>36 AOC</span></div>
             </div>
           </a>
-          <a class="route-card reveal d1" href="/oenotourisme/route-des-vins-de-provence/">
+          <a class="route-card reveal d1" href="/oenotourisme/itineraire-caves-bourgogne/">
             <span class="num">II.</span>
-            <div class="imgbox">
-              <img loading="lazy" src="/assets/img/vignoble-pourcieux-var-800.jpg" alt="Le vignoble de Pourcieux bordant la route, dans le Var">
-            </div>
-            <div class="body">
-              <span class="region">Provence</span>
-              <h3>La route des vins de Provence, itinéraires et guide pratique</h3>
-              <div class="specs"><span>10 itinéraires</span><span>9 à 102 km</span><span>8 AOC</span></div>
-            </div>
-          </a>
-          <a class="route-card reveal d2" href="/oenotourisme/itineraire-caves-bourgogne/">
-            <span class="num">III.</span>
             <div class="imgbox">
               <img loading="lazy" src="/assets/img/village-vosne-romanee-vignoble-800.jpg" alt="Le village de Vosne-Romanée et son vignoble, en Côte de Nuits">
             </div>
             <div class="body">
               <span class="region">Bourgogne</span>
-              <h3>Itinéraire caves de Bourgogne, ce qui se visite vraiment</h3>
-              <div class="specs"><span>3 jours</span><span>60 km</span><span>gratuit à 350 €</span></div>
+              <h3>Ce qui se visite vraiment</h3>
+              <div class="specs"><span>60 km</span><span>gratuit à 350 €</span></div>
+            </div>
+          </a>
+          <a class="route-card reveal d2" href="/oenotourisme/caves-champagne-reims-epernay/">
+            <span class="num">III.</span>
+            <div class="imgbox">
+              <img loading="lazy" src="/assets/img/avenue-de-champagne-epernay-800.jpg" alt="L’Avenue de Champagne à Épernay et ses hôtels particuliers">
+            </div>
+            <div class="body">
+              <span class="region">Champagne</span>
+              <h3>De Reims à Épernay</h3>
+              <div class="specs"><span>12 maisons</span><span>dès 20 €</span></div>
+            </div>
+          </a>
+          <a class="route-card reveal d3" href="/oenotourisme/route-des-vins-de-provence/">
+            <span class="num">IV.</span>
+            <div class="imgbox">
+              <img loading="lazy" src="/assets/img/vignoble-pourcieux-var-800.jpg" alt="Le vignoble de Pourcieux bordant la route, dans le Var">
+            </div>
+            <div class="body">
+              <span class="region">Provence</span>
+              <h3>La route des vins, étape par étape</h3>
+              <div class="specs"><span>10 itinéraires</span><span>8 AOC</span></div>
             </div>
           </a>
         </div>
