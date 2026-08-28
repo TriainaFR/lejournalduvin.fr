@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/accord-vin-fromage/",
+    soon: false,
+    cat: "Guide d’achat — Accords",
+    title: "Quel vin avec le fromage : le blanc gagne, et la recherche dit pourquoi",
+    excerpt: "La seule étude sensorielle sérieuse montre que le fromage n’exalte pas le vin rouge : il en atténue l’astringence et le boisé. Ce que ça change, famille par famille.",
+    date: "28 août 2026",
+    minutes: 10,
+    img: "/assets/img/plateau-fromages-bar-a-vin-480.jpg",
+    tags: ["accord vin fromage", "quel vin avec le fromage", "vin blanc fromage", "vin rouge fromage", "plateau de fromages", "roquefort sauternes", "fromage bleu liquoreux", "sancerre crottin de chavignol", "gewurztraminer munster", "vin jaune comté", "accord vin raclette", "accord vin fondue", "apremont", "roussette de savoie", "quarts-de-chaume", "cryoextraction", "coteaux du layon", "jurançon moelleux", "madrigal-galan heymann", "astringence tanins", "contraste sucré-salé", "accords mets vins"]
+  },
+  {
     url: "/champagne/drappier-blanc-de-blancs/",
     soon: false,
     cat: "Champagne — Portrait de cuvée",
