@@ -11,7 +11,7 @@ window.JDV_ARTICLES = [
     excerpt: "Stockholm, 1999 : sur 150 champagnes dégustés à l’aveugle, le 1959 premier et le 1961 deuxième — et le fils avait inscrit la maison en cachette de son père.",
     date: "28 août 2026",
     minutes: 10,
-    img: "/assets/img/village-mareuil-sur-ay-480.jpg",
+    img: "/assets/img/billecart-salmon-jardins-maison-480.jpg",
     tags: ["billecart-salmon", "champagne billecart", "mareuil-sur-aÿ", "aÿ-champagne", "grande vallée de la marne", "champagne du millénaire", "richard juhlin", "stockholm 1999", "cuvée nicolas françois", "cuvée elisabeth salmon", "clos saint-hilaire", "brut rosé", "blanc de blancs grand cru", "brut sous bois", "fermentation basse température", "jean roland-billecart", "mathieu roland-billecart", "antoine roland-billecart", "hénokiens", "maison familiale indépendante", "champagne millésimé", "premier cru 99%"]
   },
   {
