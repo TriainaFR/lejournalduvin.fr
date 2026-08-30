@@ -118,11 +118,11 @@ window.JDV_ARTICLES = [
     soon: false,
     cat: "Guide d’achat — Vins rosés",
     title: "Meilleurs vins rosés 2026 : notre sélection par région",
-    excerpt: "Trois familles, onze repères de 12 € à 29 €. Les 18 crus classés de Provence expliqués, Bandol comme seul rosé de garde, et pourquoi la pâleur ne dit rien de la qualité.",
+    excerpt: "Trois familles, douze repères de 10 € à 29 €. Les 18 crus classés de Provence expliqués, Bandol comme seul rosé de garde, le seul rosé de la sélection qu’on trouve en grande surface, et pourquoi la pâleur ne dit rien de la qualité.",
     date: "19 août 2026",
     minutes: 12,
     img: "/assets/img/vignoble-bandol-la-cadiere-azur-480.jpg",
-    tags: ["vins rosés", "meilleur rosé", "rosé de provence", "côtes de provence", "bandol", "mourvèdre", "cru classé de provence", "crus classés 1955", "château minuty", "château du galoupet", "château sainte-marguerite", "château sainte-roseline", "la tour de l’évêque", "domaine tempier", "domaine la suffrène", "château miraval", "sant armettu", "sciaccarellu", "rosé de corse", "rosé de savoie", "rosé du languedoc", "gamay", "mondeuse", "couleur du rosé", "macération pelliculaire", "température de service", "rosé de garde", "observatoire mondial du rosé", "franceagrimer", "rosé gastronomique", "guide d’achat"]
+    tags: ["vins rosés", "meilleur rosé", "rosé de provence", "côtes de provence", "bandol", "mourvèdre", "cru classé de provence", "crus classés 1955", "château minuty", "château du galoupet", "château sainte-marguerite", "château sainte-roseline", "la tour de l’évêque", "domaine tempier", "domaine la suffrène", "château miraval", "sant armettu", "sciaccarellu", "rosé de corse", "rosé de savoie", "rosé du languedoc", "gamay", "mondeuse", "couleur du rosé", "macération pelliculaire", "température de service", "rosé de garde", "observatoire mondial du rosé", "franceagrimer", "rosé gastronomique", "bleu de mer", "bernard magrez", "rosé en grande surface", "guide d’achat"]
   },
   {
     url: "/guides/prix/champagne-moins-de-20-euros/",
