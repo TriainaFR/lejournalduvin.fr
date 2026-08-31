@@ -4,9 +4,20 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/vins-roses/meilleurs-vins-roses-ete/",
+    soon: false,
+    cat: "Guide d’achat : Vins rosés",
+    title: "Quels sont les meilleurs vins rosés pour l’été ?",
+    excerpt: "Neuf rosés de 9 à 31,40 €, du demi-sec de Loire au Bandol de garde. Distinctions publiées, prix relevés en août 2026, température de service et accords.",
+    date: "31 août 2026",
+    minutes: 12,
+    img: "/assets/img/vignoble-cotes-de-provence-pierrefeu-480.jpg",
+    tags: ["meilleur rosé été", "vin rosé été", "rosé été 2026", "rosé apéritif", "bleu de mer", "bernard magrez", "château minuty", "domaine tempier", "bandol", "tavel", "trinquevedel", "château miraval", "château léoube", "puech-haut argali", "fiumicicoli", "corse sartène", "cabernet d’anjou", "petite roche", "igp pays d’oc", "côtes de provence", "température de service rosé", "accord rosé", "rosé des riceys", "guide d’achat"]
+  },
+  {
     url: "/champagne/billecart-salmon/",
     soon: false,
-    cat: "Champagne — Portrait de maison",
+    cat: "Champagne : Portrait de maison",
     title: "Billecart-Salmon : la maison qui a pris les deux premières places du millénaire",
     excerpt: "Stockholm, 1999 : sur 150 champagnes dégustés à l’aveugle, le 1959 premier et le 1961 deuxième — et le fils avait inscrit la maison en cachette de son père.",
     date: "28 août 2026",
@@ -17,7 +28,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/accord-vin-fromage/",
     soon: false,
-    cat: "Guide d’achat — Accords",
+    cat: "Guide d’achat : Accords",
     title: "Quel vin avec le fromage : le blanc gagne, et la recherche dit pourquoi",
     excerpt: "La seule étude sensorielle sérieuse montre que le fromage n’exalte pas le vin rouge : il en atténue l’astringence et le boisé. Ce que ça change, famille par famille.",
     date: "28 août 2026",
@@ -28,7 +39,7 @@ window.JDV_ARTICLES = [
   {
     url: "/champagne/drappier-blanc-de-blancs/",
     soon: false,
-    cat: "Champagne — Portrait de cuvée",
+    cat: "Champagne : Portrait de cuvée",
     title: "Drappier Blanc de Blancs : le chardonnay d’une maison de pinot noir",
     excerpt: "Le chardonnay ne pèse que 9 % du vignoble Drappier, et la maison en tire pourtant un blanc de blancs. Caves cisterciennes d’Urville, première maison carbone neutre de Champagne, tarifs de visite vérifiés.",
     date: "27 août 2026",
@@ -39,7 +50,7 @@ window.JDV_ARTICLES = [
   {
     url: "/oenotourisme/itineraire-caves-bordeaux/",
     soon: false,
-    cat: "Œnotourisme — Bordeaux",
+    cat: "Œnotourisme : Bordeaux",
     title: "Itinéraire caves de Bordeaux : les châteaux qui reçoivent vraiment",
     excerpt: "Margaux, Pétrus, Ausone, Cheval Blanc et Haut-Brion ne reçoivent pas le public. Ce qui ouvre réellement, les tarifs vérifiés de la Cité du Vin, et deux rives qui ne classent pas leurs crus pareil.",
     date: "27 août 2026",
@@ -50,7 +61,7 @@ window.JDV_ARTICLES = [
   {
     url: "/spiritueux/whisky/meilleur-whisky-ecossais/",
     soon: false,
-    cat: "Spiritueux — Whisky",
+    cat: "Spiritueux : Whisky",
     title: "Meilleur whisky écossais : le palmarès 2026, région par région",
     excerpt: "Cinq régions sont protégées par la loi écossaise, six figurent sur les étiquettes. Les lauréats des World Whiskies Awards 2026 par région, et trois erreurs de classement qui circulent partout.",
     date: "26 août 2026",
@@ -61,7 +72,7 @@ window.JDV_ARTICLES = [
   {
     url: "/champagne/bereche-et-fils/",
     soon: false,
-    cat: "Champagne — Portrait",
+    cat: "Champagne : Portrait",
     title: "Bérèche et Fils : ce que « champagne de vigneron » veut encore dire",
     excerpt: "Onze hectares en huit villages, zéro herbicide depuis 2003, et un changement de statut en octobre 2013 — de récoltant à négociant — que presque aucun portrait ne mentionne.",
     date: "25 août 2026",
@@ -72,7 +83,7 @@ window.JDV_ARTICLES = [
   {
     url: "/oenotourisme/itineraire-caves-bourgogne/",
     soon: false,
-    cat: "Œnotourisme — Bourgogne",
+    cat: "Œnotourisme : Bourgogne",
     title: "Itinéraire caves de Bourgogne : ce qui se visite vraiment",
     excerpt: "Les grands noms de la Côte de Nuits n’ouvrent pas leurs portes. Ce qui se visite réellement, les tarifs relevés à la source — de la visite gratuite à 350 € — et les deux maisons Bouchard qu’on confond partout.",
     date: "25 août 2026",
@@ -83,7 +94,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/prix/vin-rose-moins-de-15-euros/",
     soon: false,
-    cat: "Guide d’achat — Prix",
+    cat: "Guide d’achat : Prix",
     title: "Vin rosé à moins de 15 € : le mieux noté du monde en fait partie",
     excerpt: "Le rosé élu meilleur du monde par Decanter en 2025 se vend 13,90 €, prix vérifié. Huit repères sous 15 €, tous adossés à une distinction publiée, et les trois erreurs d’appellation qui circulent partout.",
     date: "24 août 2026",
@@ -94,7 +105,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/vins-roses/provence/",
     soon: false,
-    cat: "Guide d’achat — Vins rosés",
+    cat: "Guide d’achat : Vins rosés",
     title: "Meilleurs vins rosés de Provence 2026 : notre sélection en 14 cuvées",
     excerpt: "Sainte-Victoire est devenue en 2025 le premier cru officiel de Provence. Ce que cela change, les appellations remises à plat, le tibouren, et 14 cuvées de 12 € à 150 €.",
     date: "21 août 2026",
@@ -105,7 +116,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/prix/vin-blanc-bourgogne-moins-de-20-euros/",
     soon: false,
-    cat: "Guide d’achat — Prix",
+    cat: "Guide d’achat : Prix",
     title: "Vin blanc de Bourgogne à moins de 20 € : où le trouver vraiment",
     excerpt: "Les 27 dénominations du Mâconnais, la clé que personne n’explique. Les distinctions Hachette 2026 vérifiées, et pourquoi une note sur 100 attribuée à Hachette est toujours fausse.",
     date: "20 août 2026",
@@ -116,7 +127,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/vins-roses/",
     soon: false,
-    cat: "Guide d’achat — Vins rosés",
+    cat: "Guide d’achat : Vins rosés",
     title: "Meilleurs vins rosés 2026 : notre sélection par région",
     excerpt: "Trois familles, douze repères de 10 € à 29 €. Les 18 crus classés de Provence expliqués, Bandol comme seul rosé de garde, le seul rosé de la sélection qu’on trouve en grande surface, et pourquoi la pâleur ne dit rien de la qualité.",
     date: "19 août 2026",
@@ -127,7 +138,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/prix/champagne-moins-de-20-euros/",
     soon: false,
-    cat: "Guide d’achat — Prix",
+    cat: "Guide d’achat : Prix",
     title: "Champagne à moins de 20 € : ce que ce budget permet vraiment",
     excerpt: "Six bouteilles vérifiées, dont le podium de la dégustation à l’aveugle de l’UFC-Que Choisir. Et les mentions RM, NM, CM, MA de l’étiquette, seul vrai repère à ce prix.",
     date: "18 août 2026",
@@ -138,7 +149,7 @@ window.JDV_ARTICLES = [
   {
     url: "/oenotourisme/caves-champagne-reims-epernay/",
     soon: false,
-    cat: "Œnotourisme — Champagne",
+    cat: "Œnotourisme : Champagne",
     title: "Visiter les caves de Champagne : de Reims à Épernay",
     excerpt: "15 maisons avec leurs tarifs réels de 20 € à 460 €, les quatre routes par cépage, six adresses où dormir et trois budgets chiffrés pour trois jours.",
     date: "17 août 2026",
@@ -149,7 +160,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/vins-rouges/beaujolais/",
     soon: false,
-    cat: "Guide d’achat — Vins rouges",
+    cat: "Guide d’achat : Vins rouges",
     title: "Meilleurs vins rouges du Beaujolais 2026 : notre sélection en 16 cuvées",
     excerpt: "Six références de 13 € à 27 €, prix relevés en caviste, et les dix trophées 2026 du Concours des Grands Vins du Beaujolais attribués cuvée par cuvée. Les dix crus expliqués par leurs sols.",
     date: "17 août 2026",
@@ -160,7 +171,7 @@ window.JDV_ARTICLES = [
   {
     url: "/oenotourisme/route-des-vins-de-provence/",
     soon: false,
-    cat: "Œnotourisme — Provence",
+    cat: "Œnotourisme : Provence",
     title: "Route des vins de Provence : itinéraires et guide pratique 2026",
     excerpt: "10 itinéraires officiels de 9 à 102 km, 8 territoires, 431 domaines adhérents et les 8 AOC provençales. Et pourquoi la route ne va pas à Nice.",
     date: "14 août 2026",
@@ -171,7 +182,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/prix/vin-blanc-alsace-moins-de-15-euros/",
     soon: false,
-    cat: "Guide d’achat — Prix",
+    cat: "Guide d’achat : Prix",
     title: "Vin blanc d’Alsace à moins de 15 € : notre sélection 2026",
     excerpt: "13 cuvées de 5,70 € à 13,90 €, prix producteur vérifiés : un grand cru Ollwiller à 13,90 €, le coup de cœur Hachette d’Allimant-Laugner à 11 €. Et le piège du sucre résiduel, que l’étiquette annonce à peine.",
     date: "14 août 2026",
@@ -182,7 +193,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/occasions/vin-rouge-anniversaire/",
     soon: false,
-    cat: "Guide d’achat — Occasions",
+    cat: "Guide d’achat : Occasions",
     title: "Quel vin rouge offrir pour un anniversaire ? Notre sélection 2026",
     excerpt: "12 rouges de 22 € à 330 €, médiane 58,50 € : Cantemerle, Chinon Couly-Dutheil, Léoville-Barton, Guigal Côte-Rôtie. Et le millésime de naissance : quelles années offrir, lesquelles éviter.",
     date: "13 août 2026",
@@ -193,7 +204,7 @@ window.JDV_ARTICLES = [
   {
     url: "/spiritueux/gin/meilleur-gin-francais/",
     soon: false,
-    cat: "Guide d’achat — Spiritueux",
+    cat: "Guide d’achat : Spiritueux",
     title: "Meilleur gin français : notre sélection 2026 en 12 bouteilles",
     excerpt: "12 gins de 30 € à 50 €, médiane 39,50 € : Citadelle Original, Magellan Iris, Melifera à la fleur d’immortelle, Awen Nature Smoky. La moitié du panel vient des Charentes.",
     date: "12 août 2026",
@@ -204,7 +215,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/vins-blancs/loire/",
     soon: false,
-    cat: "Guide d’achat — Vins blancs",
+    cat: "Guide d’achat : Vins blancs",
     title: "Meilleurs vins blancs de Loire : notre sélection 2026 en 15 cuvées",
     excerpt: "15 blancs de 10 € à 200 €, médiane 24 € : Menetou-Salon Pellé, Muscadet Granite, Vouvray Huet, Coulée de Serrant. Le meilleur achat est un Menetou-Salon à 18 €.",
     date: "12 août 2026",
@@ -215,7 +226,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/vins-blancs/bourgogne/",
     soon: false,
-    cat: "Guide d’achat — Vins blancs",
+    cat: "Guide d’achat : Vins blancs",
     title: "Meilleurs vins blancs de Bourgogne : notre sélection 2026 en 15 cuvées",
     excerpt: "15 chardonnays de 20 € à 950 €, médiane 45 € : Rully Clos Saint-Jacques, Chablis Les Clos, Meursault Grands Charrons. Le meilleur achat est en Côte Chalonnaise, à 32 €.",
     date: "11 août 2026",
@@ -226,7 +237,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/occasions/champagne-nouvel-an/",
     soon: false,
-    cat: "Guide d’achat — Champagne",
+    cat: "Guide d’achat : Champagne",
     title: "Champagne pour le Nouvel An : de l’apéritif au toast de minuit",
     excerpt: "Quel style à chacun des six moments du réveillon, les quantités pour une soirée de six heures, le magnum comme format du toast, et le vrai prix des cuvées de prestige.",
     date: "11 août 2026",
@@ -237,7 +248,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/vins-rouges/loire/",
     soon: false,
-    cat: "Guide d’achat — Vins rouges",
+    cat: "Guide d’achat : Vins rouges",
     title: "Meilleurs vins rouges de Loire 2026 : notre sélection en 15 cuvées",
     excerpt: "15 rouges de 14,50 € à 38 €, prix moyen 23,37 € : Alliet Coteau de Noiré, Baudry La Croix Boissée, Ogereau Les Tailles, Amirault La Petite Cave. Bourgueil est l’appellation la moins chère du panel.",
     date: "10 août 2026",
@@ -248,7 +259,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/vins-blancs/",
     soon: false,
-    cat: "Guide d’achat — Vins blancs",
+    cat: "Guide d’achat : Vins blancs",
     title: "Meilleurs vins blancs 2026 : notre sélection en 20 bouteilles",
     excerpt: "20 vins blancs de 8,75 € à 49 €, prix moyen 31,09 € : Simonnet-Febvre Saint-Bris, Huet Le Mont sec, Drouhin Chablis Vaudon, Dirler-Cadé Saering. Loire, Alsace et Bourgogne pèsent 65 % du panel.",
     date: "10 août 2026",
@@ -259,7 +270,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/vins-tendance/",
     soon: false,
-    cat: "Guide d’achat — Vin",
+    cat: "Guide d’achat : Vin",
     title: "Vins tendance 2026 : notre sélection à moins de 20 €",
     excerpt: "12 vins de 9 € à 18 €, prix moyen 13,24 € : Cahors Haut-Monplaisir, Monnières-Saint Fiacre, pét-nat Perles Grises, Fleurie Cuvée Tardive. La Loire pèse la moitié du panel.",
     date: "7 août 2026",
@@ -270,7 +281,7 @@ window.JDV_ARTICLES = [
   {
     url: "/spiritueux/rhum/meilleur-rhum-agricole/",
     soon: false,
-    cat: "Guide d’achat — Spiritueux",
+    cat: "Guide d’achat : Spiritueux",
     title: "Meilleur rhum agricole : notre sélection 2026 en 12 bouteilles",
     excerpt: "12 rhums de 14 € à 66 €, prix moyen 39 € : Bologne Blanc 50° or 2026, Bielle Canne Grise, Braud & Quennesson, HSE XO. L’AOC Martinique et l’IG Guadeloupe expliquées.",
     date: "7 août 2026",
@@ -281,7 +292,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/vins-rouges/bordeaux-grands-crus-classes/",
     soon: false,
-    cat: "Guide d’achat — Vins rouges",
+    cat: "Guide d’achat : Vins rouges",
     title: "Grand cru classé de Bordeaux : les 12 meilleurs rapports qualité-prix 2026",
     excerpt: "12 crus classés de 30 € à 150 €, prix moyen 87,33 € : Cantemerle, Olivier, Jean Faure, Léoville-Barton, Pontet-Canet, Cos d’Estournel. Les trois classements bordelais expliqués.",
     date: "6 août 2026",
@@ -292,7 +303,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/vins-blancs/alsace/",
     soon: false,
-    cat: "Guide d’achat — Vins blancs",
+    cat: "Guide d’achat : Vins blancs",
     title: "Meilleurs vins blancs d’Alsace 2026 : notre sélection en 15 cuvées",
     excerpt: "15 cuvées de 9 € à 280 €, médiane 16,50 € : Kuehn Kaefferkopf, Zind-Humbrecht Clos Windsbuhl, Weinbach Furstentum, Trimbach Clos Sainte-Hune. Dix passent sous 20 €, grands crus compris.",
     date: "6 août 2026",
@@ -303,7 +314,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/prix/vin-rouge-bourgogne-moins-de-30-euros/",
     soon: false,
-    cat: "Guide d’achat — Prix",
+    cat: "Guide d’achat : Prix",
     title: "Vin rouge de Bourgogne à moins de 30 € : les 12 meilleurs en 2026",
     excerpt: "12 cuvées de 18 € à 31 €, prix moyen 25,67 € : Garaudet, Tollot-Beaut, Collotte, Simon Bize, Faiveley, Joblot. Le palier où les villages de la Côte d’Or deviennent accessibles.",
     date: "5 août 2026",
@@ -314,7 +325,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/vins-rouges/rhone/",
     soon: false,
-    cat: "Guide d’achat — Vins rouges",
+    cat: "Guide d’achat : Vins rouges",
     title: "Meilleurs vins rouges du Rhône 2026 : notre sélection en 15 cuvées",
     excerpt: "15 cuvées de 14 € à 1 200 € : Le Sang des Cailloux, Jamet, Pégau, Gonon, Guigal La Mouline, Rayas. Rhône Nord et Rhône Sud comparés, avec notre indice qualité-prix.",
     date: "4 août 2026",
@@ -325,7 +336,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/occasions/champagne-anniversaire/",
     soon: false,
-    cat: "Guide d’achat — Occasions",
+    cat: "Guide d’achat : Occasions",
     title: "Champagne pour un anniversaire : que choisir en 2026 ?",
     excerpt: "16 cuvées de 24 € à 180 € : Billecart-Salmon, Deutz, Ayala, Bollinger, Dom Pérignon. La zone de valeur se situe entre 35 et 40 €, plus le calcul des bouteilles par invité.",
     date: "3 août 2026",
@@ -336,7 +347,7 @@ window.JDV_ARTICLES = [
   {
     url: "/spiritueux/cognac/meilleur-cognac-francais/",
     soon: false,
-    cat: "Guide d’achat — Spiritueux",
+    cat: "Guide d’achat : Spiritueux",
     title: "Meilleur cognac français : notre sélection 2026 en 12 bouteilles",
     excerpt: "12 cognacs de 35 € à 1 150 €, du VS au Hors d’âge : Frapin Château Fontpinot XO, Navarre Souvenir Impérial, Delamain, Camus Borderies, Hennessy Paradis. Les six crus et les mentions d’âge expliqués.",
     date: "31 juillet 2026",
@@ -347,7 +358,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/prix/vin-rouge-bordeaux-moins-de-20-euros/",
     soon: false,
-    cat: "Guide d’achat — Prix",
+    cat: "Guide d’achat : Prix",
     title: "Vin rouge de Bordeaux à moins de 20 € : les 15 meilleurs en 2026",
     excerpt: "15 bouteilles de 8,50 € à 19,90 €, prix moyen 15,61 €, notées 90 à 95/100 par la RVF et Le Figaro Vin : Château Ferran, Clos Floridène, Pierre 1er, La Brande, La Rose Garnier. Dix appellations sous la barre.",
     date: "30 juillet 2026",
@@ -358,7 +369,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/prix/vin-rouge-bourgogne-moins-de-20-euros/",
     soon: false,
-    cat: "Guide d’achat — Prix",
+    cat: "Guide d’achat : Prix",
     title: "Vin rouge de Bourgogne à moins de 20 € : les 12 meilleurs en 2026",
     excerpt: "12 cuvées de 13 € à 19,50 €, notées 90 à 92/100 RVF : Coteaux des Margots, Nicolas Delfaud, Domaine Bart, Berthaut-Gerbet, Tupinier-Bautista, Jacqueson. Neuf appellations sous la barre.",
     date: "29 juillet 2026",
@@ -369,7 +380,7 @@ window.JDV_ARTICLES = [
   {
     url: "/spiritueux/whisky/meilleur-whisky-tourbe/",
     soon: false,
-    cat: "Guide d’achat — Spiritueux",
+    cat: "Guide d’achat : Spiritueux",
     title: "Meilleur whisky tourbé : les 12 incontournables en 2026",
     excerpt: "12 bouteilles de 40 € à 220 €, de 10 à 128,9 ppm : Ardbeg, Laphroaig, Lagavulin, Octomore, Kilchoman, Armorik Yeun Elez. Le PPM expliqué, prix relevés et notes attribuées.",
     date: "28 juillet 2026",
@@ -380,7 +391,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/occasions/champagne-noel/",
     soon: false,
-    cat: "Guide d’achat — Champagne",
+    cat: "Guide d’achat : Champagne",
     title: "Champagne pour Noël 2026 : notre sélection de 24 cuvées",
     excerpt: "24 cuvées de 20 € à 290 € : Jonot Frères, Devaux Cœur des Bar, Delamotte, Bollinger, Krug, Dom Pérignon. Accords du foie gras au dessert, budget et température de service.",
     date: "27 juillet 2026",
@@ -391,7 +402,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/vins-rouges/bordeaux/",
     soon: false,
-    cat: "Guide d’achat — Vins rouges",
+    cat: "Guide d’achat : Vins rouges",
     title: "Meilleurs vins rouges de Bordeaux 2026 : notre sélection",
     excerpt: "15 crus de 18 € à 250 € : Cantemerle, Ducluzeau, Pontet-Canet, Beychevelle, Troplong Mondot, Léoville-Las Cases. Millésimes 2019, 2020 et 2022, prix relevés et notes attribuées.",
     date: "25 juillet 2026",
@@ -402,7 +413,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/vins-rouges/bourgogne/",
     soon: false,
-    cat: "Guide d’achat — Vins rouges",
+    cat: "Guide d’achat : Vins rouges",
     title: "Meilleurs vins rouges de Bourgogne 2026 : notre sélection",
     excerpt: "16 cuvées de 13,50 € à 495 € : Domaine Bart Marsannay, Jacqueson Rully, Duroché Gevrey-Chambertin, A.-F. Gros Échézeaux. Millésimes 2020-2023 et classement qualité-prix.",
     date: "24 juillet 2026",
@@ -413,7 +424,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/vins-rouges/",
     soon: false,
-    cat: "Guide d’achat — Vins rouges",
+    cat: "Guide d’achat : Vins rouges",
     title: "Meilleurs vins rouges 2026 : notre sélection par région",
     excerpt: "15 cuvées de 12,95 € à 400 €, notées 90 à 100/100 : Ledogar, Marcel Lapierre, Marionnet, Cellier aux Moines, Château d’Issan, Guigal La Mouline. Indice qualité-prix par région.",
     date: "23 juillet 2026",
@@ -424,7 +435,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/occasions/que-boire-a-noel/",
     soon: false,
-    cat: "Occasions — Noël",
+    cat: "Occasions : Noël",
     title: "Que boire à Noël : notre sélection par budget",
     excerpt: "De 9 € à 75 € : douze bouteilles pour les fêtes, avec prix relevés et notes attribuées. Muscadet Landron, Cahors, champagnes Colin et Gremillet, Gevrey-Chambertin, Bollinger, Ruinart.",
     date: "22 juillet 2026",
@@ -435,7 +446,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/prix/champagne-moins-de-30-euros/",
     soon: false,
-    cat: "Guide d’achat — Champagne",
+    cat: "Guide d’achat : Champagne",
     title: "Champagne à moins de 30 euros : notre sélection testée de 15 vignerons",
     excerpt: "Zéro grande maison, 100 % vignerons récoltants : 15 cuvées de 17,40 € à 30 €, notées 87 à 92/100 par la RVF. Gonet-Médeville, Diebolt-Vallois, Furdyna… Prix moyen 24,61 €.",
     date: "18 juillet 2026",
@@ -446,7 +457,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/prix/vin-blanc-moins-de-15-euros/",
     soon: false,
-    cat: "Guide d’achat — Prix",
+    cat: "Guide d’achat : Prix",
     title: "Vin blanc : les 15 meilleurs à moins de 15 euros en 2026",
     excerpt: "Loire, Alsace, Bourgogne, Languedoc : 15 blancs notés 90 à 94/100 par la RVF et le Figaro Vin, avec prix, cépages, tableau comparatif et accords. Note moyenne 91/100.",
     date: "18 juillet 2026",
@@ -457,7 +468,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/prix/vin-rouge-moins-de-20-euros/",
     soon: false,
-    cat: "Guide d’achat — Prix",
+    cat: "Guide d’achat : Prix",
     title: "Vin rouge : les 20 meilleurs rapports qualité-prix à moins de 20 euros",
     excerpt: "Un Cahors à 9 € noté 93/100 par la RVF : le classement des 20 vraies affaires en vin rouge, classées par indice note/prix, avec tableau comparatif et méthode de sélection.",
     date: "16 juillet 2026",
@@ -468,7 +479,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/prix/champagne-moins-de-40-euros/",
     soon: false,
-    cat: "Guide d’achat — Champagne",
+    cat: "Guide d’achat : Champagne",
     title: "Meilleur champagne à moins de 40 euros : notre top 25 comparé",
     excerpt: "Gonet-Médeville, Fleury, Jérôme Dehours… 25 cuvées comparées et classées, des grandes maisons aux vignerons indépendants, avec tableau comparatif et le bon choix selon l’occasion.",
     date: "16 juillet 2026",
@@ -479,7 +490,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/prix/vin-moins-de-15-euros/",
     soon: false,
-    cat: "Guide d’achat — Prix",
+    cat: "Guide d’achat : Prix",
     title: "Les 30 meilleurs vins à moins de 15 € que l’on peut servir sans rougir",
     excerpt: "Corbières, Saumur-Champigny, Picpoul de Pinet, crémants… 30 appellations qui surclassent leur prix, sélection recoupée avec les guides : 10 rouges, 8 blancs, 5 rosés et 7 effervescents, avec accords et budgets.",
     date: "16 juillet 2026",
@@ -490,7 +501,7 @@ window.JDV_ARTICLES = [
   {
     url: "#",
     soon: true,
-    cat: "Grand format — Bourgogne",
+    cat: "Grand format : Bourgogne",
     title: "Millésime 2026 : pourquoi la Bourgogne s’apprête à signer une année historique",
     excerpt: "Gelées évitées, été solaire, vendanges précoces : des Chablis aux Maranges, les vignerons parlent déjà d’un millésime « de légende ».",
     date: "16 juillet 2026",
@@ -501,7 +512,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/millesimes/bordeaux/",
     soon: false,
-    cat: "Guide d’achat — Millésimes",
+    cat: "Guide d’achat : Millésimes",
     title: "Millésimes Bordeaux : lesquels boire en 2026, lesquels attendre",
     excerpt: "2000, 2003, 2005 et 2009 à boire ; 2010, 2016, 2019 et le « millésime du siècle » 2022 à attendre. Le tableau complet 2000-2022, sources Parker, Decanter, RVF et Wine Scholar Guild.",
     date: "16 juillet 2026",
@@ -523,7 +534,7 @@ window.JDV_ARTICLES = [
   {
     url: "/spiritueux/whisky/meilleur-whisky-francais/",
     soon: false,
-    cat: "Spiritueux — Whisky",
+    cat: "Spiritueux : Whisky",
     title: "Meilleur whisky français : les 12 cuvées à connaître en 2026",
     excerpt: "Armorik, Rozelieures, Hautes Glaces, Kornog, Bellevoye… Les 12 meilleurs whiskys français comparés et sourcés, avec tableau des prix, les tourbés à connaître et le podium haut de gamme.",
     date: "16 juillet 2026",
@@ -534,7 +545,7 @@ window.JDV_ARTICLES = [
   {
     url: "/guides/occasions/champagne-mariage/",
     soon: false,
-    cat: "Occasions — Mariage",
+    cat: "Occasions : Mariage",
     title: "Quel champagne pour un mariage ? Le calcul juste, les bons choix",
     excerpt: "Une bouteille pour 3 invités au vin d’honneur, une pour 2 si le champagne coule toute la soirée : le calcul complet, les cuvées justes par moment de la fête et trois budgets réalistes.",
     date: "16 juillet 2026",
@@ -556,7 +567,7 @@ window.JDV_ARTICLES = [
   {
     url: "#",
     soon: true,
-    cat: "Visites de caves — Champagne",
+    cat: "Visites de caves : Champagne",
     title: "De Reims à Épernay, les caves des grandes maisons",
     excerpt: "Trois jours et neuf caves dans les crayères champenoises, des grandes maisons aux vignerons de la Montagne de Reims.",
     date: "5 juillet 2026",
@@ -567,7 +578,7 @@ window.JDV_ARTICLES = [
   {
     url: "#",
     soon: true,
-    cat: "Visites de caves — Bordeaux",
+    cat: "Visites de caves : Bordeaux",
     title: "Médoc confidentiel : chais et châteaux hors des sentiers battus",
     excerpt: "Trois jours, 110 kilomètres et huit châteaux loin des circuits classiques, entre estuaire et forêts de pins.",
     date: "3 juillet 2026",
