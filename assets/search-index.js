@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/champagne/meilleur-champagne-millesime/",
+    soon: false,
+    cat: "Guide d’achat : Champagne",
+    title: "Meilleur champagne millésimé : notre sélection 2026",
+    excerpt: "Neuf millésimés de 44,50 € à plus de 400 €, notes publiées citées sous le nom de leur auteur. Les deux règles AOC qui définissent un millésimé, et la cuvée la mieux notée du panel n’est pas la plus chère.",
+    date: "31 août 2026",
+    minutes: 13,
+    img: "/assets/img/vignes-champagne-environs-ay-480.jpg",
+    tags: ["champagne millésimé", "meilleur champagne millésimé", "millésimes champagne", "champagne prestige", "drappier millésime exception", "bollinger la grande année", "taittinger comtes de champagne", "dom pérignon vintage", "louis roederer cristal", "krug millésimé", "egly-ouriet", "billecart-salmon louis salmon", "laherte frères", "les longues voyes", "blanc de blancs", "côte des blancs", "millésime 2012", "millésime 2015", "millésime 2019", "36 mois élevage", "température champagne", "guide d’achat"]
+  },
+  {
     url: "/guides/vins-roses/meilleurs-vins-roses-ete/",
     soon: false,
     cat: "Guide d’achat : Vins rosés",
