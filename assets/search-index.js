@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/oenotourisme/itineraire-caves-loire/",
+    soon: false,
+    cat: "Œnotourisme : Loire",
+    title: "Itinéraire caves de Loire : cinq jours de Nantes à Sancerre",
+    excerpt: "800 km, la plus longue route des vins de France. Conditions de visite relevées à la source chez Bouvet-Ladubay, Huet et Henri Bourgeois, et trois erreurs qui circulent sur ce parcours.",
+    date: "1er septembre 2026",
+    minutes: 13,
+    img: "/assets/img/chateau-vignoble-saumur-480.jpg",
+    tags: ["itinéraire caves loire", "route des vins val de loire", "visite cave loire", "caves troglodytiques", "tuffeau", "saumur", "bouvet-ladubay", "vouvray", "domaine huet", "montlouis-sur-loire", "sancerre", "chavignol", "henri bourgeois", "muscadet", "sèvre-et-maine", "savennières", "coteaux du layon", "chinon", "bourgueil", "pouilly-fumé", "val de loire unesco", "loire à vélo", "œnotourisme"]
+  },
+  {
     url: "/champagne/meilleur-champagne-millesime/",
     soon: false,
     cat: "Guide d’achat : Champagne",
