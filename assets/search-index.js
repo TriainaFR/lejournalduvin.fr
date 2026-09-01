@@ -11,7 +11,7 @@ window.JDV_ARTICLES = [
     excerpt: "Quatre ans de cave, six mois après dégorgement, un dosage à 6-8 g/l. La cuvée signature de la plus ancienne maison de vins de la Champagne, documentée à la source.",
     date: "1er septembre 2026",
     minutes: 9,
-    img: "/assets/img/coteaux-historiques-champagne-epernay-480.jpg",
+    img: "/assets/img/gosset-caves-domaine-epernay-480.jpg",
     tags: ["gosset", "gosset grande réserve", "maison gosset", "plus ancienne maison de vins de champagne", "aÿ 1584", "pierre gosset", "odilon de varine", "domaine gosset épernay", "brut sans année", "dosage brut", "vign’art", "brut excellence", "ruinart 1729", "portrait de cuvée"]
   },
   {
