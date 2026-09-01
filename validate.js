@@ -170,7 +170,11 @@ if (!fs.existsSync(sitemapPath)) {
 
 /* ————— 7. Assets locaux référencés ————— */
 for (const page of pages) {
-  const refs = new Set(page.html.match(/\/assets\/[A-Za-z0-9._\/-]+/g) || []);
+  // Les URL absolues sont retirées d'abord : un lien externe dont le chemin
+  // contient « /assets/ » (fiches PDF de maisons, par exemple) n'est pas un
+  // asset local et n'a pas à exister sur le disque.
+  const sansUrlsExternes = page.html.replace(/https?:\/\/[^"'\s<>)]+/g, '');
+  const refs = new Set(sansUrlsExternes.match(/\/assets\/[A-Za-z0-9._\/-]+/g) || []);
   for (const ref of refs) {
     if (!fs.existsSync(path.join(ROOT, ref))) err(page.rel, `asset introuvable : ${ref}`);
   }
