@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/champagne/pol-roger-brut-vintage/",
+    soon: false,
+    cat: "Champagne : Portrait de cuvée",
+    title: "Pol Roger Brut Vintage 2018 : la fiche, le prix réel, l’histoire Churchill",
+    excerpt: "Vingt crus, caves à 33 mètres, remuage à la main, aucun élevage sous bois depuis 1930. Prix constaté à 82,80 €, et deux erreurs corrigées sur cette maison.",
+    date: "2 septembre 2026",
+    minutes: 10,
+    img: "/assets/img/pol-roger-avenue-champagne-epernay-480.jpg",
+    tags: ["pol roger", "brut vintage 2018", "winston churchill", "sir winston churchill", "champagne millésimé", "épernay", "avenue de champagne", "remuage à la main", "odette pol-roger", "blenheim palace", "damien cambres", "portrait de cuvée"]
+  },
+  {
     url: "/guides/accord-vin-poisson/",
     soon: false,
     cat: "Guide d’achat : Accords",
