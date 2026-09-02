@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.lejournalduvin.fr/</loc>
-    <lastmod>2026-09-01T10:53:35+02:00</lastmod>
+    <lastmod>2026-09-02T09:53:08+02:00</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/a-propos/</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-02T09:53:08+02:00</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/vin/</loc>
@@ -235,6 +235,10 @@
   <url>
     <loc>https://www.lejournalduvin.fr/champagne/drappier-blanc-de-blancs/</loc>
     <lastmod>2026-08-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.lejournalduvin.fr/guides/accord-vin-poisson/</loc>
+    <lastmod>2026-09-02</lastmod>
   </url>
   <url>
     <loc>https://www.lejournalduvin.fr/guides/accord-vin-fromage/</loc>

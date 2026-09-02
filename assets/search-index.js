@@ -4,6 +4,17 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/guides/accord-vin-poisson/",
+    soon: false,
+    cat: "Guide d’achat : Accords",
+    title: "Quel vin avec le poisson : ce n’est pas une affaire de tanins",
+    excerpt: "Le goût métallique vient du fer, pas des tanins. Une étude publiée dans le Journal of Agricultural and Food Chemistry le mesure depuis 2009, et cela change la règle.",
+    date: "2 septembre 2026",
+    minutes: 11,
+    img: "/assets/img/sole-meuniere-assiette-480.jpg",
+    tags: ["accord vin poisson", "quel vin avec le poisson", "vin blanc poisson", "vin rouge poisson", "chablis", "muscadet", "sancerre", "riesling alsace", "pinot gris", "bandol rosé", "bouillabaisse", "saumon", "sole", "thon", "huîtres", "température de service", "fer dans le vin", "accords mets vins"]
+  },
+  {
     url: "/champagne/gosset-grande-reserve/",
     soon: false,
     cat: "Champagne : Portrait de cuvée",
