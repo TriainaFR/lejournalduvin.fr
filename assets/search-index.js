@@ -4,6 +4,28 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/champagne/lanson-le-green-bio-organic/",
+    soon: false,
+    cat: "Champagne : Portrait de cuvée",
+    title: "Lanson Le Green Bio-Organic 2018 : la fiche, le prix, ce qui a changé",
+    excerpt: "Huit hectares en biodynamie, extra-brut à 5 g, aucune malolactique, quatre ans de cave, 47 €. Et un Royal Warrant que la maison a perdu en 2025.",
+    date: "3 septembre 2026",
+    minutes: 10,
+    img: "/assets/img/lanson-parc-courlancy-reims-480.jpg",
+    tags: ["lanson", "le green bio-organic", "green label", "champagne biologique", "champagne bio", "biodynamie", "demeter", "domaine de la malmaison", "verneuil", "vandières", "hervé dantan", "fermentation malolactique", "extra-brut", "royal warrant", "reims", "portrait de cuvée"]
+  },
+  {
+    url: "/guides/prix/champagne-millesime-moins-de-60-euros/",
+    soon: false,
+    cat: "Guide d’achat : Champagne",
+    title: "Champagne millésimé à moins de 60 € : notre sélection 2026",
+    excerpt: "Six vrais millésimés vérifiés de 44,50 à 51 € au tarif producteur. Et cinq cuvées que ce budget ne peut pas retenir : deux ne sont pas millésimées, trois dépassent 60 €.",
+    date: "3 septembre 2026",
+    minutes: 11,
+    img: "/assets/img/le-mesnil-sur-oger-vignoble-480.jpg",
+    tags: ["champagne millésimé", "champagne millésimé moins de 60 euros", "champagne pas cher", "beaumont des crayères", "fleur de prestige", "allouchery-deguerne", "michel gonet", "mailly grand cru", "drappier", "le mesnil-sur-oger", "coopérative", "récoltant-manipulant", "grand cru", "premier cru", "échelle des crus", "guide d’achat"]
+  },
+  {
     url: "/champagne/pol-roger-brut-vintage/",
     soon: false,
     cat: "Champagne : Portrait de cuvée",
