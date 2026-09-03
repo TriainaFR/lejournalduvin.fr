@@ -480,7 +480,7 @@
     }
     .routes .section-head h2{ color:var(--paper); }
     .routes .section-head .orn::before, .routes .section-head .orn::after{ border-color:rgba(244,238,224,.28); }
-    .routes-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; }
+    .routes-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(205px,1fr)); gap:1.5rem; }
     .route-card{ position:relative; display:block; }
     .route-card .imgbox{ overflow:hidden; aspect-ratio:4/5; position:relative; }
     .route-card .imgbox::after{
@@ -866,58 +866,62 @@
         <div class="guides-grid">
           <article class="card card--lead reveal">
             <div class="imgwrap">
-              <a href="/guides/prix/vin-moins-de-15-euros/" class="imglink"><div class="imgbox">
-                <img loading="lazy" src="https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?q=80&w=1000&auto=format&fit=crop" alt="Bouteilles de vin alignées sur un casier de cave">
+              <a href="/guides/prix/champagne-millesime-moins-de-60-euros/" class="imglink"><div class="imgbox">
+                <img loading="lazy" src="/assets/img/le-mesnil-sur-oger-vignoble-800.jpg" alt="Le village du Mesnil-sur-Oger et son vignoble de chardonnay, en Côte des Blancs">
               </div></a>
-              <span class="chip">Guide d’achat — Prix</span>
+              <span class="chip">Guide d’achat : Champagne</span>
             </div>
-            <h3><a href="/guides/prix/vin-moins-de-15-euros/">Les 30 meilleurs vins à moins de 15 € que l’on peut servir sans rougir</a></h3>
-            <p class="excerpt">Notre rédaction a goûté et passé au crible les appellations vendues en grande distribution et chez les cavistes. Voici les 30 qui surclassent leur prix — et les pièges à éviter au rayon vin.</p>
-            <p class="meta">16 juillet 2026<i>◆</i>Lecture 12 min</p>
+            <h3><a href="/guides/prix/champagne-millesime-moins-de-60-euros/">Champagne millésimé à moins de 60&#8239;€&#8239;: notre sélection 2026</a></h3>
+            <p class="excerpt">Six vrais millésimés vérifiés de 44,50 à 51&#8239;€ au tarif producteur. Et cinq cuvées que ce budget ne peut pas retenir&#8239;: deux ne sont pas millésimées, trois dépassent 60&#8239;€.</p>
+            <p class="meta">3 septembre 2026<i>◆</i>Lecture 11 min</p>
           </article>
 
           <article class="card reveal d1">
             <div class="imgwrap">
-              <a href="/guides/occasions/champagne-mariage/" class="imglink"><div class="imgbox">
-                <img loading="lazy" src="https://images.unsplash.com/photo-1707707178778-bec9382d152c?q=80&w=800&auto=format&fit=crop" alt="Jeunes mariés trinquant au champagne">
+              <a href="/guides/accord-vin-poisson/" class="imglink"><div class="imgbox">
+                <img loading="lazy" src="/assets/img/sole-meuniere-assiette-800.jpg" alt="Une sole meunière servie en assiette">
               </div></a>
-              <span class="chip">Occasions — Mariage</span>
+              <span class="chip">Guide d’achat : Accords</span>
             </div>
-            <h3><a href="/guides/occasions/champagne-mariage/">Quel champagne pour un mariage&#8239;? Le calcul juste, les bons choix</a></h3>
-            <p class="meta">16 juillet 2026<i>◆</i>Lecture 9 min</p>
+            <h3><a href="/guides/accord-vin-poisson/">Quel vin avec le poisson&#8239;: ce n’est pas une affaire de tanins</a></h3>
+            <p class="excerpt">Le goût métallique vient du fer, pas des tanins. Une étude publiée dans le Journal of Agricultural and Food Chemistry le mesure depuis 2009, et cela change la règle.</p>
+            <p class="meta">2 septembre 2026<i>◆</i>Lecture 11 min</p>
           </article>
 
           <article class="card reveal d2">
             <div class="imgwrap">
-              <a href="/guides/millesimes/bordeaux/" class="imglink"><div class="imgbox">
-                <img loading="lazy" src="https://images.unsplash.com/photo-1692764719158-77276a8fb65e?q=80&w=800&auto=format&fit=crop" alt="Vieille bouteille de vin patinée par le temps">
+              <a href="/guides/vins-roses/meilleurs-vins-roses-ete/" class="imglink"><div class="imgbox">
+                <img loading="lazy" src="/assets/img/vignoble-cotes-de-provence-pierrefeu-800.jpg" alt="Le vignoble des Côtes de Provence entre Cuers et Pierrefeu-du-Var">
               </div></a>
-              <span class="chip">Millésimes</span>
+              <span class="chip">Guide d’achat : Vins rosés</span>
             </div>
-            <h3><a href="/guides/millesimes/bordeaux/">Millésimes Bordeaux&#8239;: lesquels boire en 2026, lesquels attendre</a></h3>
-            <p class="meta">16 juillet 2026<i>◆</i>Lecture 12 min</p>
+            <h3><a href="/guides/vins-roses/meilleurs-vins-roses-ete/">Quels sont les meilleurs vins rosés pour l’été&#8239;?</a></h3>
+            <p class="excerpt">Neuf rosés de 9 à 31,40&#8239;€, du demi-sec de Loire au Bandol de garde. Distinctions publiées, prix relevés en août 2026, température de service et accords.</p>
+            <p class="meta">31 août 2026<i>◆</i>Lecture 12 min</p>
           </article>
 
           <article class="card reveal d2">
             <div class="imgwrap">
-              <a href="/spiritueux/whisky/meilleur-whisky-francais/" class="imglink"><div class="imgbox">
-                <img loading="lazy" src="https://images.unsplash.com/photo-1597290282695-edc43d0e7129?q=80&w=800&auto=format&fit=crop" alt="Étagère de bar garnie de bouteilles de spiritueux">
+              <a href="/guides/accord-vin-fromage/" class="imglink"><div class="imgbox">
+                <img loading="lazy" src="/assets/img/plateau-fromages-bar-a-vin-800.jpg" alt="Deux plateaux de fromages servis dans un bar à vin">
               </div></a>
-              <span class="chip">Spiritueux — Whisky</span>
+              <span class="chip">Guide d’achat : Accords</span>
             </div>
-            <h3><a href="/spiritueux/whisky/meilleur-whisky-francais/">Meilleur whisky français&#8239;: les 12 cuvées à connaître en 2026</a></h3>
-            <p class="meta">16 juillet 2026<i>◆</i>Lecture 11 min</p>
+            <h3><a href="/guides/accord-vin-fromage/">Quel vin avec le fromage&#8239;: le blanc gagne, et la recherche dit pourquoi</a></h3>
+            <p class="excerpt">La seule étude sensorielle sérieuse montre que le fromage n’exalte pas le vin rouge&#8239;: il en atténue l’astringence et le boisé. Ce que ça change, famille par famille.</p>
+            <p class="meta">28 août 2026<i>◆</i>Lecture 10 min</p>
           </article>
 
           <article class="card reveal d3">
             <div class="imgwrap">
-              <a href="/guides/" class="imglink"><div class="imgbox">
-                <img loading="lazy" src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=800&auto=format&fit=crop" alt="Amis levant leurs verres de vin lors d’un dîner">
+              <a href="/spiritueux/whisky/meilleur-whisky-ecossais/" class="imglink"><div class="imgbox">
+                <img loading="lazy" src="/assets/img/distillerie-bowmore-islay-800.jpg" alt="La distillerie Bowmore, sur l’île d’Islay">
               </div></a>
-              <span class="chip">Accords &amp; conseils</span>
+              <span class="chip">Spiritueux : Whisky</span>
             </div>
-            <h3><a href="/guides/">Apéritif d’été&#8239;: 12 bouteilles qui font l’unanimité (et leurs accords)</a></h3>
-            <p class="meta">6 juillet 2026<i>◆</i>Lecture 8 min</p>
+            <h3><a href="/spiritueux/whisky/meilleur-whisky-ecossais/">Meilleur whisky écossais&#8239;: le palmarès 2026, région par région</a></h3>
+            <p class="excerpt">Cinq régions sont protégées par la loi écossaise, six figurent sur les étiquettes. Les lauréats des World Whiskies Awards 2026 par région, et trois erreurs qui circulent.</p>
+            <p class="meta">26 août 2026<i>◆</i>Lecture 10 min</p>
           </article>
         </div>
         <div class="center reveal">
@@ -982,6 +986,15 @@
               <span class="region">Champagne</span>
               <h3>De Reims à Épernay</h3>
               <div class="specs"><span>12 maisons</span><span>dès 20 €</span></div>
+            </div>
+          </a>
+          <a class="route-card reveal d3" href="/oenotourisme/route-des-vins-de-provence/">
+            <span class="num">V.</span>
+            <div class="imgbox"><img loading="lazy" src="/assets/img/vignoble-pourcieux-var-800.jpg" alt="Le vignoble de Pourcieux, dans le Var, avec un relief calcaire à l’horizon"></div>
+            <div class="body">
+              <span class="region">Provence</span>
+              <h3>Dix itinéraires, pas une route</h3>
+              <div class="specs"><span>9 à 102 km</span><span>431 domaines</span></div>
             </div>
           </a>
         </div>
