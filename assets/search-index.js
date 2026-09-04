@@ -22,7 +22,7 @@ window.JDV_ARTICLES = [
     excerpt: "Une étude de 2021 mesure ce que le gras fait vraiment aux tanins : il les rend indisponibles, il ne les adoucit pas. La nuance inverse un réflexe d’achat.",
     date: "4 septembre 2026",
     minutes: 12,
-    img: "/assets/img/cote-de-boeuf-grillee-480.jpg",
+    img: "/assets/img/cote-de-boeuf-grillee-v2-480.jpg",
     tags: ["accord vin viande rouge", "quel vin avec la viande rouge", "côte de bœuf", "entrecôte", "filet de bœuf", "bavette", "onglet", "tartare", "bœuf bourguignon", "gigot d’agneau", "gibier", "tanins", "astringence", "syrah", "pinot noir", "gamay", "grenache", "accords mets et vins"]
   },
   {
