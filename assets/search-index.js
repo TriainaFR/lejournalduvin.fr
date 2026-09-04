@@ -11,7 +11,7 @@ window.JDV_ARTICLES = [
     excerpt: "La fondatrice ne s’appelle pas Apolline de Montalivet, ce nom n’existe pas. Et la maison n’est plus familiale : elle appartient à une union de coopératives depuis septembre 2023.",
     date: "4 septembre 2026",
     minutes: 11,
-    img: "/assets/img/vignoble-verzenay-montagne-de-reims-480.jpg",
+    img: "/assets/img/henriot-vignoble-vendanges-480.jpg",
     tags: ["henriot", "apolline henriot", "apolline godinot", "veuve henriot", "brut souverain", "blanc souverain", "cuve 38", "réserve perpétuelle", "alice tétienne", "verzenay", "verzy", "montagne de reims", "côte des blancs", "terroirs et vignerons de champagne", "nicolas feuillatte", "artémis domaines", "portrait de maison"]
   },
   {
