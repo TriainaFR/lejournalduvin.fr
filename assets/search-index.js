@@ -4,6 +4,28 @@
 ———————————————————————————————— */
 window.JDV_ARTICLES = [
   {
+    url: "/champagne/henriot/",
+    soon: false,
+    cat: "Champagne : Portrait de maison",
+    title: "Champagne Henriot : la maison d’Apolline Henriot, et ce qui a changé",
+    excerpt: "La fondatrice ne s’appelle pas Apolline de Montalivet, ce nom n’existe pas. Et la maison n’est plus familiale : elle appartient à une union de coopératives depuis septembre 2023.",
+    date: "4 septembre 2026",
+    minutes: 11,
+    img: "/assets/img/vignoble-verzenay-montagne-de-reims-480.jpg",
+    tags: ["henriot", "apolline henriot", "apolline godinot", "veuve henriot", "brut souverain", "blanc souverain", "cuve 38", "réserve perpétuelle", "alice tétienne", "verzenay", "verzy", "montagne de reims", "côte des blancs", "terroirs et vignerons de champagne", "nicolas feuillatte", "artémis domaines", "portrait de maison"]
+  },
+  {
+    url: "/guides/accord-vin-viande-rouge/",
+    soon: false,
+    cat: "Guide d’achat : Accords",
+    title: "Quel vin avec la viande rouge : le gras ne neutralise pas les tanins",
+    excerpt: "Une étude de 2021 mesure ce que le gras fait vraiment aux tanins : il les rend indisponibles, il ne les adoucit pas. La nuance inverse un réflexe d’achat.",
+    date: "4 septembre 2026",
+    minutes: 12,
+    img: "/assets/img/cote-de-boeuf-grillee-480.jpg",
+    tags: ["accord vin viande rouge", "quel vin avec la viande rouge", "côte de bœuf", "entrecôte", "filet de bœuf", "bavette", "onglet", "tartare", "bœuf bourguignon", "gigot d’agneau", "gibier", "tanins", "astringence", "syrah", "pinot noir", "gamay", "grenache", "accords mets et vins"]
+  },
+  {
     url: "/champagne/lanson-le-green-bio-organic/",
     soon: false,
     cat: "Champagne : Portrait de cuvée",
